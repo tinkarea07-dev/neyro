@@ -1,0 +1,1595 @@
+2025-12-23 04:18:21,111 - INFO - 🔌 Подключение к Telegram...
+2025-12-23 04:18:21,115 - INFO - Connecting to 149.154.175.55:443/TcpFull...
+2025-12-23 04:18:21,277 - INFO - Connection to 149.154.175.55:443/TcpFull complete!
+2025-12-23 04:18:22,328 - INFO - ✅ Подключен как: ebanyta9 (@shotanedoma)
+2025-12-23 04:18:22,674 - INFO - 💬 Запуск автоответчика...
+2025-12-23 04:18:22,675 - INFO - 🚀 Выполнение первичных задач...
+2025-12-23 04:18:22,676 - INFO - ✅ Бот запущен и готов к работе!
+2025-12-23 04:18:22,676 - INFO - 📺 Отслеживается 73 каналов
+2025-12-23 04:18:22,677 - INFO - 🔄 Цикл #1
+2025-12-23 04:18:23,038 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:18:23,224 - INFO - File lives in another DC
+2025-12-23 04:18:23,401 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 04:18:24,881 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 04:18:24,882 - INFO - Exporting auth for new borrowed sender in DcOption(id=2, ip_address='149.154.167.50', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2025-12-23 04:18:25,530 - INFO - 📷 Обнаружено изображение в посте 2472 (тип: jpeg)
+2025-12-23 04:18:25,530 - INFO - 📝 Генерация комментария к посту 2472 в stickers_temy_emodzi...
+2025-12-23 04:18:30,187 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:18:59,426 - ERROR - Ошибка при отправке комментария в 'stickers_temy_emodzi': The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+2025-12-23 04:19:28,609 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 04:19:28,609 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 04:19:28,624 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 04:19:28,981 - INFO - 📝 Генерация комментария к посту 21521 в animetarakans...
+2025-12-23 04:19:34,044 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:20:07,636 - INFO - ✅ Пост 21521 в animetarakans отмечен как обработанный в БД
+2025-12-23 04:20:07,973 - INFO - ✅ Комментарий отправлен в animetarakans
+2025-12-23 04:20:29,347 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:20:29,527 - INFO - File lives in another DC
+2025-12-23 04:20:29,529 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 04:20:29,581 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 04:20:49,167 - INFO - 📷 Обнаружено изображение в посте 6353 (тип: jpeg)
+2025-12-23 04:20:49,167 - INFO - 📝 Генерация комментария к посту 6353 в smotretr...
+2025-12-23 04:20:59,035 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-12-23 04:21:26,221 - ERROR - Ошибка при отправке комментария в 'smotretr': The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+2025-12-23 04:21:50,582 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 04:21:50,582 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 04:21:50,593 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 04:21:50,952 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:21:51,126 - INFO - File lives in another DC
+2025-12-23 04:21:51,131 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 04:21:51,175 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 04:21:54,386 - INFO - 📷 Обнаружено изображение в посте 20892 (тип: jpeg)
+2025-12-23 04:21:54,386 - INFO - 📝 Генерация комментария к посту 20892 в anilibria...
+2025-12-23 04:21:58,981 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:22:32,324 - ERROR - Ошибка при отправке комментария в 'anilibria': The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+2025-12-23 04:22:54,053 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:22:54,228 - INFO - File lives in another DC
+2025-12-23 04:23:20,076 - INFO - 📷 Обнаружено изображение в посте 32415 (тип: jpeg)
+2025-12-23 04:23:20,078 - INFO - 📝 Генерация комментария к посту 32415 в jutsu_anime...
+2025-12-23 04:23:39,383 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-12-23 04:24:17,797 - ERROR - Ошибка при отправке комментария в 'jutsu_anime': You join the discussion group before commenting, see [here](/api/discussion#requiring-users-to-join-the-group) for more info (caused by SendMessageRequest)
+2025-12-23 04:24:44,512 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:24:44,736 - INFO - File lives in another DC
+2025-12-23 04:24:45,061 - INFO - 📷 Обнаружено изображение в посте 11571 (тип: jpeg)
+2025-12-23 04:24:45,062 - INFO - 📝 Генерация комментария к посту 11571 в nyasticks...
+2025-12-23 04:35:02,903 - INFO - 🔌 Подключение к Telegram...
+2025-12-23 04:35:02,908 - INFO - Connecting to 149.154.175.55:443/TcpFull...
+2025-12-23 04:35:03,067 - INFO - Connection to 149.154.175.55:443/TcpFull complete!
+2025-12-23 04:35:04,090 - INFO - ✅ Подключен как: ebanyta9 (@shotanedoma)
+2025-12-23 04:35:04,424 - INFO - 💬 Запуск автоответчика...
+2025-12-23 04:35:04,424 - INFO - 🚀 Выполнение первичных задач...
+2025-12-23 04:35:04,425 - INFO - ✅ Бот запущен и готов к работе!
+2025-12-23 04:35:04,425 - INFO - 📺 Отслеживается 75 каналов
+2025-12-23 04:35:04,425 - INFO - 🔄 Цикл #1
+2025-12-23 04:35:04,778 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:35:04,946 - INFO - File lives in another DC
+2025-12-23 04:35:05,114 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 04:35:06,818 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 04:35:06,819 - INFO - Exporting auth for new borrowed sender in DcOption(id=2, ip_address='149.154.167.50', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2025-12-23 04:35:07,421 - INFO - 📷 Обнаружено изображение в посте 2472 (тип: webp, размер: 29.5KB)
+2025-12-23 04:35:07,421 - INFO - 📝 Генерация комментария к посту 2472 в stickers_temy_emodzi...
+2025-12-23 04:35:12,219 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:35:47,433 - WARNING - 🗑️ Канал stickers_temy_emodzi удален из активных (комментарии закрыты)
+2025-12-23 04:35:48,552 - WARNING - ⚠️ Неподдерживаемый формат изображения: video/mp4, пропускаю изображение
+2025-12-23 04:35:48,904 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:35:49,072 - INFO - File lives in another DC
+2025-12-23 04:35:50,477 - INFO - 📷 Обнаружено изображение в посте 20892 (тип: jpeg, размер: 201.2KB)
+2025-12-23 04:35:50,499 - INFO - 📝 Генерация комментария к посту 20892 в anilibria...
+2025-12-23 04:35:55,538 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:36:29,921 - WARNING - 🗑️ Канал anilibria удален из активных (комментарии закрыты)
+2025-12-23 04:36:30,629 - WARNING - ⚠️ Неподдерживаемый формат изображения: video/mp4, пропускаю изображение
+2025-12-23 04:36:30,629 - INFO - 📝 Генерация комментария к посту 32415 в jutsu_anime...
+2025-12-23 04:36:35,666 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:37:09,218 - WARNING - ⚠️ Группа обсуждения не найдена для jutsu_anime
+2025-12-23 04:37:09,616 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:37:09,786 - INFO - File lives in another DC
+2025-12-23 04:37:10,093 - INFO - 📷 Обнаружено изображение в посте 11571 (тип: webp, размер: 37.2KB)
+2025-12-23 04:37:10,093 - INFO - 📝 Генерация комментария к посту 11571 в nyasticks...
+2025-12-23 04:37:14,209 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:37:40,396 - WARNING - 🗑️ Канал nyasticks удален из активных (комментарии закрыты)
+2025-12-23 04:37:41,109 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:37:41,294 - INFO - File lives in another DC
+2025-12-23 04:37:42,581 - INFO - 📷 Обнаружено изображение в посте 8039 (тип: jpeg, размер: 137.9KB)
+2025-12-23 04:37:42,582 - INFO - 📝 Генерация комментария к посту 8039 в avy_oboi_kartinki...
+2025-12-23 04:37:47,394 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:38:09,591 - WARNING - 🗑️ Канал avy_oboi_kartinki удален из активных (комментарии закрыты)
+2025-12-23 04:38:10,371 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:38:10,726 - INFO - File lives in another DC
+2025-12-23 04:38:13,600 - INFO - 📷 Обнаружено изображение в посте 18144 (тип: jpeg, размер: 94.8KB)
+2025-12-23 04:38:13,615 - INFO - 📝 Генерация комментария к посту 18144 в tg_themes_anime...
+2025-12-23 04:38:18,251 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:38:51,634 - WARNING - 🗑️ Канал tg_themes_anime удален из активных (комментарии закрыты)
+2025-12-23 04:38:52,398 - INFO - 📝 Генерация комментария к посту 4733 в khentayma_komixy_igry...
+2025-12-23 04:38:58,636 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:39:25,851 - WARNING - 🗑️ Канал khentayma_komixy_igry удален из активных (комментарии закрыты)
+2025-12-23 04:39:26,393 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:39:26,576 - INFO - File lives in another DC
+2025-12-23 04:39:28,543 - INFO - 📷 Обнаружено изображение в посте 9207 (тип: jpeg, размер: 137.9KB)
+2025-12-23 04:39:28,543 - INFO - 📝 Генерация комментария к посту 9207 в cosplayro...
+2025-12-23 04:39:35,258 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:40:08,013 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:40:25,081 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:40:25,114 - WARNING - 🗑️ Канал cosplayro удален из активных (комментарии закрыты)
+2025-12-23 04:40:29,672 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:40:41,709 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\BOTS\нейрокоментинг\main_new.py", line 316, in write_comments_in_telegram
+    image_data = None
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\sync.py", line 39, in syncified
+    return loop.run_until_complete(coro)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\messages.py", line 840, in send_message
+    entity, reply_to = await self._get_comment_data(entity, comment_to)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\messages.py", line 616, in _get_comment_data
+    r = await self(functions.messages.GetDiscussionMessageRequest(
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\users.py", line 83, in _call
+    result = await future
+telethon.errors.rpcerrorlist.MsgIdInvalidError: The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:40:46,290 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:41:05,452 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\BOTS\нейрокоментинг\main_new.py", line 316, in write_comments_in_telegram
+    image_data = None
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\sync.py", line 39, in syncified
+    return loop.run_until_complete(coro)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\messages.py", line 840, in send_message
+    entity, reply_to = await self._get_comment_data(entity, comment_to)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\messages.py", line 616, in _get_comment_data
+    r = await self(functions.messages.GetDiscussionMessageRequest(
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\users.py", line 83, in _call
+    result = await future
+telethon.errors.rpcerrorlist.MsgIdInvalidError: The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:41:05,480 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 04:41:05,530 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 04:41:14,710 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:41:31,475 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\BOTS\нейрокоментинг\main_new.py", line 316, in write_comments_in_telegram
+    image_data = None
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\sync.py", line 39, in syncified
+    return loop.run_until_complete(coro)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\messages.py", line 840, in send_message
+    entity, reply_to = await self._get_comment_data(entity, comment_to)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\messages.py", line 616, in _get_comment_data
+    r = await self(functions.messages.GetDiscussionMessageRequest(
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\users.py", line 83, in _call
+    result = await future
+telethon.errors.rpcerrorlist.MsgIdInvalidError: The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:41:31,675 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 04:41:36,871 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:41:49,037 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\BOTS\нейрокоментинг\main_new.py", line 316, in write_comments_in_telegram
+    image_type = None
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\sync.py", line 39, in syncified
+    return loop.run_until_complete(coro)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\messages.py", line 840, in send_message
+    entity, reply_to = await self._get_comment_data(entity, comment_to)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\messages.py", line 616, in _get_comment_data
+    r = await self(functions.messages.GetDiscussionMessageRequest(
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\users.py", line 83, in _call
+    result = await future
+telethon.errors.rpcerrorlist.MsgIdInvalidError: The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:41:54,842 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:42:15,022 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\BOTS\нейрокоментинг\main_new.py", line 316, in write_comments_in_telegram
+    image_type = None
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\sync.py", line 39, in syncified
+    return loop.run_until_complete(coro)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\messages.py", line 840, in send_message
+    entity, reply_to = await self._get_comment_data(entity, comment_to)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\messages.py", line 616, in _get_comment_data
+    r = await self(functions.messages.GetDiscussionMessageRequest(
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\users.py", line 83, in _call
+    result = await future
+telethon.errors.rpcerrorlist.MsgIdInvalidError: The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:42:20,720 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:42:31,755 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\BOTS\нейрокоментинг\main_new.py", line 316, in write_comments_in_telegram
+    image_type = None
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\sync.py", line 39, in syncified
+    return loop.run_until_complete(coro)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\messages.py", line 840, in send_message
+    entity, reply_to = await self._get_comment_data(entity, comment_to)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\messages.py", line 616, in _get_comment_data
+    r = await self(functions.messages.GetDiscussionMessageRequest(
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\users.py", line 83, in _call
+    result = await future
+telethon.errors.rpcerrorlist.MsgIdInvalidError: The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:42:36,253 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:43:05,289 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:43:09,523 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:43:25,558 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:43:33,929 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:43:50,953 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:43:55,696 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:44:15,847 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:44:21,260 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:44:25,405 - INFO - 🛑 Получен сигнал остановки
+2025-12-23 04:45:30,946 - INFO - 🔌 Подключение к Telegram...
+2025-12-23 04:45:30,965 - INFO - Connecting to 149.154.175.55:443/TcpFull...
+2025-12-23 04:45:31,131 - INFO - Connection to 149.154.175.55:443/TcpFull complete!
+2025-12-23 04:45:32,217 - INFO - ✅ Подключен как: ebanyta9 (@shotanedoma)
+2025-12-23 04:45:32,564 - INFO - 💬 Запуск автоответчика...
+2025-12-23 04:45:32,564 - INFO - 🚀 Выполнение первичных задач...
+2025-12-23 04:45:32,564 - INFO - ✅ Бот запущен и готов к работе!
+2025-12-23 04:45:32,565 - INFO - 📺 Отслеживается 68 каналов
+2025-12-23 04:45:32,565 - INFO - 🔄 Цикл #1
+2025-12-23 04:45:33,289 - INFO - 🎬 Обнаружено видео в посте 6353 (тип: video/mp4)
+2025-12-23 04:45:33,452 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 04:45:33,453 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:45:33,630 - INFO - File lives in another DC
+2025-12-23 04:45:33,803 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 04:45:35,265 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 04:45:35,266 - INFO - Exporting auth for new borrowed sender in DcOption(id=2, ip_address='149.154.167.50', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2025-12-23 04:45:41,940 - INFO - ✅ Скриншот извлечен (размер: 6.9KB)
+2025-12-23 04:45:41,941 - INFO - 📸 Скриншот извлечен из видео в посте 6353
+2025-12-23 04:45:41,941 - INFO - 📷 Обнаружено изображение в посте 6353 (тип: jpeg, размер: 6.9KB)
+2025-12-23 04:45:41,942 - INFO - 📝 Генерация комментария к посту 6353 в smotretr...
+2025-12-23 04:45:46,345 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:46:10,563 - WARNING - ⚠️ Ошибка MessageIdInvalidError для поста 6353 в smotretr: The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+2025-12-23 04:46:10,579 - WARNING - 🗑️ Канал smotretr удален из активных (комментарии закрыты или не поддерживаются)
+2025-12-23 04:46:11,525 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:46:11,734 - INFO - File lives in another DC
+2025-12-23 04:46:13,031 - INFO - 📷 Обнаружено изображение в посте 2408 (тип: jpeg, размер: 137.9KB)
+2025-12-23 04:46:13,031 - INFO - 📝 Генерация комментария к посту 2408 в editsa_videosa_moviesa...
+2025-12-23 04:46:18,615 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:46:41,793 - WARNING - ⚠️ Ошибка MessageIdInvalidError для поста 2408 в editsa_videosa_moviesa: The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+2025-12-23 04:46:41,809 - WARNING - 🗑️ Канал editsa_videosa_moviesa удален из активных (комментарии закрыты или не поддерживаются)
+2025-12-23 04:46:42,536 - INFO - 📝 Генерация комментария к посту 4397 в animessam3...
+2025-12-23 04:46:48,358 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:47:24,535 - WARNING - ⚠️ Ошибка MessageIdInvalidError для поста 4397 в animessam3: The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+2025-12-23 04:47:24,549 - WARNING - 🗑️ Канал animessam3 удален из активных (комментарии закрыты или не поддерживаются)
+2025-12-23 04:47:25,264 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:47:25,439 - INFO - File lives in another DC
+2025-12-23 04:47:25,727 - INFO - 📷 Обнаружено изображение в посте 47642 (тип: jpeg, размер: 29.9KB)
+2025-12-23 04:47:25,727 - INFO - 📝 Генерация комментария к посту 47642 в figovbaron...
+2025-12-23 04:47:30,086 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:48:08,265 - WARNING - ⚠️ Ошибка MessageIdInvalidError для поста 47642 в figovbaron: The message ID used in the peer was invalid (caused by GetDiscussionMessageRequest)
+2025-12-23 04:48:08,276 - WARNING - 🗑️ Канал figovbaron удален из активных (комментарии закрыты или не поддерживаются)
+2025-12-23 04:48:08,998 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:48:09,174 - INFO - File lives in another DC
+2025-12-23 04:48:10,192 - INFO - 📷 Обнаружено изображение в посте 1429 (тип: jpeg, размер: 137.9KB)
+2025-12-23 04:48:10,192 - INFO - 📝 Генерация комментария к посту 1429 в kartinki_milye_poshlyez...
+2025-12-23 04:48:15,297 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:48:18,942 - INFO - 🛑 Получен сигнал остановки
+2025-12-23 04:48:24,497 - INFO - 🔌 Подключение к Telegram...
+2025-12-23 04:48:24,507 - INFO - Connecting to 149.154.175.55:443/TcpFull...
+2025-12-23 04:48:24,674 - INFO - Connection to 149.154.175.55:443/TcpFull complete!
+2025-12-23 04:48:25,753 - INFO - ✅ Подключен как: ebanyta9 (@shotanedoma)
+2025-12-23 04:48:26,104 - INFO - 💬 Запуск автоответчика...
+2025-12-23 04:48:26,104 - INFO - 🚀 Выполнение первичных задач...
+2025-12-23 04:48:26,104 - INFO - ✅ Бот запущен и готов к работе!
+2025-12-23 04:48:26,106 - INFO - 📺 Отслеживается 64 каналов
+2025-12-23 04:48:26,106 - INFO - 🔄 Цикл #1
+2025-12-23 04:48:27,208 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:48:27,385 - INFO - File lives in another DC
+2025-12-23 04:48:27,561 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 04:48:29,115 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 04:48:29,116 - INFO - Exporting auth for new borrowed sender in DcOption(id=2, ip_address='149.154.167.50', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2025-12-23 04:48:30,400 - INFO - 📷 Обнаружено изображение в посте 1429 (тип: jpeg, размер: 137.9KB)
+2025-12-23 04:48:30,574 - WARNING - ⚠️ Комментарии не поддерживаются в kartinki_milye_poshlyez, пропускаю пост
+2025-12-23 04:48:30,962 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:48:31,138 - INFO - File lives in another DC
+2025-12-23 04:48:31,495 - INFO - 📷 Обнаружено изображение в посте 33200 (тип: webp, размер: 31.3KB)
+2025-12-23 04:48:31,669 - WARNING - ⚠️ Комментарии не поддерживаются в anime_stickerr, пропускаю пост
+2025-12-23 04:48:32,057 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:48:32,232 - INFO - File lives in another DC
+2025-12-23 04:48:33,187 - INFO - 📷 Обнаружено изображение в посте 9211 (тип: jpeg, размер: 156.5KB)
+2025-12-23 04:48:33,375 - INFO - 📝 Генерация комментария к посту 9211 в sharon_al...
+2025-12-23 04:48:38,499 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:49:14,181 - INFO - ✅ Пост 9211 в sharon_al отмечен как обработанный в БД
+2025-12-23 04:49:14,385 - INFO - ✅ Комментарий отправлен в sharon_al
+2025-12-23 04:49:54,390 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 04:49:54,391 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 04:49:54,410 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 04:49:54,587 - INFO - Got difference for channel 1308294569 updates
+2025-12-23 04:49:54,590 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:49:54,771 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:49:54,964 - INFO - File lives in another DC
+2025-12-23 04:49:54,966 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 04:49:55,015 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 04:49:57,057 - INFO - 📷 Обнаружено изображение в посте 591 (тип: jpeg, размер: 137.9KB)
+2025-12-23 04:49:57,289 - WARNING - ⚠️ Комментарии не поддерживаются в skachat_khentayka_serii, пропускаю пост
+2025-12-23 04:49:57,795 - INFO - 🎬 Обнаружено видео в посте 7525 (тип: video/mp4)
+2025-12-23 04:49:58,241 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 04:49:58,244 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:49:58,425 - INFO - File lives in another DC
+2025-12-23 04:50:30,517 - WARNING - ⚠️ Не удалось удалить временный файл: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:\\Users\\USER\\AppData\\Local\\Temp\\tmp3vb6cmw2.mp4'
+2025-12-23 04:50:30,518 - INFO - 🛑 Получен сигнал остановки
+2025-12-23 04:52:06,613 - INFO - 🔌 Подключение к Telegram...
+2025-12-23 04:52:06,616 - INFO - Connecting to 149.154.175.55:443/TcpFull...
+2025-12-23 04:52:06,782 - INFO - Connection to 149.154.175.55:443/TcpFull complete!
+2025-12-23 04:52:07,843 - INFO - ✅ Подключен как: ebanyta9 (@shotanedoma)
+2025-12-23 04:52:08,195 - INFO - 💬 Запуск автоответчика...
+2025-12-23 04:52:08,196 - INFO - 🚀 Выполнение первичных задач...
+2025-12-23 04:52:08,196 - INFO - ✅ Бот запущен и готов к работе!
+2025-12-23 04:52:08,196 - INFO - 📺 Отслеживается 64 каналов
+2025-12-23 04:52:08,196 - INFO - 🔄 Цикл #1
+2025-12-23 04:52:10,870 - INFO - 🎬 Обнаружено видео в посте 7525 (тип: video/mp4)
+2025-12-23 04:52:10,991 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 04:52:10,991 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:52:11,166 - INFO - File lives in another DC
+2025-12-23 04:52:11,365 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 04:52:12,959 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 04:52:12,959 - INFO - Exporting auth for new borrowed sender in DcOption(id=2, ip_address='149.154.167.50', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2025-12-23 04:52:39,123 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:53:04,169 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:53:05,149 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:53:10,626 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:53:32,654 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:53:37,682 - INFO - Retrying request to /chat/completions in 0.494861 seconds
+2025-12-23 04:53:43,543 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:54:12,584 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:54:23,835 - INFO - ✅ Скриншот извлечен (размер: 101.0KB)
+2025-12-23 04:54:23,916 - INFO - 📸 Скриншот извлечен из видео в посте 7525
+2025-12-23 04:54:23,917 - INFO - 📷 Обнаружено изображение в посте 7525 (тип: jpeg, размер: 101.0KB)
+2025-12-23 04:54:24,122 - INFO - 📝 Генерация комментария к посту 7525 в anikorshorts...
+2025-12-23 04:54:28,884 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:54:50,541 - INFO - ✅ Пост 7525 в anikorshorts отмечен как обработанный в БД
+2025-12-23 04:54:50,822 - INFO - ✅ Комментарий отправлен в anikorshorts
+2025-12-23 04:55:18,191 - INFO - 🎬 Обнаружено видео в посте 9392 (тип: video/mp4)
+2025-12-23 04:55:18,191 - WARNING - ⚠️ Видео слишком большое (634.12MB), пропускаю
+2025-12-23 04:55:18,375 - WARNING - ⚠️ Комментарии не поддерживаются в tichoanime, пропускаю пост и удаляю канал
+2025-12-23 04:55:18,396 - WARNING - 🗑️ Канал tichoanime удален из активных (комментарии не поддерживаются)
+2025-12-23 04:55:19,515 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:55:19,721 - INFO - File lives in another DC
+2025-12-23 04:55:19,721 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2025-12-23 04:55:21,328 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2025-12-23 04:55:21,330 - INFO - Exporting auth for new borrowed sender in DcOption(id=4, ip_address='149.154.167.92', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2025-12-23 04:55:25,470 - INFO - 📷 Обнаружено изображение в посте 202807 (тип: jpeg, размер: 288.3KB)
+2025-12-23 04:55:25,665 - INFO - 📝 Генерация комментария к посту 202807 в advance_emp...
+2025-12-23 04:55:31,171 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:55:54,763 - INFO - ✅ Пост 202807 в advance_emp отмечен как обработанный в БД
+2025-12-23 04:55:55,151 - INFO - ✅ Комментарий отправлен в advance_emp
+2025-12-23 04:56:16,529 - INFO - 🎬 Обнаружено видео в посте 7165 (тип: video/mp4)
+2025-12-23 04:56:16,529 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 04:56:16,532 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 04:56:16,720 - INFO - File lives in another DC
+2025-12-23 04:57:18,506 - INFO - Disconnecting borrowed sender for DC 4
+2025-12-23 04:57:18,506 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2025-12-23 04:57:18,507 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2025-12-23 04:57:19,224 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:57:52,968 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:58:01,324 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:58:10,241 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:58:15,855 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:58:25,867 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:58:26,568 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:58:35,998 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:58:41,342 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:58:43,945 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:58:50,989 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:58:54,475 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:58:55,982 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:59:05,474 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:59:09,976 - INFO - ✅ Скриншот извлечен (размер: 148.9KB)
+2025-12-23 04:59:09,984 - INFO - 📸 Скриншот извлечен из видео в посте 7165
+2025-12-23 04:59:09,985 - INFO - 📷 Обнаружено изображение в посте 7165 (тип: jpeg, размер: 148.9KB)
+2025-12-23 04:59:10,187 - INFO - 📝 Генерация комментария к посту 7165 в AnimeOfficialX...
+2025-12-23 04:59:15,772 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 04:59:51,801 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:59:51,807 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:59:51,814 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:59:51,818 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:59:51,824 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:59:51,852 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 04:59:52,398 - INFO - ✅ Пост 7165 в AnimeOfficialX отмечен как обработанный в БД
+2025-12-23 04:59:52,662 - INFO - ✅ Комментарий отправлен в AnimeOfficialX
+2025-12-23 05:00:15,684 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 05:00:15,698 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 05:00:15,699 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 05:00:16,216 - WARNING - ⚠️ Комментарии не поддерживаются в tokyo_ghoulonline, пропускаю пост и удаляю канал
+2025-12-23 05:00:16,356 - WARNING - 🗑️ Канал tokyo_ghoulonline удален из активных (комментарии не поддерживаются)
+2025-12-23 05:00:16,957 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 05:00:17,080 - WARNING - ⚠️ Комментарии не поддерживаются в vse_deathnote, пропускаю пост и удаляю канал
+2025-12-23 05:00:17,233 - WARNING - 🗑️ Канал vse_deathnote удален из активных (комментарии не поддерживаются)
+2025-12-23 05:00:17,788 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:00:17,816 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:00:18,190 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:00:18,365 - INFO - File lives in another DC
+2025-12-23 05:00:18,946 - INFO - 📷 Обнаружено изображение в посте 42850 (тип: jpeg, размер: 78.1KB)
+2025-12-23 05:00:19,164 - WARNING - ⚠️ Комментарии не поддерживаются в animeanistartelegram, пропускаю пост и удаляю канал
+2025-12-23 05:00:19,178 - WARNING - 🗑️ Канал animeanistartelegram удален из активных (комментарии не поддерживаются)
+2025-12-23 05:00:19,736 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:00:19,910 - INFO - File lives in another DC
+2025-12-23 05:00:20,311 - INFO - 📷 Обнаружено изображение в посте 9659 (тип: jpeg, размер: 59.8KB)
+2025-12-23 05:00:20,502 - INFO - 📝 Генерация комментария к посту 9659 в animebay...
+2025-12-23 05:00:26,396 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:00:58,421 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 05:00:58,428 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 05:00:58,449 - ERROR - Unhandled exception on handler
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python310\lib\site-packages\telethon\client\updates.py", line 543, in _dispatch_update
+    await callback(event)
+TypeError: object NoneType can't be used in 'await' expression
+2025-12-23 05:00:59,145 - INFO - ✅ Пост 9659 в animebay отмечен как обработанный в БД
+2025-12-23 05:00:59,376 - INFO - ✅ Комментарий отправлен в animebay
+2025-12-23 05:01:34,660 - INFO - 🛑 Получен сигнал остановки
+2025-12-23 05:05:43,508 - INFO - 🔌 Подключение к Telegram...
+2025-12-23 05:05:43,511 - INFO - Connecting to 149.154.175.55:443/TcpFull...
+2025-12-23 05:05:43,678 - INFO - Connection to 149.154.175.55:443/TcpFull complete!
+2025-12-23 05:05:44,738 - INFO - ✅ Подключен как: ebanyta9 (@shotanedoma)
+2025-12-23 05:05:45,273 - INFO - 💬 Запуск автоответчика...
+2025-12-23 05:05:45,274 - INFO - 🚀 Выполнение первичных задач...
+2025-12-23 05:05:45,274 - INFO - ✅ Бот запущен и готов к работе!
+2025-12-23 05:05:45,274 - INFO - 📺 Отслеживается 60 каналов
+2025-12-23 05:05:45,274 - INFO - 🔄 Цикл #1
+2025-12-23 05:05:48,609 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:05:48,786 - INFO - File lives in another DC
+2025-12-23 05:05:49,083 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2025-12-23 05:05:50,390 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2025-12-23 05:05:50,391 - INFO - Exporting auth for new borrowed sender in DcOption(id=4, ip_address='149.154.167.92', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2025-12-23 05:05:56,423 - INFO - 📷 Обнаружено изображение в посте 202816 (тип: jpeg, размер: 750.8KB)
+2025-12-23 05:05:56,601 - WARNING - ⚠️ Комментарии не поддерживаются в advance_emp, пропускаю пост и удаляю канал
+2025-12-23 05:05:56,621 - WARNING - 🗑️ Канал advance_emp удален из активных (комментарии не поддерживаются)
+2025-12-23 05:05:57,567 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:05:57,568 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:05:58,367 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:05:58,557 - INFO - File lives in another DC
+2025-12-23 05:05:58,558 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 05:06:00,434 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:06:00,435 - INFO - Exporting auth for new borrowed sender in DcOption(id=2, ip_address='149.154.167.50', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2025-12-23 05:06:02,244 - INFO - 📷 Обнаружено изображение в посте 2065 (тип: jpeg, размер: 201.4KB)
+2025-12-23 05:06:02,566 - INFO - 📝 Генерация комментария к посту 2065 в aniliberty_tv...
+2025-12-23 05:06:08,464 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:06:33,108 - INFO - ✅ Пост 2065 в aniliberty_tv отмечен как обработанный в БД
+2025-12-23 05:06:33,514 - INFO - ✅ Комментарий отправлен в aniliberty_tv
+2025-12-23 05:06:49,125 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:07:08,520 - INFO - Disconnecting borrowed sender for DC 4
+2025-12-23 05:07:08,521 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2025-12-23 05:07:08,541 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2025-12-23 05:07:08,542 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 05:07:08,542 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 05:07:08,544 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:07:09,527 - INFO - 🎬 Обнаружено видео в посте 1181 (тип: video/mp4)
+2025-12-23 05:07:09,527 - WARNING - ⚠️ Видео слишком большое (1752.69MB), пропускаю
+2025-12-23 05:07:09,731 - INFO - 📝 Генерация комментария к посту 1181 в zakanime...
+2025-12-23 05:07:14,405 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:07:15,321 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:07:45,918 - INFO - ✅ Пост 1181 в zakanime отмечен как обработанный в БД
+2025-12-23 05:07:46,114 - INFO - ✅ Комментарий отправлен в zakanime
+2025-12-23 05:08:21,293 - ERROR - Ошибка при получении канала 'animenews135': No user has "animenews135" as username
+2025-12-23 05:08:21,294 - WARNING - 🗑️ Канал 'animenews135' удален (недоступен)
+2025-12-23 05:08:22,031 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:08:22,207 - INFO - File lives in another DC
+2025-12-23 05:08:22,207 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 05:08:22,256 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:08:23,273 - INFO - 📷 Обнаружено изображение в посте 298 (тип: jpeg, размер: 137.9KB)
+2025-12-23 05:08:23,446 - WARNING - ⚠️ Комментарии не поддерживаются в narezki_klipy_otryvki, пропускаю пост и удаляю канал
+2025-12-23 05:08:23,581 - WARNING - 🗑️ Канал narezki_klipy_otryvki удален из активных (комментарии не поддерживаются)
+2025-12-23 05:08:24,127 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:08:24,301 - INFO - File lives in another DC
+2025-12-23 05:08:24,302 - INFO - Connecting to 91.108.56.182:443/TcpFull...
+2025-12-23 05:08:26,240 - INFO - Connection to 91.108.56.182:443/TcpFull complete!
+2025-12-23 05:08:26,241 - INFO - Exporting auth for new borrowed sender in DcOption(id=5, ip_address='91.108.56.182', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2025-12-23 05:08:28,338 - INFO - 📷 Обнаружено изображение в посте 45137 (тип: jpeg, размер: 102.8KB)
+2025-12-23 05:08:28,512 - WARNING - ⚠️ Комментарии не поддерживаются в anilaev, пропускаю пост и удаляю канал
+2025-12-23 05:08:28,655 - WARNING - 🗑️ Канал anilaev удален из активных (комментарии не поддерживаются)
+2025-12-23 05:08:29,212 - INFO - 🎬 Обнаружено видео в посте 19470 (тип: video/mp4)
+2025-12-23 05:08:29,675 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 05:08:29,675 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:08:29,855 - INFO - File lives in another DC
+2025-12-23 05:08:30,263 - INFO - ✅ Скриншот извлечен (размер: 7.7KB)
+2025-12-23 05:08:30,263 - INFO - 📸 Скриншот извлечен из видео в посте 19470
+2025-12-23 05:08:30,264 - INFO - 📷 Обнаружено изображение в посте 19470 (тип: jpeg, размер: 7.7KB)
+2025-12-23 05:08:30,441 - WARNING - ⚠️ Комментарии не поддерживаются в animgifk, пропускаю пост и удаляю канал
+2025-12-23 05:08:30,461 - WARNING - 🗑️ Канал animgifk удален из активных (комментарии не поддерживаются)
+2025-12-23 05:08:31,161 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:08:31,358 - INFO - File lives in another DC
+2025-12-23 05:08:31,926 - INFO - 📷 Обнаружено изображение в посте 14792 (тип: jpeg, размер: 80.3KB)
+2025-12-23 05:08:32,129 - INFO - 📝 Генерация комментария к посту 14792 в deep_ruanime...
+2025-12-23 05:08:36,719 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:09:07,380 - INFO - ✅ Пост 14792 в deep_ruanime отмечен как обработанный в БД
+2025-12-23 05:09:07,886 - INFO - ✅ Комментарий отправлен в deep_ruanime
+2025-12-23 05:09:45,890 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 05:09:45,893 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 05:09:45,894 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:09:45,894 - INFO - Disconnecting borrowed sender for DC 5
+2025-12-23 05:09:45,895 - INFO - Disconnecting from 91.108.56.182:443/TcpFull...
+2025-12-23 05:09:45,895 - INFO - Disconnection from 91.108.56.182:443/TcpFull complete!
+2025-12-23 05:09:46,444 - WARNING - ⚠️ Комментарии не поддерживаются в animestickee, пропускаю пост и удаляю канал
+2025-12-23 05:09:46,464 - WARNING - 🗑️ Канал animestickee удален из активных (комментарии не поддерживаются)
+2025-12-23 05:09:47,368 - WARNING - ⚠️ Комментарии не поддерживаются в stikery_animeee, пропускаю пост и удаляю канал
+2025-12-23 05:09:47,394 - WARNING - 🗑️ Канал stikery_animeee удален из активных (комментарии не поддерживаются)
+2025-12-23 05:09:48,727 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:09:48,902 - INFO - File lives in another DC
+2025-12-23 05:09:48,903 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 05:09:48,954 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:09:49,474 - INFO - 📷 Обнаружено изображение в посте 7098 (тип: jpeg, размер: 74.2KB)
+2025-12-23 05:09:49,659 - INFO - 📝 Генерация комментария к посту 7098 в aguilons...
+2025-12-23 05:09:54,129 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:10:24,778 - INFO - ✅ Пост 7098 в aguilons отмечен как обработанный в БД
+2025-12-23 05:10:25,031 - INFO - ✅ Комментарий отправлен в aguilons
+2025-12-23 05:10:57,036 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 05:10:57,037 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 05:10:57,047 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:10:57,212 - ERROR - Ошибка при получении канала 'MirAnime_HD': Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2025-12-23 05:10:57,214 - WARNING - 🗑️ Канал 'MirAnime_HD' удален (недоступен)
+2025-12-23 05:10:57,786 - INFO - Got difference for channel 1764030789 updates
+2025-12-23 05:10:57,896 - ERROR - Ошибка при получении канала 'serialxcv': No user has "serialxcv" as username
+2025-12-23 05:10:58,048 - WARNING - 🗑️ Канал 'serialxcv' удален (недоступен)
+2025-12-23 05:10:58,818 - WARNING - ⚠️ Комментарии не поддерживаются в watch_new_anime_series, пропускаю пост и удаляю канал
+2025-12-23 05:10:58,880 - WARNING - 🗑️ Канал watch_new_anime_series удален из активных (комментарии не поддерживаются)
+2025-12-23 05:10:59,541 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:10:59,727 - INFO - File lives in another DC
+2025-12-23 05:10:59,730 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 05:10:59,772 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:11:00,732 - INFO - 📷 Обнаружено изображение в посте 592 (тип: jpeg, размер: 137.9KB)
+2025-12-23 05:11:00,907 - WARNING - ⚠️ Комментарии не поддерживаются в komixy_video_khentayka, пропускаю пост и удаляю канал
+2025-12-23 05:11:00,918 - WARNING - 🗑️ Канал komixy_video_khentayka удален из активных (комментарии не поддерживаются)
+2025-12-23 05:11:01,474 - INFO - 🎬 Обнаружено видео в посте 6124 (тип: video/mp4)
+2025-12-23 05:11:01,474 - WARNING - ⚠️ Видео слишком большое (184.77MB), пропускаю
+2025-12-23 05:11:01,662 - INFO - 📝 Генерация комментария к посту 6124 в animedisney...
+2025-12-23 05:11:07,241 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:11:41,805 - WARNING - ⚠️ Группа обсуждения не найдена для animedisney
+2025-12-23 05:11:42,188 - INFO - 🎬 Обнаружено видео в посте 12793 (тип: video/mp4)
+2025-12-23 05:11:42,188 - WARNING - ⚠️ Видео слишком большое (185.87MB), пропускаю
+2025-12-23 05:11:42,382 - INFO - 📝 Генерация комментария к посту 12793 в animeshakal...
+2025-12-23 05:11:47,868 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:12:13,872 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 05:12:13,873 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 05:12:13,889 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:12:14,546 - INFO - ✅ Пост 12793 в animeshakal отмечен как обработанный в БД
+2025-12-23 05:12:14,960 - INFO - ✅ Комментарий отправлен в animeshakal
+2025-12-23 05:12:53,344 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:12:53,519 - INFO - File lives in another DC
+2025-12-23 05:12:53,520 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 05:12:53,566 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:12:54,213 - INFO - 📷 Обнаружено изображение в посте 12517 (тип: jpeg, размер: 93.0KB)
+2025-12-23 05:12:54,477 - INFO - 📝 Генерация комментария к посту 12517 в animee_channel...
+2025-12-23 05:12:59,548 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:13:27,165 - INFO - ✅ Пост 12517 в animee_channel отмечен как обработанный в БД
+2025-12-23 05:13:27,453 - INFO - ✅ Комментарий отправлен в animee_channel
+2025-12-23 05:14:04,038 - INFO - 📝 Генерация комментария к посту 17872 в sleeeeeeppy...
+2025-12-23 05:14:08,787 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:14:46,793 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 05:14:46,794 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 05:14:46,806 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:14:47,386 - INFO - ✅ Пост 17872 в sleeeeeeppy отмечен как обработанный в БД
+2025-12-23 05:14:47,633 - INFO - ✅ Комментарий отправлен в sleeeeeeppy
+2025-12-23 05:15:09,119 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:15:09,369 - INFO - File lives in another DC
+2025-12-23 05:15:09,445 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 05:15:09,499 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:15:10,290 - INFO - 📷 Обнаружено изображение в посте 12446 (тип: webp, размер: 39.7KB)
+2025-12-23 05:15:10,503 - WARNING - ⚠️ Комментарии не поддерживаются в tg_sticks, пропускаю пост и удаляю канал
+2025-12-23 05:15:10,629 - WARNING - 🗑️ Канал tg_sticks удален из активных (комментарии не поддерживаются)
+2025-12-23 05:15:11,255 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:15:11,435 - INFO - File lives in another DC
+2025-12-23 05:15:13,021 - INFO - 📷 Обнаружено изображение в посте 595 (тип: jpeg, размер: 137.9KB)
+2025-12-23 05:15:13,198 - WARNING - ⚠️ Комментарии не поддерживаются в khentaynye_stikery_gifki, пропускаю пост и удаляю канал
+2025-12-23 05:15:13,217 - WARNING - 🗑️ Канал khentaynye_stikery_gifki удален из активных (комментарии не поддерживаются)
+2025-12-23 05:15:13,814 - INFO - 🎬 Обнаружено видео в посте 27738 (тип: video/mp4)
+2025-12-23 05:15:13,818 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 05:15:13,819 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:15:13,997 - INFO - File lives in another DC
+2025-12-23 05:15:41,950 - INFO - ✅ Скриншот извлечен (размер: 102.6KB)
+2025-12-23 05:15:41,952 - INFO - 📸 Скриншот извлечен из видео в посте 27738
+2025-12-23 05:15:41,952 - INFO - 📷 Обнаружено изображение в посте 27738 (тип: jpeg, размер: 102.6KB)
+2025-12-23 05:15:42,148 - INFO - 📝 Генерация комментария к посту 27738 в ytkanews...
+2025-12-23 05:15:47,243 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:16:12,840 - INFO - ✅ Пост 27738 в ytkanews отмечен как обработанный в БД
+2025-12-23 05:16:13,183 - INFO - ✅ Комментарий отправлен в ytkanews
+2025-12-23 05:16:43,728 - ERROR - Ошибка при получении канала 'anifaza9': No user has "anifaza9" as username
+2025-12-23 05:16:43,729 - WARNING - 🗑️ Канал 'anifaza9' удален (недоступен)
+2025-12-23 05:16:44,276 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:16:44,466 - INFO - File lives in another DC
+2025-12-23 05:16:45,523 - INFO - 📷 Обнаружено изображение в посте 588 (тип: jpeg, размер: 137.9KB)
+2025-12-23 05:16:45,698 - WARNING - ⚠️ Комментарии не поддерживаются в games_skachat_khentayna, пропускаю пост и удаляю канал
+2025-12-23 05:16:45,717 - WARNING - 🗑️ Канал games_skachat_khentayna удален из активных (комментарии не поддерживаются)
+2025-12-23 05:16:46,285 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:16:46,460 - INFO - File lives in another DC
+2025-12-23 05:16:48,016 - INFO - 📷 Обнаружено изображение в посте 26959 (тип: jpeg, размер: 236.0KB)
+2025-12-23 05:16:48,192 - WARNING - ⚠️ Комментарии не поддерживаются в currentanimenews, пропускаю пост и удаляю канал
+2025-12-23 05:16:48,207 - WARNING - 🗑️ Канал currentanimenews удален из активных (комментарии не поддерживаются)
+2025-12-23 05:16:48,780 - INFO - 🎬 Обнаружено видео в посте 6764 (тип: video/mp4)
+2025-12-23 05:16:48,783 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 05:16:48,784 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:16:48,961 - INFO - File lives in another DC
+2025-12-23 05:17:35,629 - INFO - ✅ Скриншот извлечен (размер: 209.0KB)
+2025-12-23 05:17:35,632 - INFO - 📸 Скриншот извлечен из видео в посте 6764
+2025-12-23 05:17:35,634 - INFO - 📷 Обнаружено изображение в посте 6764 (тип: jpeg, размер: 209.0KB)
+2025-12-23 05:17:35,827 - INFO - 📝 Генерация комментария к посту 6764 в erjbnjkre...
+2025-12-23 05:17:41,413 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:18:06,059 - INFO - ✅ Пост 6764 в erjbnjkre отмечен как обработанный в БД
+2025-12-23 05:18:06,377 - INFO - ✅ Комментарий отправлен в erjbnjkre
+2025-12-23 05:18:45,387 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 05:18:45,450 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 05:18:45,501 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:18:45,766 - INFO - 🎬 Обнаружено видео в посте 22793 (тип: video/mp4)
+2025-12-23 05:18:45,767 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 05:18:45,772 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:18:45,959 - INFO - File lives in another DC
+2025-12-23 05:18:45,959 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 05:18:46,016 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:19:20,374 - INFO - ✅ Скриншот извлечен (размер: 75.6KB)
+2025-12-23 05:19:20,377 - INFO - 📸 Скриншот извлечен из видео в посте 22793
+2025-12-23 05:19:20,377 - INFO - 📷 Обнаружено изображение в посте 22793 (тип: jpeg, размер: 75.6KB)
+2025-12-23 05:19:20,569 - INFO - 📝 Генерация комментария к посту 22793 в editshub...
+2025-12-23 05:19:24,932 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:19:48,593 - INFO - ✅ Пост 22793 в editshub отмечен как обработанный в БД
+2025-12-23 05:19:48,924 - INFO - ✅ Комментарий отправлен в editshub
+2025-12-23 05:20:24,564 - INFO - 📝 Генерация комментария к посту 894 в anicard...
+2025-12-23 05:20:31,121 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:20:51,127 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 05:20:51,138 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 05:20:51,160 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:20:51,890 - INFO - ✅ Пост 894 в anicard отмечен как обработанный в БД
+2025-12-23 05:20:52,087 - INFO - ✅ Комментарий отправлен в anicard
+2025-12-23 05:21:14,478 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:21:14,655 - INFO - File lives in another DC
+2025-12-23 05:21:14,655 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 05:21:14,703 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:21:16,132 - INFO - 📷 Обнаружено изображение в посте 12603 (тип: jpeg, размер: 207.5KB)
+2025-12-23 05:21:16,306 - WARNING - ⚠️ Комментарии не поддерживаются в anime_foto_art_18, пропускаю пост и удаляю канал
+2025-12-23 05:21:16,394 - WARNING - 🗑️ Канал anime_foto_art_18 удален из активных (комментарии не поддерживаются)
+2025-12-23 05:21:16,994 - INFO - 🎬 Обнаружено видео в посте 1146 (тип: video/mp4)
+2025-12-23 05:21:16,998 - WARNING - ⚠️ Видео слишком большое (3239.64MB), пропускаю
+2025-12-23 05:21:17,187 - INFO - 📝 Генерация комментария к посту 1146 в animemarafonx...
+2025-12-23 05:21:24,596 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:21:46,795 - INFO - Got difference for channel 1407830686 updates
+2025-12-23 05:21:47,164 - INFO - ✅ Пост 1146 в animemarafonx отмечен как обработанный в БД
+2025-12-23 05:21:47,404 - INFO - ✅ Комментарий отправлен в animemarafonx
+2025-12-23 05:22:14,986 - WARNING - ⚠️ Комментарии не поддерживаются в masteramechaa, пропускаю пост и удаляю канал
+2025-12-23 05:22:14,991 - WARNING - 🗑️ Канал masteramechaa удален из активных (комментарии не поддерживаются)
+2025-12-23 05:22:15,978 - WARNING - ⚠️ Комментарии не поддерживаются в animeshcol, пропускаю пост и удаляю канал
+2025-12-23 05:22:15,984 - WARNING - 🗑️ Канал animeshcol удален из активных (комментарии не поддерживаются)
+2025-12-23 05:22:16,634 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:22:16,861 - INFO - File lives in another DC
+2025-12-23 05:22:19,834 - INFO - 📷 Обнаружено изображение в посте 14216 (тип: jpeg, размер: 418.3KB)
+2025-12-23 05:22:20,029 - INFO - 📝 Генерация комментария к посту 14216 в anime_skachat_00...
+2025-12-23 05:22:25,234 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:23:02,809 - INFO - ✅ Пост 14216 в anime_skachat_00 отмечен как обработанный в БД
+2025-12-23 05:23:03,011 - INFO - ✅ Комментарий отправлен в anime_skachat_00
+2025-12-23 05:23:36,013 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 05:23:36,014 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 05:23:36,014 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:23:37,114 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:23:37,292 - INFO - File lives in another DC
+2025-12-23 05:23:37,294 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 05:23:37,343 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:23:38,334 - INFO - 📷 Обнаружено изображение в посте 9996 (тип: jpeg, размер: 108.8KB)
+2025-12-23 05:23:38,510 - WARNING - ⚠️ Комментарии не поддерживаются в anizanime, пропускаю пост и удаляю канал
+2025-12-23 05:23:38,520 - WARNING - 🗑️ Канал anizanime удален из активных (комментарии не поддерживаются)
+2025-12-23 05:23:39,142 - ERROR - Ошибка при получении канала 'animefon11': No user has "animefon11" as username
+2025-12-23 05:23:39,199 - WARNING - 🗑️ Канал 'animefon11' удален (недоступен)
+2025-12-23 05:23:40,033 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:23:40,215 - INFO - File lives in another DC
+2025-12-23 05:23:41,832 - INFO - 📷 Обнаружено изображение в посте 1502 (тип: jpeg, размер: 185.8KB)
+2025-12-23 05:23:42,006 - WARNING - ⚠️ Комментарии не поддерживаются в animedfsdf, пропускаю пост и удаляю канал
+2025-12-23 05:23:42,025 - WARNING - 🗑️ Канал animedfsdf удален из активных (комментарии не поддерживаются)
+2025-12-23 05:23:42,591 - INFO - 🎬 Обнаружено видео в посте 15 (тип: video/mp4)
+2025-12-23 05:23:42,592 - WARNING - ⚠️ Видео слишком большое (109.18MB), пропускаю
+2025-12-23 05:23:42,770 - WARNING - ⚠️ Комментарии не поддерживаются в animenolovezone, пропускаю пост и удаляю канал
+2025-12-23 05:23:42,786 - WARNING - 🗑️ Канал animenolovezone удален из активных (комментарии не поддерживаются)
+2025-12-23 05:23:43,450 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:23:43,627 - INFO - File lives in another DC
+2025-12-23 05:23:44,262 - INFO - 📷 Обнаружено изображение в посте 54079 (тип: jpeg, размер: 83.8KB)
+2025-12-23 05:23:44,439 - WARNING - ⚠️ Комментарии не поддерживаются в feiaqrcz18ttfdrjjfdergcjjl, пропускаю пост и удаляю канал
+2025-12-23 05:23:44,453 - WARNING - 🗑️ Канал feiaqrcz18ttfdrjjfdergcjjl удален из активных (комментарии не поддерживаются)
+2025-12-23 05:23:44,819 - ERROR - Ошибка при получении канала 'anime_seriia': No user has "anime_seriia" as username
+2025-12-23 05:23:44,823 - WARNING - 🗑️ Канал 'anime_seriia' удален (недоступен)
+2025-12-23 05:23:45,497 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 05:23:45,676 - INFO - File lives in another DC
+2025-12-23 05:23:47,695 - INFO - 📷 Обнаружено изображение в посте 2246 (тип: jpeg, размер: 122.3KB)
+2025-12-23 05:23:47,888 - INFO - 📝 Генерация комментария к посту 2246 в animedinablin...
+2025-12-23 05:23:52,420 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 05:24:28,047 - INFO - ✅ Пост 2246 в animedinablin отмечен как обработанный в БД
+2025-12-23 05:24:28,259 - INFO - ✅ Комментарий отправлен в animedinablin
+2025-12-23 05:25:04,263 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 05:25:04,264 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 05:25:04,264 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 05:25:04,442 - ERROR - Ошибка при получении канала 'anime_online_hd': No user has "anime_online_hd" as username
+2025-12-23 05:25:04,443 - WARNING - 🗑️ Канал 'anime_online_hd' удален (недоступен)
+2025-12-23 05:25:04,816 - ERROR - Ошибка при получении канала '+impEfyH78bpiMTky': Cannot find any entity corresponding to "+impEfyH78bpiMTky"
+2025-12-23 05:25:04,821 - WARNING - 🗑️ Канал '+impEfyH78bpiMTky' удален (недоступен)
+2025-12-23 05:25:05,008 - ERROR - Ошибка при получении канала '+I4dSENzd23M2Njli': Cannot find any entity corresponding to "+I4dSENzd23M2Njli"
+2025-12-23 05:25:05,010 - WARNING - 🗑️ Канал '+I4dSENzd23M2Njli' удален (недоступен)
+2025-12-23 05:26:05,197 - INFO - 🔄 Цикл #2
+2025-12-23 05:26:05,384 - INFO - Got difference for channel 2210026403 updates
+2025-12-23 05:26:09,042 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:26:09,042 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:27:17,338 - INFO - 🔄 Цикл #3
+2025-12-23 05:27:21,265 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:27:21,265 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:28:29,535 - INFO - 🔄 Цикл #4
+2025-12-23 05:28:33,334 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:28:33,335 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:29:41,465 - INFO - 🔄 Цикл #5
+2025-12-23 05:29:42,190 - INFO - Got difference for channel 1751081531 updates
+2025-12-23 05:29:45,139 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:29:45,139 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:30:53,347 - INFO - 🔄 Цикл #6
+2025-12-23 05:30:57,025 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:30:57,025 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:32:05,203 - INFO - 🔄 Цикл #7
+2025-12-23 05:32:09,080 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:32:09,080 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:33:17,261 - INFO - 🔄 Цикл #8
+2025-12-23 05:33:21,147 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:33:21,148 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:34:29,308 - INFO - 🔄 Цикл #9
+2025-12-23 05:34:33,021 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:34:33,022 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:35:41,251 - INFO - 🔄 Цикл #10
+2025-12-23 05:35:45,030 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:35:45,030 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:35:52,087 - INFO - Got difference for channel 2030494588 updates
+2025-12-23 05:35:53,331 - INFO - 🔍 Проверка каналов на возможность комментирования...
+2025-12-23 05:36:46,986 - INFO - Got difference for channel 1407830686 updates
+2025-12-23 05:36:59,895 - INFO - ✅ Проверка завершена. Активных каналов: 29
+2025-12-23 05:37:59,895 - INFO - 🔄 Цикл #11
+2025-12-23 05:38:01,393 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:38:01,395 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:39:10,858 - INFO - 🔄 Цикл #12
+2025-12-23 05:39:11,594 - INFO - Got difference for channel 1751081531 updates
+2025-12-23 05:39:12,328 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:39:12,328 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:40:21,625 - INFO - 🔄 Цикл #13
+2025-12-23 05:40:21,914 - INFO - Got difference for channel 2465389500 updates
+2025-12-23 05:40:23,391 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:40:23,391 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:41:32,726 - INFO - 🔄 Цикл #14
+2025-12-23 05:41:34,346 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:41:34,347 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:42:43,625 - INFO - 🔄 Цикл #15
+2025-12-23 05:42:45,268 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:42:45,268 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:43:54,580 - INFO - 🔄 Цикл #16
+2025-12-23 05:43:56,048 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:43:56,049 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:45:05,256 - INFO - 🔄 Цикл #17
+2025-12-23 05:45:06,722 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:45:06,724 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:46:09,073 - INFO - 🛑 Получен сигнал остановки
+2025-12-23 05:46:21,364 - INFO - 🔌 Подключение к Telegram...
+2025-12-23 05:46:21,381 - INFO - Connecting to 149.154.175.55:443/TcpFull...
+2025-12-23 05:46:21,543 - INFO - Connection to 149.154.175.55:443/TcpFull complete!
+2025-12-23 05:46:22,579 - INFO - ✅ Подключен как: ebanyta9 (@shotanedoma)
+2025-12-23 05:46:23,088 - INFO - 💬 Запуск автоответчика...
+2025-12-23 05:46:23,089 - INFO - 🚀 Выполнение первичных задач...
+2025-12-23 05:46:23,089 - INFO - ✅ Бот запущен и готов к работе!
+2025-12-23 05:46:23,090 - INFO - 📺 Отслеживается 29 каналов
+2025-12-23 05:46:23,090 - INFO - 🔄 Цикл #1
+2025-12-23 05:46:24,721 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:46:24,721 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:47:33,784 - INFO - 🔄 Цикл #2
+2025-12-23 05:47:35,213 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:47:35,213 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:48:44,255 - INFO - 🔄 Цикл #3
+2025-12-23 05:48:45,704 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:48:45,707 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:49:54,844 - INFO - 🔄 Цикл #4
+2025-12-23 05:49:56,308 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:49:56,308 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:51:05,796 - INFO - 🔄 Цикл #5
+2025-12-23 05:51:07,248 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:51:07,249 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:52:16,493 - INFO - 🔄 Цикл #6
+2025-12-23 05:52:17,923 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:52:17,923 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:53:27,818 - INFO - 🔄 Цикл #7
+2025-12-23 05:53:28,522 - INFO - Got difference for channel 1751081531 updates
+2025-12-23 05:53:29,263 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:53:29,263 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:54:38,544 - INFO - 🔄 Цикл #8
+2025-12-23 05:54:39,999 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:54:40,000 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:55:49,354 - INFO - 🔄 Цикл #9
+2025-12-23 05:55:50,815 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:55:50,895 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:57:00,174 - INFO - 🔄 Цикл #10
+2025-12-23 05:57:01,671 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:57:01,671 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:57:10,720 - INFO - 🔍 Проверка каналов на возможность комментирования...
+2025-12-23 05:58:13,465 - INFO - ✅ Проверка завершена. Активных каналов: 29
+2025-12-23 05:59:13,468 - INFO - 🔄 Цикл #11
+2025-12-23 05:59:13,938 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 05:59:13,938 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 05:59:14,325 - INFO - Got difference for channel 1751081531 updates
+2025-12-23 06:00:24,286 - INFO - 🔄 Цикл #12
+2025-12-23 06:00:24,655 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 06:00:24,655 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 06:01:34,996 - INFO - 🔄 Цикл #13
+2025-12-23 06:01:35,364 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 06:01:35,364 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 06:02:45,578 - INFO - 🔄 Цикл #14
+2025-12-23 06:02:45,956 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 06:02:45,974 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 06:03:56,324 - INFO - 🔄 Цикл #15
+2025-12-23 06:03:56,690 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 06:03:56,692 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 06:05:06,824 - INFO - 🔄 Цикл #16
+2025-12-23 06:05:07,181 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 06:05:07,183 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 06:06:17,326 - INFO - 🔄 Цикл #17
+2025-12-23 06:06:17,775 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 06:06:17,777 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 06:07:28,763 - INFO - 🔄 Цикл #18
+2025-12-23 06:07:29,126 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 06:07:29,176 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 06:08:39,744 - INFO - 🔄 Цикл #19
+2025-12-23 06:08:40,116 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 06:08:40,120 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 06:09:50,570 - INFO - 🔄 Цикл #20
+2025-12-23 06:09:52,536 - INFO - 🎬 Обнаружено видео в посте 31548 (тип: video/mp4)
+2025-12-23 06:09:52,537 - WARNING - ⚠️ Видео слишком большое (1036.91MB), пропускаю
+2025-12-23 06:10:03,340 - INFO - 🔍 Проверка каналов на возможность комментирования...
+2025-12-23 06:11:06,871 - INFO - ✅ Проверка завершена. Активных каналов: 29
+2025-12-23 06:11:06,871 - INFO - 🎌 Запуск поиска аниме каналов...
+2025-12-23 06:12:14,414 - INFO - Sleeping for 6s (0:00:06) on GetHistoryRequest flood wait
+2025-12-23 06:12:21,691 - INFO - Sleeping for 41s (0:00:41) on ResolveUsernameRequest flood wait
+2025-12-23 06:13:16,472 - INFO - Sleeping for 47s (0:00:47) on ResolveUsernameRequest flood wait
+2025-12-23 06:14:15,835 - INFO - Sleeping for 49s (0:00:49) on ResolveUsernameRequest flood wait
+2025-12-23 06:15:08,755 - INFO - 📺 Обновлен список активных каналов. Всего: 149
+2025-12-23 06:15:08,761 - ERROR - ❌ Критическая ошибка: A wait of 58093 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:16:08,761 - INFO - 🔄 Цикл #21
+2025-12-23 06:16:08,771 - ERROR - Ошибка при получении канала 'hentaime': A wait of 58033 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:16:08,773 - WARNING - 🗑️ Канал 'hentaime' удален (недоступен)
+2025-12-23 06:16:08,816 - ERROR - ❌ Критическая ошибка: A wait of 58033 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:17:08,818 - INFO - 🔄 Цикл #22
+2025-12-23 06:17:08,830 - ERROR - Ошибка при получении канала 'jutsu_anime': A wait of 57973 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:17:08,831 - WARNING - 🗑️ Канал 'jutsu_anime' удален (недоступен)
+2025-12-23 06:17:08,849 - ERROR - ❌ Критическая ошибка: A wait of 57973 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:18:08,850 - INFO - 🔄 Цикл #23
+2025-12-23 06:18:08,859 - INFO - Closing current connection to begin reconnect...
+2025-12-23 06:18:08,873 - ERROR - Ошибка при получении канала 'sleeeeeeppy': A wait of 57913 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:18:08,874 - WARNING - 🗑️ Канал 'sleeeeeeppy' удален (недоступен)
+2025-12-23 06:18:08,892 - ERROR - ❌ Критическая ошибка: A wait of 57913 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:19:08,893 - INFO - 🔄 Цикл #24
+2025-12-23 06:19:08,906 - ERROR - Ошибка при получении канала 'erjbnjkre': A wait of 57853 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:19:08,907 - WARNING - 🗑️ Канал 'erjbnjkre' удален (недоступен)
+2025-12-23 06:19:08,909 - ERROR - ❌ Критическая ошибка: A wait of 57853 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:20:08,909 - INFO - 🔄 Цикл #25
+2025-12-23 06:20:08,916 - INFO - Connecting to 149.154.175.55:443/TcpFull...
+2025-12-23 06:20:08,920 - ERROR - Ошибка при получении канала 'dd_room': A wait of 57793 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:20:08,921 - WARNING - 🗑️ Канал 'dd_room' удален (недоступен)
+2025-12-23 06:20:08,937 - ERROR - ❌ Критическая ошибка: A wait of 57793 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:21:08,938 - INFO - 🔄 Цикл #26
+2025-12-23 06:21:09,187 - ERROR - Ошибка при получении канала 'animedisney': A wait of 57733 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:21:09,191 - WARNING - 🗑️ Канал 'animedisney' удален (недоступен)
+2025-12-23 06:21:09,192 - ERROR - ❌ Критическая ошибка: A wait of 57733 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:22:09,192 - INFO - 🔄 Цикл #27
+2025-12-23 06:22:09,193 - WARNING - Attempt 1 at connecting failed: TimeoutError: 
+2025-12-23 06:22:09,194 - ERROR - Ошибка при получении канала 'animedinablin': A wait of 57673 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:22:09,196 - WARNING - 🗑️ Канал 'animedinablin' удален (недоступен)
+2025-12-23 06:22:09,197 - ERROR - ❌ Критическая ошибка: A wait of 57673 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:23:09,198 - INFO - 🔄 Цикл #28
+2025-12-23 06:23:09,209 - ERROR - Ошибка при получении канала 'animeshakal': A wait of 57613 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:23:09,211 - WARNING - 🗑️ Канал 'animeshakal' удален (недоступен)
+2025-12-23 06:23:09,212 - ERROR - ❌ Критическая ошибка: A wait of 57613 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:24:09,212 - INFO - 🔄 Цикл #29
+2025-12-23 06:24:09,213 - ERROR - Ошибка при получении канала 'AnimeOfficialX': A wait of 57553 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:24:09,215 - WARNING - 🗑️ Канал 'AnimeOfficialX' удален (недоступен)
+2025-12-23 06:24:09,216 - ERROR - ❌ Критическая ошибка: A wait of 57553 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:25:09,217 - INFO - 🔄 Цикл #30
+2025-12-23 06:25:09,217 - WARNING - Attempt 2 at connecting failed: TimeoutError: 
+2025-12-23 06:25:09,218 - ERROR - Ошибка при получении канала 'skachat_khentayka_serii': A wait of 57493 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:25:09,219 - WARNING - 🗑️ Канал 'skachat_khentayka_serii' удален (недоступен)
+2025-12-23 06:25:09,221 - ERROR - ❌ Критическая ошибка: A wait of 57493 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:26:09,222 - INFO - 🔄 Цикл #31
+2025-12-23 06:26:09,223 - ERROR - Ошибка при получении канала 'editshub': A wait of 57433 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:26:09,225 - WARNING - 🗑️ Канал 'editshub' удален (недоступен)
+2025-12-23 06:26:09,226 - ERROR - ❌ Критическая ошибка: A wait of 57433 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:27:09,227 - INFO - 🔄 Цикл #32
+2025-12-23 06:27:09,228 - ERROR - Ошибка при получении канала 'animemarafonx': A wait of 57373 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:27:09,229 - WARNING - 🗑️ Канал 'animemarafonx' удален (недоступен)
+2025-12-23 06:27:09,231 - ERROR - ❌ Критическая ошибка: A wait of 57373 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:28:09,232 - INFO - 🔄 Цикл #33
+2025-12-23 06:28:09,233 - WARNING - Attempt 3 at connecting failed: TimeoutError: 
+2025-12-23 06:28:09,234 - ERROR - Ошибка при получении канала 'anikorshorts': A wait of 57313 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:28:09,236 - WARNING - 🗑️ Канал 'anikorshorts' удален (недоступен)
+2025-12-23 06:28:09,237 - ERROR - ❌ Критическая ошибка: A wait of 57313 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:29:09,237 - INFO - 🔄 Цикл #34
+2025-12-23 06:29:09,240 - ERROR - Ошибка при получении канала 'zakanime': A wait of 57253 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:29:09,243 - WARNING - 🗑️ Канал 'zakanime' удален (недоступен)
+2025-12-23 06:29:09,245 - ERROR - ❌ Критическая ошибка: A wait of 57252 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:30:09,245 - INFO - 🔄 Цикл #35
+2025-12-23 06:30:09,246 - ERROR - Ошибка при получении канала 'anime_skachat_00': A wait of 57192 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:30:09,247 - WARNING - 🗑️ Канал 'anime_skachat_00' удален (недоступен)
+2025-12-23 06:30:09,251 - ERROR - ❌ Критическая ошибка: A wait of 57192 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:31:09,252 - INFO - 🔄 Цикл #36
+2025-12-23 06:31:09,261 - WARNING - Attempt 4 at connecting failed: TimeoutError: 
+2025-12-23 06:31:09,261 - ERROR - Ошибка при получении канала 'animevict': A wait of 57132 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:31:09,264 - WARNING - 🗑️ Канал 'animevict' удален (недоступен)
+2025-12-23 06:31:09,270 - ERROR - ❌ Критическая ошибка: A wait of 57132 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:32:09,271 - INFO - 🔄 Цикл #37
+2025-12-23 06:32:09,272 - ERROR - Ошибка при получении канала 'animee_channel': A wait of 57072 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:32:09,273 - WARNING - 🗑️ Канал 'animee_channel' удален (недоступен)
+2025-12-23 06:32:09,277 - ERROR - ❌ Критическая ошибка: A wait of 57072 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:33:09,277 - INFO - 🔄 Цикл #38
+2025-12-23 06:33:09,280 - ERROR - Ошибка при получении канала 'pohojieanime': A wait of 57012 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:33:09,281 - WARNING - 🗑️ Канал 'pohojieanime' удален (недоступен)
+2025-12-23 06:33:09,282 - ERROR - ❌ Критическая ошибка: A wait of 57012 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:34:09,285 - INFO - 🔄 Цикл #39
+2025-12-23 06:34:09,290 - WARNING - Attempt 5 at connecting failed: TimeoutError: 
+2025-12-23 06:34:09,293 - ERROR - Ошибка при получении канала 'anitubehd': A wait of 56952 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:34:09,294 - WARNING - 🗑️ Канал 'anitubehd' удален (недоступен)
+2025-12-23 06:34:09,295 - ERROR - ❌ Критическая ошибка: A wait of 56952 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:35:09,296 - INFO - 🔄 Цикл #40
+2025-12-23 06:35:09,297 - ERROR - Ошибка при получении канала 'hentaicomicsianim': A wait of 56892 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:35:09,298 - WARNING - 🗑️ Канал 'hentaicomicsianim' удален (недоступен)
+2025-12-23 06:35:09,302 - ERROR - ❌ Критическая ошибка: A wait of 56892 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:36:09,303 - INFO - 🔄 Цикл #41
+2025-12-23 06:36:09,304 - ERROR - Ошибка при получении канала 'kartinki_milye_poshlyez': A wait of 56832 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:36:09,309 - WARNING - 🗑️ Канал 'kartinki_milye_poshlyez' удален (недоступен)
+2025-12-23 06:36:09,310 - ERROR - ❌ Критическая ошибка: A wait of 56832 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:37:09,311 - INFO - 🔄 Цикл #42
+2025-12-23 06:37:09,312 - WARNING - Attempt 6 at connecting failed: TimeoutError: 
+2025-12-23 06:37:09,313 - ERROR - Ошибка при получении канала 'sharon_al': A wait of 56772 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:37:09,322 - WARNING - 🗑️ Канал 'sharon_al' удален (недоступен)
+2025-12-23 06:37:09,324 - ERROR - ❌ Критическая ошибка: A wait of 56772 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:38:09,325 - INFO - 🔄 Цикл #43
+2025-12-23 06:38:09,335 - INFO - Failed reconnection attempt 1 with ConnectionError
+2025-12-23 06:38:09,336 - ERROR - Ошибка при получении канала 'animetarakans': A wait of 56712 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:38:09,337 - WARNING - 🗑️ Канал 'animetarakans' удален (недоступен)
+2025-12-23 06:38:09,338 - ERROR - ❌ Критическая ошибка: A wait of 56712 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:39:09,339 - INFO - 🔄 Цикл #44
+2025-12-23 06:39:09,341 - INFO - Connecting to 149.154.175.55:443/TcpFull...
+2025-12-23 06:39:09,341 - ERROR - Ошибка при получении канала 'aguilons': A wait of 56652 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:39:09,344 - WARNING - 🗑️ Канал 'aguilons' удален (недоступен)
+2025-12-23 06:39:09,347 - ERROR - ❌ Критическая ошибка: A wait of 56652 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:40:09,348 - INFO - 🔄 Цикл #45
+2025-12-23 06:40:09,349 - ERROR - Ошибка при получении канала 'ytkanews': A wait of 56592 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:40:09,353 - WARNING - 🗑️ Канал 'ytkanews' удален (недоступен)
+2025-12-23 06:40:09,355 - ERROR - ❌ Критическая ошибка: A wait of 56592 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:41:09,355 - INFO - 🔄 Цикл #46
+2025-12-23 06:41:09,356 - WARNING - Attempt 1 at connecting failed: TimeoutError: 
+2025-12-23 06:41:09,357 - ERROR - Ошибка при получении канала 'deep_ruanime': A wait of 56532 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:41:09,358 - WARNING - 🗑️ Канал 'deep_ruanime' удален (недоступен)
+2025-12-23 06:41:09,360 - ERROR - ❌ Критическая ошибка: A wait of 56532 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:42:09,362 - INFO - 🔄 Цикл #47
+2025-12-23 06:42:09,364 - ERROR - Ошибка при получении канала 'anime_stickerr': A wait of 56472 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:42:09,366 - WARNING - 🗑️ Канал 'anime_stickerr' удален (недоступен)
+2025-12-23 06:42:09,370 - ERROR - ❌ Критическая ошибка: A wait of 56472 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:43:09,371 - INFO - 🔄 Цикл #48
+2025-12-23 06:43:09,372 - ERROR - Ошибка при получении канала 'animebay': A wait of 56412 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:43:09,373 - WARNING - 🗑️ Канал 'animebay' удален (недоступен)
+2025-12-23 06:43:09,377 - ERROR - ❌ Критическая ошибка: A wait of 56412 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:44:09,379 - INFO - 🔄 Цикл #49
+2025-12-23 06:44:09,380 - WARNING - Attempt 2 at connecting failed: TimeoutError: 
+2025-12-23 06:44:09,381 - ERROR - Ошибка при получении канала 'aniliberty_tv': A wait of 56352 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:44:09,388 - WARNING - 🗑️ Канал 'aniliberty_tv' удален (недоступен)
+2025-12-23 06:44:09,391 - ERROR - ❌ Критическая ошибка: A wait of 56352 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:45:09,391 - INFO - 🔄 Цикл #50
+2025-12-23 06:45:09,392 - ERROR - Ошибка при получении канала '@chat_animeeee': A wait of 56292 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:45:09,393 - WARNING - 🗑️ Канал '@chat_animeeee' удален (недоступен)
+2025-12-23 06:45:09,394 - ERROR - ❌ Критическая ошибка: A wait of 56292 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:46:09,395 - INFO - 🔄 Цикл #51
+2025-12-23 06:46:09,396 - ERROR - Ошибка при получении канала '@editsa_videosa_moviesa': A wait of 56232 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:46:09,398 - WARNING - 🗑️ Канал '@editsa_videosa_moviesa' удален (недоступен)
+2025-12-23 06:46:09,399 - ERROR - ❌ Критическая ошибка: A wait of 56232 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:47:09,400 - INFO - 🔄 Цикл #52
+2025-12-23 06:47:09,400 - WARNING - Attempt 3 at connecting failed: TimeoutError: 
+2025-12-23 06:47:09,401 - ERROR - Ошибка при получении канала '@otakustore_ru': A wait of 56172 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:47:09,411 - WARNING - 🗑️ Канал '@otakustore_ru' удален (недоступен)
+2025-12-23 06:47:09,413 - ERROR - ❌ Критическая ошибка: A wait of 56172 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:48:09,413 - INFO - 🔄 Цикл #53
+2025-12-23 06:48:09,414 - ERROR - Ошибка при получении канала '@tg_sticks': A wait of 56112 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:48:09,417 - WARNING - 🗑️ Канал '@tg_sticks' удален (недоступен)
+2025-12-23 06:48:09,419 - ERROR - ❌ Критическая ошибка: A wait of 56112 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:49:09,419 - INFO - 🔄 Цикл #54
+2025-12-23 06:49:09,422 - ERROR - Ошибка при получении канала '@STLA3DM': A wait of 56052 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:49:09,425 - WARNING - 🗑️ Канал '@STLA3DM' удален (недоступен)
+2025-12-23 06:49:09,427 - ERROR - ❌ Критическая ошибка: A wait of 56052 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:50:09,427 - INFO - 🔄 Цикл #55
+2025-12-23 06:50:09,427 - WARNING - Attempt 4 at connecting failed: TimeoutError: 
+2025-12-23 06:50:09,428 - ERROR - Ошибка при получении канала '@animezxfjsj': A wait of 55992 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:50:09,429 - WARNING - 🗑️ Канал '@animezxfjsj' удален (недоступен)
+2025-12-23 06:50:09,430 - ERROR - ❌ Критическая ошибка: A wait of 55992 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:51:09,431 - INFO - 🔄 Цикл #56
+2025-12-23 06:51:09,432 - ERROR - Ошибка при получении канала '@animee_channel': A wait of 55932 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:51:09,435 - WARNING - 🗑️ Канал '@animee_channel' удален (недоступен)
+2025-12-23 06:51:09,436 - ERROR - ❌ Критическая ошибка: A wait of 55932 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:52:09,437 - INFO - 🔄 Цикл #57
+2025-12-23 06:52:09,438 - ERROR - Ошибка при получении канала '@stalic': A wait of 55872 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:52:09,439 - WARNING - 🗑️ Канал '@stalic' удален (недоступен)
+2025-12-23 06:52:09,441 - ERROR - ❌ Критическая ошибка: A wait of 55872 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:53:09,442 - INFO - 🔄 Цикл #58
+2025-12-23 06:53:09,442 - WARNING - Attempt 5 at connecting failed: TimeoutError: 
+2025-12-23 06:53:09,443 - ERROR - Ошибка при получении канала '@mangadaily': A wait of 55812 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:53:09,453 - WARNING - 🗑️ Канал '@mangadaily' удален (недоступен)
+2025-12-23 06:53:09,455 - ERROR - ❌ Критическая ошибка: A wait of 55812 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:54:09,456 - INFO - 🔄 Цикл #59
+2025-12-23 06:54:09,458 - ERROR - Ошибка при получении канала '@mangakkkkk': A wait of 55752 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:54:09,459 - WARNING - 🗑️ Канал '@mangakkkkk' удален (недоступен)
+2025-12-23 06:54:09,461 - ERROR - ❌ Критическая ошибка: A wait of 55752 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:55:09,461 - INFO - 🔄 Цикл #60
+2025-12-23 06:55:09,462 - ERROR - Ошибка при получении канала '@mangallerymsc': A wait of 55692 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:55:09,463 - WARNING - 🗑️ Канал '@mangallerymsc' удален (недоступен)
+2025-12-23 06:55:09,464 - ERROR - ❌ Критическая ошибка: A wait of 55692 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:56:09,465 - INFO - 🔄 Цикл #61
+2025-12-23 06:56:09,465 - WARNING - Attempt 6 at connecting failed: TimeoutError: 
+2025-12-23 06:56:09,466 - ERROR - Ошибка при получении канала '@manjchif': A wait of 55632 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:56:09,475 - WARNING - 🗑️ Канал '@manjchif' удален (недоступен)
+2025-12-23 06:56:09,476 - ERROR - ❌ Критическая ошибка: A wait of 55632 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:57:09,476 - INFO - 🔄 Цикл #62
+2025-12-23 06:57:09,477 - INFO - Failed reconnection attempt 2 with ConnectionError
+2025-12-23 06:57:09,477 - ERROR - Ошибка при получении канала '@madurai_mysore_mangalore_call_se': A wait of 55572 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:57:09,479 - WARNING - 🗑️ Канал '@madurai_mysore_mangalore_call_se' удален (недоступен)
+2025-12-23 06:57:09,480 - ERROR - ❌ Критическая ошибка: A wait of 55572 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:58:09,480 - INFO - 🔄 Цикл #63
+2025-12-23 06:58:09,481 - INFO - Connecting to 149.154.175.55:443/TcpFull...
+2025-12-23 06:58:09,481 - ERROR - Ошибка при получении канала '@MANGAj': A wait of 55512 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:58:09,483 - WARNING - 🗑️ Канал '@MANGAj' удален (недоступен)
+2025-12-23 06:58:09,486 - ERROR - ❌ Критическая ошибка: A wait of 55512 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:59:09,486 - INFO - 🔄 Цикл #64
+2025-12-23 06:59:09,489 - ERROR - Ошибка при получении канала '@mangax': A wait of 55452 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 06:59:09,811 - WARNING - 🗑️ Канал '@mangax' удален (недоступен)
+2025-12-23 06:59:09,813 - ERROR - ❌ Критическая ошибка: A wait of 55452 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:00:09,818 - INFO - 🔄 Цикл #65
+2025-12-23 07:00:09,819 - WARNING - Attempt 1 at connecting failed: TimeoutError: 
+2025-12-23 07:00:09,819 - ERROR - Ошибка при получении канала '@manga9': A wait of 55392 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:00:09,821 - WARNING - 🗑️ Канал '@manga9' удален (недоступен)
+2025-12-23 07:00:09,824 - ERROR - ❌ Критическая ошибка: A wait of 55392 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:01:09,826 - INFO - 🔄 Цикл #66
+2025-12-23 07:01:09,827 - ERROR - Ошибка при получении канала '@gvapa_pro_prosexsing': A wait of 55332 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:01:09,829 - WARNING - 🗑️ Канал '@gvapa_pro_prosexsing' удален (недоступен)
+2025-12-23 07:01:09,832 - ERROR - ❌ Критическая ошибка: A wait of 55332 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:02:09,833 - INFO - 🔄 Цикл #67
+2025-12-23 07:02:09,834 - ERROR - Ошибка при получении канала '@Animepodve': A wait of 55272 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:02:09,836 - WARNING - 🗑️ Канал '@Animepodve' удален (недоступен)
+2025-12-23 07:02:09,837 - ERROR - ❌ Критическая ошибка: A wait of 55272 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:03:09,837 - INFO - 🔄 Цикл #68
+2025-12-23 07:03:09,838 - WARNING - Attempt 2 at connecting failed: TimeoutError: 
+2025-12-23 07:03:09,838 - ERROR - Ошибка при получении канала '@kymuk228': A wait of 55212 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:03:09,839 - WARNING - 🗑️ Канал '@kymuk228' удален (недоступен)
+2025-12-23 07:03:09,842 - ERROR - ❌ Критическая ошибка: A wait of 55212 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:04:09,844 - INFO - 🔄 Цикл #69
+2025-12-23 07:04:09,845 - ERROR - Ошибка при получении канала '@MishaAnimeshnikOfficial2025': A wait of 55152 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:04:09,846 - WARNING - 🗑️ Канал '@MishaAnimeshnikOfficial2025' удален (недоступен)
+2025-12-23 07:04:09,847 - ERROR - ❌ Критическая ошибка: A wait of 55152 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:05:09,848 - INFO - 🔄 Цикл #70
+2025-12-23 07:05:09,849 - ERROR - Ошибка при получении канала '@animenight': A wait of 55092 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:05:09,850 - WARNING - 🗑️ Канал '@animenight' удален (недоступен)
+2025-12-23 07:05:09,853 - ERROR - ❌ Критическая ошибка: A wait of 55092 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:06:09,854 - INFO - 🔄 Цикл #71
+2025-12-23 07:06:09,855 - WARNING - Attempt 3 at connecting failed: TimeoutError: 
+2025-12-23 07:06:09,856 - ERROR - Ошибка при получении канала '@rektv0let': A wait of 55032 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:06:09,857 - WARNING - 🗑️ Канал '@rektv0let' удален (недоступен)
+2025-12-23 07:06:09,858 - ERROR - ❌ Критическая ошибка: A wait of 55032 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:07:09,860 - INFO - 🔄 Цикл #72
+2025-12-23 07:07:09,864 - ERROR - Ошибка при получении канала '@mishaanimisha': A wait of 54972 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:07:09,866 - WARNING - 🗑️ Канал '@mishaanimisha' удален (недоступен)
+2025-12-23 07:07:09,870 - ERROR - ❌ Критическая ошибка: A wait of 54972 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:08:09,871 - INFO - 🔄 Цикл #73
+2025-12-23 07:08:09,873 - ERROR - Ошибка при получении канала '@animeshnix': A wait of 54912 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:08:09,874 - WARNING - 🗑️ Канал '@animeshnix' удален (недоступен)
+2025-12-23 07:08:09,877 - ERROR - ❌ Критическая ошибка: A wait of 54912 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:09:09,878 - INFO - 🔄 Цикл #74
+2025-12-23 07:09:09,880 - WARNING - Attempt 4 at connecting failed: TimeoutError: 
+2025-12-23 07:09:09,881 - ERROR - Ошибка при получении канала '@animeshniks': A wait of 54852 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:09:09,890 - WARNING - 🗑️ Канал '@animeshniks' удален (недоступен)
+2025-12-23 07:09:09,892 - ERROR - ❌ Критическая ошибка: A wait of 54852 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:10:09,893 - INFO - 🔄 Цикл #75
+2025-12-23 07:10:09,894 - ERROR - Ошибка при получении канала '@animechat77': A wait of 54792 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:10:09,895 - WARNING - 🗑️ Канал '@animechat77' удален (недоступен)
+2025-12-23 07:10:09,897 - ERROR - ❌ Критическая ошибка: A wait of 54792 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:11:09,898 - INFO - 🔄 Цикл #76
+2025-12-23 07:11:09,901 - ERROR - Ошибка при получении канала '@animechattttttttttt': A wait of 54732 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:11:09,902 - WARNING - 🗑️ Канал '@animechattttttttttt' удален (недоступен)
+2025-12-23 07:11:09,904 - ERROR - ❌ Критическая ошибка: A wait of 54732 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:12:09,905 - INFO - 🔄 Цикл #77
+2025-12-23 07:12:09,905 - WARNING - Attempt 5 at connecting failed: TimeoutError: 
+2025-12-23 07:12:09,906 - ERROR - Ошибка при получении канала '@AnimeChatADuce': A wait of 54672 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:12:09,907 - WARNING - 🗑️ Канал '@AnimeChatADuce' удален (недоступен)
+2025-12-23 07:12:09,908 - ERROR - ❌ Критическая ошибка: A wait of 54672 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:13:09,909 - INFO - 🔄 Цикл #78
+2025-12-23 07:13:09,910 - ERROR - Ошибка при получении канала '@animechatZeus': A wait of 54612 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:13:09,912 - WARNING - 🗑️ Канал '@animechatZeus' удален (недоступен)
+2025-12-23 07:13:09,913 - ERROR - ❌ Критическая ошибка: A wait of 54612 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:14:09,914 - INFO - 🔄 Цикл #79
+2025-12-23 07:14:09,914 - ERROR - Ошибка при получении канала '@animechatITA1': A wait of 54552 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:14:09,915 - WARNING - 🗑️ Канал '@animechatITA1' удален (недоступен)
+2025-12-23 07:14:09,917 - ERROR - ❌ Критическая ошибка: A wait of 54552 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:15:09,917 - INFO - 🔄 Цикл #80
+2025-12-23 07:15:09,918 - WARNING - Attempt 6 at connecting failed: TimeoutError: 
+2025-12-23 07:15:09,918 - ERROR - Ошибка при получении канала '@animechater': A wait of 54492 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:15:09,921 - WARNING - 🗑️ Канал '@animechater' удален (недоступен)
+2025-12-23 07:15:09,922 - ERROR - ❌ Критическая ошибка: A wait of 54492 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:16:09,922 - INFO - 🔄 Цикл #81
+2025-12-23 07:16:09,923 - INFO - Failed reconnection attempt 3 with ConnectionError
+2025-12-23 07:16:09,923 - ERROR - Ошибка при получении канала '@animechatto': A wait of 54432 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:16:09,925 - WARNING - 🗑️ Канал '@animechatto' удален (недоступен)
+2025-12-23 07:16:09,925 - ERROR - ❌ Критическая ошибка: A wait of 54432 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:17:09,926 - INFO - 🔄 Цикл #82
+2025-12-23 07:17:09,926 - INFO - Connecting to 149.154.175.55:443/TcpFull...
+2025-12-23 07:17:09,926 - ERROR - Ошибка при получении канала '@AnimeChatz': A wait of 54372 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:17:09,928 - WARNING - 🗑️ Канал '@AnimeChatz' удален (недоступен)
+2025-12-23 07:17:09,929 - ERROR - ❌ Критическая ошибка: A wait of 54372 seconds is required (caused by ResolveUsernameRequest)
+2025-12-23 07:17:35,103 - INFO - 🔌 Подключение к Telegram...
+2025-12-23 07:17:35,107 - INFO - Connecting to 149.154.175.55:443/TcpFull...
+2025-12-23 07:17:35,262 - INFO - Connection to 149.154.175.55:443/TcpFull complete!
+2025-12-23 07:17:36,265 - INFO - ✅ Подключен как: ebanyta9 (@shotanedoma)
+2025-12-23 07:17:36,760 - INFO - 💬 Запуск автоответчика...
+2025-12-23 07:17:36,761 - INFO - 🚀 Выполнение первичных задач...
+2025-12-23 07:17:36,761 - INFO - ✅ Бот запущен и готов к работе!
+2025-12-23 07:17:36,762 - INFO - 📺 Отслеживается 87 каналов
+2025-12-23 07:17:36,762 - INFO - 🔄 Цикл #1
+2025-12-23 07:17:37,271 - INFO - 📝 Генерация комментария к посту 160460 в @AnimechatA...
+2025-12-23 07:17:43,809 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:18:05,203 - ERROR - Ошибка при отправке комментария в '@AnimechatA': You can't write in this chat (caused by SendMessageRequest)
+2025-12-23 07:18:11,550 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:18:30,715 - INFO - 🎬 Обнаружено видео в посте 95956 (тип: video/webm)
+2025-12-23 07:18:31,234 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 07:18:31,235 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:18:31,400 - INFO - File lives in another DC
+2025-12-23 07:18:31,563 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2025-12-23 07:18:32,794 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2025-12-23 07:18:32,794 - INFO - Exporting auth for new borrowed sender in DcOption(id=4, ip_address='149.154.167.92', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2025-12-23 07:18:34,125 - INFO - ✅ Скриншот извлечен (размер: 39.4KB)
+2025-12-23 07:18:34,127 - INFO - 📸 Скриншот извлечен из видео в посте 95956
+2025-12-23 07:18:34,128 - INFO - 📷 Обнаружено изображение в посте 95956 (тип: jpeg, размер: 39.4KB)
+2025-12-23 07:18:34,296 - INFO - 📝 Генерация комментария к посту 95956 в @animechat4...
+2025-12-23 07:18:38,296 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:19:12,739 - ERROR - Ошибка при отправке комментария в '@animechat4': You can't write in this chat (caused by SendMessageRequest)
+2025-12-23 07:19:37,420 - INFO - 🎬 Обнаружено видео в посте 2005 (тип: video/mp4)
+2025-12-23 07:19:37,430 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 07:19:37,431 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:19:37,597 - INFO - File lives in another DC
+2025-12-23 07:19:37,597 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 07:19:39,102 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 07:19:39,102 - INFO - Exporting auth for new borrowed sender in DcOption(id=2, ip_address='149.154.167.50', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2025-12-23 07:20:02,211 - INFO - ✅ Скриншот извлечен (размер: 56.4KB)
+2025-12-23 07:20:02,213 - INFO - 📸 Скриншот извлечен из видео в посте 2005
+2025-12-23 07:20:02,213 - INFO - 📷 Обнаружено изображение в посте 2005 (тип: jpeg, размер: 56.4KB)
+2025-12-23 07:20:02,377 - WARNING - ⚠️ Комментарии не поддерживаются в @animenovosti_top, пропускаю пост и удаляю канал
+2025-12-23 07:20:02,391 - WARNING - 🗑️ Канал @animenovosti_top удален из активных (комментарии не поддерживаются)
+2025-12-23 07:20:02,913 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:20:03,075 - INFO - File lives in another DC
+2025-12-23 07:20:04,104 - INFO - 📷 Обнаружено изображение в посте 8290 (тип: jpeg, размер: 199.3KB)
+2025-12-23 07:20:04,280 - INFO - 📝 Генерация комментария к посту 8290 в @animenovosti2...
+2025-12-23 07:20:09,868 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:20:39,873 - INFO - Disconnecting borrowed sender for DC 4
+2025-12-23 07:20:39,874 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2025-12-23 07:20:39,875 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2025-12-23 07:20:40,558 - INFO - ✅ Пост 8290 в @animenovosti2 отмечен как обработанный в БД
+2025-12-23 07:20:40,927 - INFO - ✅ Комментарий отправлен в @animenovosti2
+2025-12-23 07:21:20,270 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:21:20,434 - INFO - File lives in another DC
+2025-12-23 07:21:20,941 - INFO - 📷 Обнаружено изображение в посте 6399 (тип: jpeg, размер: 90.1KB)
+2025-12-23 07:21:21,114 - INFO - 📝 Генерация комментария к посту 6399 в @welovemanga...
+2025-12-23 07:21:25,261 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:21:56,872 - INFO - ✅ Пост 6399 в @welovemanga отмечен как обработанный в БД
+2025-12-23 07:21:57,069 - INFO - ✅ Комментарий отправлен в @welovemanga
+2025-12-23 07:22:23,583 - WARNING - ⚠️ Комментарии не поддерживаются в @animenovosti04, пропускаю пост и удаляю канал
+2025-12-23 07:22:23,598 - WARNING - 🗑️ Канал @animenovosti04 удален из активных (комментарии не поддерживаются)
+2025-12-23 07:22:24,277 - WARNING - ⚠️ Комментарии не поддерживаются в @AnimeNovosti886, пропускаю пост и удаляю канал
+2025-12-23 07:22:24,297 - WARNING - 🗑️ Канал @AnimeNovosti886 удален из активных (комментарии не поддерживаются)
+2025-12-23 07:22:24,817 - INFO - 🎬 Обнаружено видео в посте 72 (тип: video/mp4)
+2025-12-23 07:22:24,818 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 07:22:24,818 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:22:24,983 - INFO - File lives in another DC
+2025-12-23 07:25:30,412 - INFO - ✅ Скриншот извлечен (размер: 95.6KB)
+2025-12-23 07:25:30,420 - INFO - 📸 Скриншот извлечен из видео в посте 72
+2025-12-23 07:25:30,420 - INFO - 📷 Обнаружено изображение в посте 72 (тип: jpeg, размер: 95.6KB)
+2025-12-23 07:25:30,589 - WARNING - ⚠️ Комментарии не поддерживаются в @animenovostidub, пропускаю пост и удаляю канал
+2025-12-23 07:25:30,608 - WARNING - 🗑️ Канал @animenovostidub удален из активных (комментарии не поддерживаются)
+2025-12-23 07:25:31,337 - INFO - 🎬 Обнаружено видео в посте 34 (тип: video/mp4)
+2025-12-23 07:25:31,338 - WARNING - ⚠️ Видео слишком большое (125.01MB), пропускаю
+2025-12-23 07:25:31,516 - INFO - 📝 Генерация комментария к посту 34 в @animenovosti004...
+2025-12-23 07:25:36,833 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:26:01,402 - INFO - ✅ Пост 34 в @animenovosti004 отмечен как обработанный в БД
+2025-12-23 07:26:01,793 - INFO - ✅ Комментарий отправлен в @animenovosti004
+2025-12-23 07:26:34,142 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:26:34,305 - INFO - File lives in another DC
+2025-12-23 07:26:35,216 - INFO - 📷 Обнаружено изображение в посте 59 (тип: jpeg, размер: 170.4KB)
+2025-12-23 07:26:35,379 - WARNING - ⚠️ Комментарии не поддерживаются в @animenovostyh, пропускаю пост и удаляю канал
+2025-12-23 07:26:35,398 - WARNING - 🗑️ Канал @animenovostyh удален из активных (комментарии не поддерживаются)
+2025-12-23 07:26:36,250 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:26:36,413 - INFO - File lives in another DC
+2025-12-23 07:26:37,234 - INFO - 📷 Обнаружено изображение в посте 58 (тип: jpeg, размер: 144.3KB)
+2025-12-23 07:26:37,444 - WARNING - ⚠️ Комментарии не поддерживаются в @AnimeNoVostio, пропускаю пост и удаляю канал
+2025-12-23 07:26:37,465 - WARNING - 🗑️ Канал @AnimeNoVostio удален из активных (комментарии не поддерживаются)
+2025-12-23 07:26:38,595 - WARNING - ⚠️ Комментарии не поддерживаются в @animeinfokanal, пропускаю пост и удаляю канал
+2025-12-23 07:26:38,609 - WARNING - 🗑️ Канал @animeinfokanal удален из активных (комментарии не поддерживаются)
+2025-12-23 07:26:39,123 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:26:39,320 - INFO - File lives in another DC
+2025-12-23 07:26:39,883 - INFO - 📷 Обнаружено изображение в посте 15 (тип: jpeg, размер: 103.0KB)
+2025-12-23 07:26:40,046 - WARNING - ⚠️ Комментарии не поддерживаются в @animeinfogudini, пропускаю пост и удаляю канал
+2025-12-23 07:26:40,054 - WARNING - 🗑️ Канал @animeinfogudini удален из активных (комментарии не поддерживаются)
+2025-12-23 07:26:40,568 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:26:40,730 - INFO - File lives in another DC
+2025-12-23 07:26:40,730 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2025-12-23 07:26:40,774 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2025-12-23 07:26:41,555 - INFO - 📷 Обнаружено изображение в посте 283 (тип: jpeg, размер: 125.0KB)
+2025-12-23 07:26:41,735 - WARNING - ⚠️ Комментарии не поддерживаются в @animeinfoe, пропускаю пост и удаляю канал
+2025-12-23 07:26:41,741 - WARNING - 🗑️ Канал @animeinfoe удален из активных (комментарии не поддерживаются)
+2025-12-23 07:26:42,276 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:26:42,438 - INFO - File lives in another DC
+2025-12-23 07:26:44,269 - INFO - 📷 Обнаружено изображение в посте 271 (тип: jpeg, размер: 347.4KB)
+2025-12-23 07:26:44,445 - INFO - 📝 Генерация комментария к посту 271 в @animeinfoaz...
+2025-12-23 07:26:50,012 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:27:24,610 - INFO - ✅ Пост 271 в @animeinfoaz отмечен как обработанный в БД
+2025-12-23 07:27:24,847 - INFO - ✅ Комментарий отправлен в @animeinfoaz
+2025-12-23 07:28:05,201 - INFO - 🎬 Обнаружено видео в посте 37 (тип: video/mp4)
+2025-12-23 07:28:05,202 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 07:28:05,202 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:28:05,368 - INFO - File lives in another DC
+2025-12-23 07:28:17,296 - INFO - ✅ Скриншот извлечен (размер: 222.1KB)
+2025-12-23 07:28:17,298 - INFO - 📸 Скриншот извлечен из видео в посте 37
+2025-12-23 07:28:17,299 - INFO - 📷 Обнаружено изображение в посте 37 (тип: jpeg, размер: 222.1KB)
+2025-12-23 07:28:17,485 - INFO - 📝 Генерация комментария к посту 37 в @animeinfov...
+2025-12-23 07:28:22,740 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:28:59,751 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 07:28:59,752 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 07:28:59,779 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 07:29:00,347 - INFO - ✅ Пост 37 в @animeinfov отмечен как обработанный в БД
+2025-12-23 07:29:00,559 - INFO - ✅ Комментарий отправлен в @animeinfov
+2025-12-23 07:29:34,906 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:29:35,069 - INFO - File lives in another DC
+2025-12-23 07:29:35,070 - INFO - Connecting to 91.108.56.182:443/TcpFull...
+2025-12-23 07:29:36,873 - INFO - Connection to 91.108.56.182:443/TcpFull complete!
+2025-12-23 07:29:36,873 - INFO - Exporting auth for new borrowed sender in DcOption(id=5, ip_address='91.108.56.182', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2025-12-23 07:29:39,919 - INFO - 📷 Обнаружено изображение в посте 54 (тип: jpeg, размер: 215.6KB)
+2025-12-23 07:29:40,092 - INFO - 📝 Генерация комментария к посту 54 в @animeinfo4...
+2025-12-23 07:29:44,656 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:30:16,670 - INFO - Disconnecting borrowed sender for DC 4
+2025-12-23 07:30:16,670 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2025-12-23 07:30:16,671 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2025-12-23 07:30:17,058 - ERROR - Ошибка при отправке комментария в '@animeinfo4': You can't write in this chat (caused by SendMessageRequest)
+2025-12-23 07:30:51,452 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:30:51,616 - INFO - File lives in another DC
+2025-12-23 07:30:51,616 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2025-12-23 07:30:51,660 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2025-12-23 07:30:53,493 - INFO - 📷 Обнаружено изображение в посте 2704 (тип: jpeg, размер: 327.0KB)
+2025-12-23 07:30:53,656 - WARNING - ⚠️ Комментарии не поддерживаются в @AnimeChannelSakura, пропускаю пост и удаляю канал
+2025-12-23 07:30:53,956 - WARNING - 🗑️ Канал @AnimeChannelSakura удален из активных (комментарии не поддерживаются)
+2025-12-23 07:30:54,499 - INFO - 🎬 Обнаружено видео в посте 84 (тип: video/mp4)
+2025-12-23 07:30:54,500 - WARNING - ⚠️ Видео слишком большое (280.34MB), пропускаю
+2025-12-23 07:30:54,662 - WARNING - ⚠️ Комментарии не поддерживаются в @Watch_AnimeChannel, пропускаю пост и удаляю канал
+2025-12-23 07:30:54,933 - WARNING - 🗑️ Канал @Watch_AnimeChannel удален из активных (комментарии не поддерживаются)
+2025-12-23 07:30:55,458 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:30:55,619 - INFO - File lives in another DC
+2025-12-23 07:30:55,619 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 07:30:55,667 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 07:30:57,838 - INFO - 📷 Обнаружено изображение в посте 3396 (тип: jpeg, размер: 371.6KB)
+2025-12-23 07:30:58,006 - WARNING - ⚠️ Комментарии не поддерживаются в @AnimeChannel_ep, пропускаю пост и удаляю канал
+2025-12-23 07:30:58,017 - WARNING - 🗑️ Канал @AnimeChannel_ep удален из активных (комментарии не поддерживаются)
+2025-12-23 07:30:58,861 - INFO - 📝 Генерация комментария к посту 4797 в @animechannelwl...
+2025-12-23 07:31:04,642 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:31:29,648 - INFO - Disconnecting borrowed sender for DC 5
+2025-12-23 07:31:29,649 - INFO - Disconnecting from 91.108.56.182:443/TcpFull...
+2025-12-23 07:31:29,667 - INFO - Disconnection from 91.108.56.182:443/TcpFull complete!
+2025-12-23 07:31:30,484 - INFO - ✅ Пост 4797 в @animechannelwl отмечен как обработанный в БД
+2025-12-23 07:31:30,788 - INFO - ✅ Комментарий отправлен в @animechannelwl
+2025-12-23 07:31:51,129 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:31:51,292 - INFO - File lives in another DC
+2025-12-23 07:31:51,292 - INFO - Connecting to 91.108.56.182:443/TcpFull...
+2025-12-23 07:31:51,490 - INFO - Connection to 91.108.56.182:443/TcpFull complete!
+2025-12-23 07:31:53,691 - INFO - 📷 Обнаружено изображение в посте 1283 (тип: jpeg, размер: 213.3KB)
+2025-12-23 07:31:53,868 - WARNING - ⚠️ Комментарии не поддерживаются в @zukoParadisepoems1, пропускаю пост и удаляю канал
+2025-12-23 07:31:53,878 - WARNING - 🗑️ Канал @zukoParadisepoems1 удален из активных (комментарии не поддерживаются)
+2025-12-23 07:31:54,398 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:31:54,562 - INFO - File lives in another DC
+2025-12-23 07:31:58,545 - INFO - 📷 Обнаружено изображение в посте 670 (тип: jpeg, размер: 693.9KB)
+2025-12-23 07:31:58,710 - WARNING - ⚠️ Комментарии не поддерживаются в @animechannel2024, пропускаю пост и удаляю канал
+2025-12-23 07:31:58,725 - WARNING - 🗑️ Канал @animechannel2024 удален из активных (комментарии не поддерживаются)
+2025-12-23 07:31:59,273 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:31:59,438 - INFO - File lives in another DC
+2025-12-23 07:32:00,345 - INFO - 📷 Обнаружено изображение в посте 1557 (тип: jpeg, размер: 122.5KB)
+2025-12-23 07:32:00,524 - INFO - 📝 Генерация комментария к посту 1557 в @animechannelm...
+2025-12-23 07:32:05,212 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:32:33,217 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 07:32:33,218 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 07:32:33,235 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 07:32:34,104 - INFO - ✅ Пост 1557 в @animechannelm отмечен как обработанный в БД
+2025-12-23 07:32:34,303 - INFO - ✅ Комментарий отправлен в @animechannelm
+2025-12-23 07:32:55,652 - INFO - 🎬 Обнаружено видео в посте 1595 (тип: video/mp4)
+2025-12-23 07:32:55,654 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 07:32:55,654 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:32:55,820 - INFO - File lives in another DC
+2025-12-23 07:33:01,223 - INFO - ✅ Скриншот извлечен (размер: 61.5KB)
+2025-12-23 07:33:01,224 - INFO - 📸 Скриншот извлечен из видео в посте 1595
+2025-12-23 07:33:01,225 - INFO - 📷 Обнаружено изображение в посте 1595 (тип: jpeg, размер: 61.5KB)
+2025-12-23 07:33:01,407 - INFO - 📝 Генерация комментария к посту 1595 в @Animechannel4...
+2025-12-23 07:33:05,826 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:33:36,832 - INFO - Disconnecting borrowed sender for DC 5
+2025-12-23 07:33:36,833 - INFO - Disconnecting from 91.108.56.182:443/TcpFull...
+2025-12-23 07:33:36,856 - INFO - Disconnection from 91.108.56.182:443/TcpFull complete!
+2025-12-23 07:33:37,399 - INFO - ✅ Пост 1595 в @Animechannel4 отмечен как обработанный в БД
+2025-12-23 07:33:37,595 - INFO - ✅ Комментарий отправлен в @Animechannel4
+2025-12-23 07:34:04,940 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:34:05,105 - INFO - File lives in another DC
+2025-12-23 07:34:05,106 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 07:34:05,154 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 07:34:06,115 - INFO - 📷 Обнаружено изображение в посте 25 (тип: jpeg, размер: 147.0KB)
+2025-12-23 07:34:06,292 - INFO - 📝 Генерация комментария к посту 25 в @animedailyfd...
+2025-12-23 07:34:11,259 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:34:31,792 - INFO - ✅ Пост 25 в @animedailyfd отмечен как обработанный в БД
+2025-12-23 07:34:31,985 - INFO - ✅ Комментарий отправлен в @animedailyfd
+2025-12-23 07:35:11,988 - INFO - Disconnecting borrowed sender for DC 4
+2025-12-23 07:35:11,989 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2025-12-23 07:35:12,007 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2025-12-23 07:35:12,008 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 07:35:12,008 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 07:35:12,009 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 07:35:12,326 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:35:12,493 - INFO - File lives in another DC
+2025-12-23 07:35:12,493 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2025-12-23 07:35:12,542 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2025-12-23 07:35:13,383 - INFO - 📷 Обнаружено изображение в посте 570 (тип: jpeg, размер: 123.3KB)
+2025-12-23 07:35:13,546 - WARNING - ⚠️ Комментарии не поддерживаются в @animedailyfans, пропускаю пост и удаляю канал
+2025-12-23 07:35:13,720 - WARNING - 🗑️ Канал @animedailyfans удален из активных (комментарии не поддерживаются)
+2025-12-23 07:35:14,420 - INFO - 🎬 Обнаружено видео в посте 276 (тип: video/mp4)
+2025-12-23 07:35:14,420 - WARNING - ⚠️ Видео слишком большое (903.99MB), пропускаю
+2025-12-23 07:35:14,582 - WARNING - ⚠️ Комментарии не поддерживаются в @AnimeDailyMedia, пропускаю пост и удаляю канал
+2025-12-23 07:35:14,760 - WARNING - 🗑️ Канал @AnimeDailyMedia удален из активных (комментарии не поддерживаются)
+2025-12-23 07:35:15,279 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:35:15,443 - INFO - File lives in another DC
+2025-12-23 07:35:15,444 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2025-12-23 07:35:15,487 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2025-12-23 07:35:16,953 - INFO - 📷 Обнаружено изображение в посте 160 (тип: jpeg, размер: 254.3KB)
+2025-12-23 07:35:17,129 - INFO - 📝 Генерация комментария к посту 160 в @animedailynewss...
+2025-12-23 07:35:22,246 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:35:43,849 - INFO - ✅ Пост 160 в @animedailynewss отмечен как обработанный в БД
+2025-12-23 07:35:44,144 - INFO - ✅ Комментарий отправлен в @animedailynewss
+2025-12-23 07:36:09,895 - INFO - 🎬 Обнаружено видео в посте 88 (тип: video/mp4)
+2025-12-23 07:36:09,896 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 07:36:09,897 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:36:10,121 - INFO - File lives in another DC
+2025-12-23 07:36:29,805 - INFO - ✅ Скриншот извлечен (размер: 74.2KB)
+2025-12-23 07:36:29,807 - INFO - 📸 Скриншот извлечен из видео в посте 88
+2025-12-23 07:36:29,807 - INFO - 📷 Обнаружено изображение в посте 88 (тип: jpeg, размер: 74.2KB)
+2025-12-23 07:36:29,970 - WARNING - ⚠️ Комментарии не поддерживаются в @animedailyta, пропускаю пост и удаляю канал
+2025-12-23 07:36:29,985 - WARNING - 🗑️ Канал @animedailyta удален из активных (комментарии не поддерживаются)
+2025-12-23 07:36:30,740 - INFO - 🎬 Обнаружено видео в посте 12 (тип: video/mp4)
+2025-12-23 07:36:30,740 - WARNING - ⚠️ Видео слишком большое (492.52MB), пропускаю
+2025-12-23 07:36:30,904 - WARNING - ⚠️ Комментарии не поддерживаются в @AnimeDailyID, пропускаю пост и удаляю канал
+2025-12-23 07:36:30,919 - WARNING - 🗑️ Канал @AnimeDailyID удален из активных (комментарии не поддерживаются)
+2025-12-23 07:36:31,608 - WARNING - ⚠️ Комментарии не поддерживаются в @animedaily9, пропускаю пост и удаляю канал
+2025-12-23 07:36:31,627 - WARNING - 🗑️ Канал @animedaily9 удален из активных (комментарии не поддерживаются)
+2025-12-23 07:36:32,496 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:36:32,660 - INFO - File lives in another DC
+2025-12-23 07:36:34,527 - INFO - 📷 Обнаружено изображение в посте 1323 (тип: jpeg, размер: 356.7KB)
+2025-12-23 07:36:34,692 - WARNING - ⚠️ Комментарии не поддерживаются в @animeworldmem, пропускаю пост и удаляю канал
+2025-12-23 07:36:34,703 - WARNING - 🗑️ Канал @animeworldmem удален из активных (комментарии не поддерживаются)
+2025-12-23 07:36:35,402 - WARNING - ⚠️ Комментарии не поддерживаются в @animeworldbb, пропускаю пост и удаляю канал
+2025-12-23 07:36:35,421 - WARNING - 🗑️ Канал @animeworldbb удален из активных (комментарии не поддерживаются)
+2025-12-23 07:36:35,948 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:36:36,112 - INFO - File lives in another DC
+2025-12-23 07:36:36,506 - INFO - 📷 Обнаружено изображение в посте 41904 (тип: jpeg, размер: 72.2KB)
+2025-12-23 07:36:36,681 - INFO - 📝 Генерация комментария к посту 41904 в @exd_animeworld...
+2025-12-23 07:36:37,364 - INFO - Sleeping for 4s (0:00:04) on SendReactionRequest flood wait
+2025-12-23 07:36:45,615 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:37:09,370 - INFO - ✅ Пост 41904 в @exd_animeworld отмечен как обработанный в БД
+2025-12-23 07:37:09,567 - INFO - ✅ Комментарий отправлен в @exd_animeworld
+2025-12-23 07:37:29,917 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:37:30,080 - INFO - File lives in another DC
+2025-12-23 07:37:30,455 - INFO - 📷 Обнаружено изображение в посте 13900 (тип: jpeg, размер: 72.2KB)
+2025-12-23 07:37:30,619 - WARNING - ⚠️ Комментарии не поддерживаются в @AnimeWorldITA2, пропускаю пост и удаляю канал
+2025-12-23 07:37:30,631 - WARNING - 🗑️ Канал @AnimeWorldITA2 удален из активных (комментарии не поддерживаются)
+2025-12-23 07:37:31,315 - INFO - 🎬 Обнаружено видео в посте 3621 (тип: video/mp4)
+2025-12-23 07:37:31,316 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 07:37:31,317 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:37:31,481 - INFO - File lives in another DC
+2025-12-23 07:38:29,584 - INFO - Disconnecting borrowed sender for DC 2
+2025-12-23 07:38:29,584 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2025-12-23 07:38:29,585 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2025-12-23 07:38:54,981 - INFO - ✅ Скриншот извлечен (размер: 74.4KB)
+2025-12-23 07:38:54,986 - INFO - 📸 Скриншот извлечен из видео в посте 3621
+2025-12-23 07:38:54,987 - INFO - 📷 Обнаружено изображение в посте 3621 (тип: jpeg, размер: 74.4KB)
+2025-12-23 07:38:55,178 - INFO - 📝 Генерация комментария к посту 3621 в @AnimeWorld_2025...
+2025-12-23 07:38:59,475 - INFO - HTTP Request: POST https://openai.api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 07:39:32,008 - WARNING - ⚠️ Группа обсуждения не найдена для @AnimeWorld_2025
+2025-12-23 07:39:32,200 - INFO - Got difference for channel 1751081531 updates
+2025-12-23 07:39:32,364 - INFO - 🎬 Обнаружено видео в посте 5960 (тип: video/mp4)
+2025-12-23 07:39:32,365 - INFO - 📥 Скачивание видео для извлечения скриншота...
+2025-12-23 07:39:32,366 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2025-12-23 07:40:31,970 - INFO - Disconnecting borrowed sender for DC 4
+2025-12-23 07:40:31,970 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2025-12-23 07:40:31,971 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2025-12-23 07:43:47,900 - WARNING - ⚠️ Не удалось удалить временный файл: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:\\Users\\USER\\AppData\\Local\\Temp\\tmp0pvrze5r.mp4'
+2025-12-23 07:43:47,901 - INFO - 🛑 Получен сигнал остановки
