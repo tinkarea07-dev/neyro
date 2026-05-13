@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ARTEM KADR · Монтаж — кинематограф из сырца</title>
+<meta name="description" content="Видеомонтаж, цветокор, VFX. Музыкальные клипы, реклама, YouTube, документалки." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          mono: ['"JetBrains Mono"', 'monospace'],
+          display: ['"Bebas Neue"', 'sans-serif'],
+          sans:    ['"Space Grotesk"', 'sans-serif'],
+        },
+        colors: {
+          ink:    '#0A0A0A',
+          bone:   '#EDE6D6',
+          rec:    '#FF3B30',
+          amber:  '#F5B82E',
+          tape:   '#1A1A1A',
+          dust:   '#3B3A36',
+        },
+      },
+    },
+  };
+</script>
+<style>
+  /* ============ ZERO-DEFAULTS ============ */
+  html { scroll-behavior: smooth; cursor: none; }
+  body {
+    background: #0A0A0A;
+    color: #EDE6D6;
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+  }
+  ::selection { background: #FF3B30; color: #0A0A0A; }
+
+  /* ============ FILM GRAIN ============ */
+  .grain::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+    opacity: .12;
+    pointer-events: none;
+    z-index: 9990;
+    mix-blend-mode: overlay;
+    animation: grain 0.6s steps(6) infinite;
+  }
+  @keyframes grain {
+    0%   { transform: translate(0,0); }
+    20%  { transform: translate(-3%,2%); }
+    40%  { transform: translate(2%,-3%); }
+    60%  { transform: translate(-2%,3%); }
+    80%  { transform: translate(3%,-2%); }
+    100% { transform: translate(0,0); }
+  }
+
+  /* ============ SCAN LINES ============ */
+  .scanlines::after {
+    content: '';
+    position: fixed; inset: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.03) 0px,
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    pointer-events: none;
+    z-index: 9989;
+  }
+
+  /* ============ CUSTOM CURSOR (PLAYHEAD) ============ */
+  .cursor-playhead {
+    position: fixed;
+    top: 0; left: 0;
+    width: 22px; height: 22px;
+    border: 2px solid #FF3B30;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width .25s, height .25s, background .15s;
+    mix-blend-mode: difference;
+  }
+  .cursor-playhead::after {
+    content: '';
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 2px; height: 2px;
+    background: #FF3B30;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  .cursor-hover { width: 60px !important; height: 60px !important; background: rgba(255,59,48,0.15); }
+
+  /* ============ CHROMATIC TEXT ============ */
+  .chroma {
+    position: relative;
+    display: inline-block;
+  }
+  .chroma::before, .chroma::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+  }
+  .chroma::before {
+    color: #FF3B30;
+    transform: translate(-3px, 0);
+    mix-blend-mode: screen;
+    animation: rgbshift 4s infinite ease-in-out;
+  }
+  .chroma::after {
+    color: #00E5FF;
+    transform: translate(3px, 0);
+    mix-blend-mode: screen;
+    animation: rgbshift 4s infinite ease-in-out reverse;
+  }
+  @keyframes rgbshift {
+    0%,100% { transform: translate(-3px,0); }
+    50%     { transform: translate(-1px,1px); }
+  }
+
+  /* ============ MARQUEE ============ */
+  .marquee { display: flex; overflow: hidden; gap: 4rem; }
+  .marquee-track {
+    display: flex; gap: 4rem; flex-shrink: 0;
+    animation: marquee 30s linear infinite;
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-100%); }
+  }
+
+  /* ============ SPROCKET (FILM PERFORATION) ============ */
+  .sprocket {
+    background-image:
+      radial-gradient(circle, #0A0A0A 4px, transparent 5px),
+      radial-gradient(circle, #0A0A0A 4px, transparent 5px);
+    background-size: 24px 24px;
+    background-position: 0 6px, 12px 18px;
+    background-repeat: repeat-x;
+  }
+
+  /* ============ BENTO CELLS ============ */
+  .cell {
+    border: 1px solid rgba(237,230,214,0.18);
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.4));
+    position: relative;
+    overflow: hidden;
+    transition: transform .35s cubic-bezier(.2,.7,.2,1), border-color .25s;
+  }
+  .cell:hover {
+    border-color: #FF3B30;
+    transform: translateY(-4px);
+  }
+  .cell::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(120deg, transparent 30%, rgba(245,184,46,0.07) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform .8s;
+  }
+  .cell:hover::after { transform: translateX(100%); }
+
+  /* ============ GLITCH HOVER ============ */
+  .glitch:hover {
+    animation: glitch .3s steps(2) infinite;
+  }
+  @keyframes glitch {
+    0%   { transform: translate(0,0); text-shadow: none; }
+    25%  { transform: translate(-1px,1px); text-shadow: 2px 0 #FF3B30, -2px 0 #00E5FF; }
+    50%  { transform: translate(1px,-1px); text-shadow: -2px 0 #FF3B30, 2px 0 #00E5FF; }
+    75%  { transform: translate(-1px,-1px); text-shadow: 2px 0 #FF3B30, -2px 0 #00E5FF; }
+    100% { transform: translate(0,0); }
+  }
+
+  /* ============ TIMECODE PULSE ============ */
+  .rec-dot {
+    width: 10px; height: 10px;
+    background: #FF3B30; border-radius: 50%;
+    animation: pulse 1s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255,59,48,0.6); }
+    50%     { opacity: .6; box-shadow: 0 0 0 6px rgba(255,59,48,0); }
+  }
+
+  /* ============ TIMELINE ============ */
+  .clip { background: repeating-linear-gradient(90deg, rgba(245,184,46,0.4) 0 8px, rgba(245,184,46,0.2) 8px 16px); }
+  .clip-2 { background: repeating-linear-gradient(90deg, rgba(0,229,255,0.4) 0 8px, rgba(0,229,255,0.2) 8px 16px); }
+  .clip-3 { background: repeating-linear-gradient(90deg, rgba(255,59,48,0.4) 0 8px, rgba(255,59,48,0.2) 8px 16px); }
+
+  /* ============ KINETIC HEADING ============ */
+  .kinetic span { display: inline-block; transition: transform .3s, color .3s; }
+  .kinetic:hover span:nth-child(odd)  { transform: translateY(-6px) rotate(-2deg); color: #F5B82E; }
+  .kinetic:hover span:nth-child(even) { transform: translateY(6px)  rotate(2deg);  color: #FF3B30; }
+
+  /* ============ NUMBER COUNTER ============ */
+  .ticker { font-variant-numeric: tabular-nums; }
+
+  /* ============ REVEAL ============ */
+  .reveal { opacity: 0; transform: translateY(30px); transition: all .8s cubic-bezier(.2,.7,.2,1); }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ============ NOISE BG FOR THUMBS ============ */
+  .thumb-bg {
+    background:
+      linear-gradient(45deg, rgba(255,59,48,0.15), rgba(0,229,255,0.15)),
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n2)' opacity='0.5'/%3E%3C/svg%3E");
+    background-size: cover;
+  }
+
+  /* Reduce motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+
+<body class="grain scanlines">
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-playhead" id="cursor"></div>
+
+<!-- ============ TOP BAR (HUD) ============ -->
+<div class="fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-3 flex items-center justify-between font-mono text-xs uppercase tracking-widest backdrop-blur bg-ink/60 border-b border-bone/10">
+  <a href="index.html" class="flex items-center gap-3 group">
+    <span class="rec-dot"></span>
+    <span class="text-rec">REC</span>
+    <span class="text-bone/60 hidden sm:inline" id="timecode">00:00:00:00</span>
+  </a>
+  <div class="hidden md:flex gap-2">
+    <a href="montage.html" class="px-3 py-1 bg-rec text-ink">МОНТАЖ</a>
+    <a href="design.html" class="px-3 py-1 text-bone/60 hover:text-bone">ДИЗАЙН</a>
+    <a href="dev.html"    class="px-3 py-1 text-bone/60 hover:text-bone">КОД</a>
+  </div>
+  <div class="text-bone/60">
+    <span class="hidden md:inline">RU / </span><span class="text-amber">24fps</span>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="relative min-h-screen flex items-center px-4 md:px-8 pt-24 pb-16">
+  <!-- Sprocket strips -->
+  <div class="absolute left-0 top-0 bottom-0 w-6 sprocket opacity-40 hidden md:block"></div>
+  <div class="absolute right-0 top-0 bottom-0 w-6 sprocket opacity-40 hidden md:block"></div>
+
+  <!-- Side label -->
+  <div class="absolute left-8 top-1/2 -translate-y-1/2 -rotate-90 origin-left font-mono text-[10px] uppercase tracking-[0.4em] text-bone/40 hidden lg:block">
+    PORTFOLIO / 2026 / KADR
+  </div>
+
+  <div class="max-w-7xl mx-auto w-full relative z-10">
+    <!-- Sub label -->
+    <div class="flex items-center gap-3 mb-8 font-mono text-xs uppercase tracking-[0.3em] text-bone/60">
+      <span class="w-12 h-px bg-rec"></span>
+      <span>Видеомонтажёр / Колорист / VFX</span>
+    </div>
+
+    <!-- Main headline -->
+    <h1 class="font-display leading-[0.85] text-[15vw] md:text-[12vw] lg:text-[10vw]">
+      <span class="block kinetic">
+        <span>А</span><span>Р</span><span>Т</span><span>Ё</span><span>М</span>
+      </span>
+      <span class="block chroma text-rec" data-text="К А Д Р">К А Д Р</span>
+    </h1>
+
+    <!-- Description + meta -->
+    <div class="grid md:grid-cols-12 gap-8 mt-12">
+      <p class="md:col-span-7 text-lg md:text-xl leading-relaxed text-bone/85">
+        Превращаю сырой материал в смонтированную историю. Музыкальные клипы, рекламные ролики,
+        YouTube-контент, документалки. <span class="text-amber">DaVinci Resolve</span>, 
+        <span class="text-amber">After Effects</span>, <span class="text-amber">Premiere Pro</span>.
+      </p>
+      <div class="md:col-span-5 grid grid-cols-3 gap-4 font-mono text-xs">
+        <div class="border-l-2 border-rec pl-3">
+          <div class="text-3xl text-bone ticker" data-target="247">0</div>
+          <div class="text-bone/60 mt-1 uppercase">Проектов</div>
+        </div>
+        <div class="border-l-2 border-amber pl-3">
+          <div class="text-3xl text-bone ticker" data-target="8">0</div>
+          <div class="text-bone/60 mt-1 uppercase">Лет в&nbsp;кадре</div>
+        </div>
+        <div class="border-l-2 border-bone/50 pl-3">
+          <div class="text-3xl text-bone ticker" data-target="62">0</div>
+          <div class="text-bone/60 mt-1 uppercase">Клиентов</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA strip -->
+    <div class="mt-16 flex flex-col sm:flex-row gap-4 items-start">
+      <a href="#showreel" class="group inline-flex items-center gap-3 bg-rec text-ink px-8 py-4 font-mono uppercase text-sm tracking-widest hover:bg-bone transition">
+        <span class="w-0 h-0 border-l-[8px] border-l-ink border-y-[6px] border-y-transparent"></span>
+        Смотреть Showreel
+      </a>
+      <a href="#contact" class="inline-flex items-center gap-3 border border-bone/30 px-8 py-4 font-mono uppercase text-sm tracking-widest hover:border-bone hover:bg-bone/5 transition">
+        Заказать монтаж
+        <span class="text-rec">→</span>
+      </a>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="absolute bottom-8 right-8 font-mono text-[10px] uppercase tracking-widest text-bone/40 flex items-center gap-2 hidden md:flex">
+      <div class="w-px h-12 bg-bone/30"></div>
+      Прокрути вниз
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE / SOFTWARE ============ -->
+<div class="border-y border-bone/10 py-6 overflow-hidden bg-tape">
+  <div class="marquee">
+    <div class="marquee-track font-display text-5xl md:text-7xl whitespace-nowrap text-bone/70">
+      <span>DaVinci Resolve</span><span class="text-rec">/</span>
+      <span>After Effects</span><span class="text-amber">/</span>
+      <span>Premiere Pro</span><span class="text-rec">/</span>
+      <span>Cinema 4D</span><span class="text-amber">/</span>
+      <span>Photoshop</span><span class="text-rec">/</span>
+    </div>
+    <div class="marquee-track font-display text-5xl md:text-7xl whitespace-nowrap text-bone/70" aria-hidden="true">
+      <span>DaVinci Resolve</span><span class="text-rec">/</span>
+      <span>After Effects</span><span class="text-amber">/</span>
+      <span>Premiere Pro</span><span class="text-rec">/</span>
+      <span>Cinema 4D</span><span class="text-amber">/</span>
+      <span>Photoshop</span><span class="text-rec">/</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SHOWREEL ============ -->
+<section id="showreel" class="px-4 md:px-8 py-24">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-end justify-between mb-12 reveal">
+      <div>
+        <div class="font-mono text-xs uppercase tracking-[0.3em] text-bone/50 mb-3">// SCENE 01</div>
+        <h2 class="font-display text-5xl md:text-7xl">SHOWREEL <span class="text-rec">2026</span></h2>
+      </div>
+      <div class="font-mono text-xs text-bone/50 hidden md:block">CAM_A · TAKE_03</div>
+    </div>
+
+    <!-- Video placeholder with timeline -->
+    <div class="reveal">
+      <div class="aspect-video thumb-bg border border-bone/20 relative group cursor-pointer overflow-hidden">
+        <!-- Corner brackets -->
+        <span class="absolute top-3 left-3  w-6 h-6 border-l-2 border-t-2 border-bone"></span>
+        <span class="absolute top-3 right-3 w-6 h-6 border-r-2 border-t-2 border-bone"></span>
+        <span class="absolute bottom-3 left-3  w-6 h-6 border-l-2 border-b-2 border-bone"></span>
+        <span class="absolute bottom-3 right-3 w-6 h-6 border-r-2 border-b-2 border-bone"></span>
+        <!-- Play -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-24 h-24 rounded-full border-2 border-bone flex items-center justify-center group-hover:bg-rec group-hover:border-rec transition">
+            <span class="w-0 h-0 border-l-[18px] border-l-bone border-y-[12px] border-y-transparent ml-2 group-hover:border-l-ink"></span>
+          </div>
+        </div>
+        <!-- Top HUD -->
+        <div class="absolute top-3 left-12 font-mono text-xs text-bone/80 flex items-center gap-3">
+          <span class="rec-dot"></span> SHOWREEL.MP4
+        </div>
+        <div class="absolute top-3 right-12 font-mono text-xs text-bone/80">02:34 / 1080p</div>
+        <!-- Bottom timeline -->
+        <div class="absolute bottom-0 left-0 right-0 px-12 pb-4">
+          <div class="h-1 bg-bone/20 relative">
+            <div class="absolute left-0 top-0 h-full w-1/3 bg-rec"></div>
+            <div class="absolute left-1/3 top-1/2 -translate-y-1/2 w-3 h-3 bg-bone rotate-45"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline tracks (decorative) -->
+      <div class="mt-2 space-y-1 font-mono text-[10px] uppercase">
+        <div class="flex items-center gap-2"><span class="w-12 text-bone/50">V1</span><div class="h-3 flex-1 clip"></div></div>
+        <div class="flex items-center gap-2"><span class="w-12 text-bone/50">V2</span><div class="h-3 w-2/3 clip-2"></div></div>
+        <div class="flex items-center gap-2"><span class="w-12 text-bone/50">A1</span><div class="h-3 flex-1 clip-3"></div></div>
+        <div class="flex items-center gap-2"><span class="w-12 text-bone/50">A2</span><div class="h-3 w-1/2 clip"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES BENTO ============ -->
+<section id="services" class="px-4 md:px-8 py-24 bg-tape/50">
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-12 reveal">
+      <div class="font-mono text-xs uppercase tracking-[0.3em] text-bone/50 mb-3">// SCENE 02</div>
+      <h2 class="font-display text-5xl md:text-7xl">ЧТО МОНТИРУЮ</h2>
+    </div>
+
+    <div class="grid grid-cols-12 grid-rows-[repeat(4,minmax(120px,auto))] md:grid-rows-[repeat(3,minmax(180px,auto))] gap-3">
+      <!-- 01 Music videos: large -->
+      <div class="cell p-6 md:p-8 col-span-12 md:col-span-7 row-span-1 md:row-span-2 reveal">
+        <div class="flex items-start justify-between h-full flex-col">
+          <div>
+            <div class="font-mono text-xs text-rec mb-3">01 / MUSIC VIDEO</div>
+            <h3 class="font-display text-4xl md:text-6xl leading-none mb-4">Музыкальные клипы</h3>
+            <p class="text-bone/70 max-w-md">Резка под бит, ритмический монтаж, синхронизация с аудио. Цветокор для атмосферы трека.</p>
+          </div>
+          <div class="flex items-end justify-between w-full mt-8">
+            <div class="font-mono text-xs text-bone/50">от 25.000 ₽</div>
+            <div class="font-display text-7xl md:text-9xl text-bone/10 leading-none">01</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 Reklama -->
+      <div class="cell p-6 col-span-12 md:col-span-5 row-span-1 reveal">
+        <div class="font-mono text-xs text-amber mb-3">02 / COMMERCIAL</div>
+        <h3 class="font-display text-3xl md:text-4xl leading-none mb-2">Реклама / Бренды</h3>
+        <p class="text-bone/60 text-sm">Ролики 15s / 30s / 60s, динамика, типографика, графика.</p>
+      </div>
+
+      <!-- 03 YouTube -->
+      <div class="cell p-6 col-span-6 md:col-span-3 row-span-1 reveal">
+        <div class="font-mono text-xs text-rec mb-3">03 / YOUTUBE</div>
+        <h3 class="font-display text-2xl md:text-3xl leading-none mb-2">YouTube</h3>
+        <p class="text-bone/60 text-xs">Vlog, edu, обзоры, longform.</p>
+      </div>
+
+      <!-- 04 Color -->
+      <div class="cell p-6 col-span-6 md:col-span-2 row-span-1 reveal">
+        <div class="font-mono text-xs text-amber mb-3">04 / COLOR</div>
+        <div class="flex gap-1 mt-4">
+          <span class="w-4 h-12 bg-rec"></span>
+          <span class="w-4 h-12 bg-amber"></span>
+          <span class="w-4 h-12 bg-bone"></span>
+          <span class="w-4 h-12 bg-cyan-300"></span>
+        </div>
+        <h3 class="font-display text-xl mt-3">Цветокор</h3>
+      </div>
+
+      <!-- 05 VFX -->
+      <div class="cell p-6 col-span-12 md:col-span-4 row-span-1 reveal relative">
+        <div class="font-mono text-xs text-rec mb-3">05 / VFX & MOTION</div>
+        <h3 class="font-display text-3xl md:text-5xl leading-none chroma" data-text="VFX">VFX</h3>
+        <p class="text-bone/60 text-sm mt-3">Композ, ротоскоп, трекинг, motion-графика.</p>
+      </div>
+
+      <!-- 06 Doc -->
+      <div class="cell p-6 col-span-12 md:col-span-4 row-span-1 reveal">
+        <div class="font-mono text-xs text-amber mb-3">06 / DOCUMENTARY</div>
+        <h3 class="font-display text-3xl md:text-4xl leading-none mb-2">Документалки</h3>
+        <p class="text-bone/60 text-sm">Драматургия, интервью, повествование.</p>
+      </div>
+
+      <!-- 07 Quote/CTA -->
+      <div class="cell p-6 col-span-12 md:col-span-4 row-span-1 reveal bg-rec text-ink hover:!border-bone">
+        <div class="font-mono text-xs mb-3 opacity-70">07 / GET QUOTE</div>
+        <h3 class="font-display text-3xl md:text-4xl leading-none mb-3">Свой проект?</h3>
+        <a href="#contact" class="inline-flex items-center gap-2 font-mono text-sm uppercase border-b border-ink pb-1">
+          Получить смету →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS / TIMELINE ============ -->
+<section id="process" class="px-4 md:px-8 py-24">
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-12 reveal">
+      <div class="font-mono text-xs uppercase tracking-[0.3em] text-bone/50 mb-3">// SCENE 03</div>
+      <h2 class="font-display text-5xl md:text-7xl">КАК <span class="text-rec">МОНТИРУЕМ</span></h2>
+    </div>
+
+    <div class="space-y-px">
+      <!-- step -->
+      <div class="grid md:grid-cols-12 gap-4 py-8 border-t border-bone/15 hover:bg-bone/5 transition reveal">
+        <div class="md:col-span-1 font-mono text-rec text-sm">01</div>
+        <div class="md:col-span-3 font-display text-3xl">БРИФ</div>
+        <div class="md:col-span-6 text-bone/70">Обсуждаем идею, референсы, дедлайн, бюджет. Получаю исходники: видео, аудио, лого, бренд-гайд.</div>
+        <div class="md:col-span-2 font-mono text-xs text-bone/50 md:text-right">~1 день</div>
+      </div>
+      <div class="grid md:grid-cols-12 gap-4 py-8 border-t border-bone/15 hover:bg-bone/5 transition reveal">
+        <div class="md:col-span-1 font-mono text-amber text-sm">02</div>
+        <div class="md:col-span-3 font-display text-3xl">ROUGH CUT</div>
+        <div class="md:col-span-6 text-bone/70">Черновой монтаж: структура, тайминг, ритм. Отправляю на согласование с таймкодами.</div>
+        <div class="md:col-span-2 font-mono text-xs text-bone/50 md:text-right">2–4 дня</div>
+      </div>
+      <div class="grid md:grid-cols-12 gap-4 py-8 border-t border-bone/15 hover:bg-bone/5 transition reveal">
+        <div class="md:col-span-1 font-mono text-rec text-sm">03</div>
+        <div class="md:col-span-3 font-display text-3xl">FINE CUT</div>
+        <div class="md:col-span-6 text-bone/70">Чистовой монтаж, графика, переходы, sound-design, правки клиента (до 3 раундов).</div>
+        <div class="md:col-span-2 font-mono text-xs text-bone/50 md:text-right">3–5 дней</div>
+      </div>
+      <div class="grid md:grid-cols-12 gap-4 py-8 border-t border-bone/15 hover:bg-bone/5 transition reveal">
+        <div class="md:col-span-1 font-mono text-amber text-sm">04</div>
+        <div class="md:col-span-3 font-display text-3xl">COLOR + AUDIO</div>
+        <div class="md:col-span-6 text-bone/70">Цветокор в DaVinci, мастеринг звука, финальные эффекты. Кинематографичная картинка.</div>
+        <div class="md:col-span-2 font-mono text-xs text-bone/50 md:text-right">2 дня</div>
+      </div>
+      <div class="grid md:grid-cols-12 gap-4 py-8 border-y border-bone/15 hover:bg-bone/5 transition reveal">
+        <div class="md:col-span-1 font-mono text-rec text-sm">05</div>
+        <div class="md:col-span-3 font-display text-3xl">DELIVERY</div>
+        <div class="md:col-span-6 text-bone/70">Экспорт под платформу: 4K / 1080p / Vertical. Все исходники в облаке.</div>
+        <div class="md:col-span-2 font-mono text-xs text-bone/50 md:text-right">1 день</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKS GRID ============ -->
+<section id="works" class="px-4 md:px-8 py-24 bg-tape/50">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-end justify-between mb-12 reveal">
+      <div>
+        <div class="font-mono text-xs uppercase tracking-[0.3em] text-bone/50 mb-3">// SCENE 04</div>
+        <h2 class="font-display text-5xl md:text-7xl">ИЗБРАННОЕ</h2>
+      </div>
+      <span class="font-mono text-xs text-bone/50 hidden md:block">06 PROJECTS</span>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-3">
+      <!-- card -->
+      <article class="group reveal">
+        <div class="aspect-[4/5] thumb-bg relative overflow-hidden border border-bone/15 group-hover:border-rec transition">
+          <span class="absolute top-3 left-3 font-mono text-[10px] text-bone bg-ink/70 px-2 py-1">CLIP_001</span>
+          <span class="absolute bottom-3 right-3 font-mono text-[10px] text-bone bg-rec px-2 py-1">MUSIC</span>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink to-transparent opacity-60"></div>
+        </div>
+        <div class="mt-3 flex items-start justify-between">
+          <div>
+            <h3 class="font-display text-2xl">NIGHT TAPE</h3>
+            <p class="font-mono text-xs text-bone/50 mt-1">Музыкальный клип · 2025</p>
+          </div>
+          <span class="font-mono text-xs text-bone/50">03:42</span>
+        </div>
+      </article>
+
+      <article class="group reveal">
+        <div class="aspect-[4/5] thumb-bg relative overflow-hidden border border-bone/15 group-hover:border-amber transition">
+          <span class="absolute top-3 left-3 font-mono text-[10px] text-bone bg-ink/70 px-2 py-1">CLIP_002</span>
+          <span class="absolute bottom-3 right-3 font-mono text-[10px] text-ink bg-amber px-2 py-1">BRAND</span>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink to-transparent opacity-60"></div>
+        </div>
+        <div class="mt-3 flex items-start justify-between">
+          <div>
+            <h3 class="font-display text-2xl">SOLAR / 30s</h3>
+            <p class="font-mono text-xs text-bone/50 mt-1">Реклама · 2025</p>
+          </div>
+          <span class="font-mono text-xs text-bone/50">00:30</span>
+        </div>
+      </article>
+
+      <article class="group reveal">
+        <div class="aspect-[4/5] thumb-bg relative overflow-hidden border border-bone/15 group-hover:border-rec transition">
+          <span class="absolute top-3 left-3 font-mono text-[10px] text-bone bg-ink/70 px-2 py-1">CLIP_003</span>
+          <span class="absolute bottom-3 right-3 font-mono text-[10px] text-bone bg-rec px-2 py-1">DOC</span>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink to-transparent opacity-60"></div>
+        </div>
+        <div class="mt-3 flex items-start justify-between">
+          <div>
+            <h3 class="font-display text-2xl">BAIKAL DRIFT</h3>
+            <p class="font-mono text-xs text-bone/50 mt-1">Документальный · 2024</p>
+          </div>
+          <span class="font-mono text-xs text-bone/50">12:15</span>
+        </div>
+      </article>
+
+      <article class="group reveal">
+        <div class="aspect-[4/5] thumb-bg relative overflow-hidden border border-bone/15 group-hover:border-amber transition">
+          <span class="absolute top-3 left-3 font-mono text-[10px] text-bone bg-ink/70 px-2 py-1">CLIP_004</span>
+          <span class="absolute bottom-3 right-3 font-mono text-[10px] text-ink bg-amber px-2 py-1">YT</span>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink to-transparent opacity-60"></div>
+        </div>
+        <div class="mt-3 flex items-start justify-between">
+          <div>
+            <h3 class="font-display text-2xl">URBANIST EP.07</h3>
+            <p class="font-mono text-xs text-bone/50 mt-1">YouTube · 2025</p>
+          </div>
+          <span class="font-mono text-xs text-bone/50">14:08</span>
+        </div>
+      </article>
+
+      <article class="group reveal">
+        <div class="aspect-[4/5] thumb-bg relative overflow-hidden border border-bone/15 group-hover:border-rec transition">
+          <span class="absolute top-3 left-3 font-mono text-[10px] text-bone bg-ink/70 px-2 py-1">CLIP_005</span>
+          <span class="absolute bottom-3 right-3 font-mono text-[10px] text-bone bg-rec px-2 py-1">VFX</span>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink to-transparent opacity-60"></div>
+        </div>
+        <div class="mt-3 flex items-start justify-between">
+          <div>
+            <h3 class="font-display text-2xl">VOID //</h3>
+            <p class="font-mono text-xs text-bone/50 mt-1">Short film · 2024</p>
+          </div>
+          <span class="font-mono text-xs text-bone/50">06:21</span>
+        </div>
+      </article>
+
+      <article class="group reveal">
+        <div class="aspect-[4/5] thumb-bg relative overflow-hidden border border-bone/15 group-hover:border-amber transition">
+          <span class="absolute top-3 left-3 font-mono text-[10px] text-bone bg-ink/70 px-2 py-1">CLIP_006</span>
+          <span class="absolute bottom-3 right-3 font-mono text-[10px] text-ink bg-amber px-2 py-1">MUSIC</span>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink to-transparent opacity-60"></div>
+        </div>
+        <div class="mt-3 flex items-start justify-between">
+          <div>
+            <h3 class="font-display text-2xl">NEON RAIN</h3>
+            <p class="font-mono text-xs text-bone/50 mt-1">Музыкальный клип · 2024</p>
+          </div>
+          <span class="font-mono text-xs text-bone/50">02:58</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL ============ -->
+<section class="px-4 md:px-8 py-24">
+  <div class="max-w-5xl mx-auto reveal">
+    <div class="font-mono text-xs uppercase tracking-[0.3em] text-bone/50 mb-6">// QUOTE</div>
+    <blockquote class="font-display text-3xl md:text-6xl leading-tight">
+      «Артём за <span class="text-rec">3 дня</span> собрал из 12 часов сырца ролик, который собрал
+      <span class="text-amber">2.4M просмотров</span>. Чувствует ритм, как режиссёр.»
+    </blockquote>
+    <div class="mt-8 flex items-center gap-4 font-mono text-xs uppercase tracking-widest text-bone/60">
+      <span class="w-12 h-px bg-rec"></span>
+      Дмитрий М. · продюсер · MOSCOW STUDIO
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="px-4 md:px-8 py-24 bg-tape/70 border-t border-bone/10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12">
+      <div class="reveal">
+        <div class="font-mono text-xs uppercase tracking-[0.3em] text-bone/50 mb-3">// SCENE 05 · END</div>
+        <h2 class="font-display text-5xl md:text-7xl leading-none">
+          ДАВАЙ <br/>
+          <span class="chroma text-rec" data-text="СНИМЕМ">СНИМЕМ</span> <br/>
+          ВМЕСТЕ.
+        </h2>
+        <p class="text-bone/70 mt-6 max-w-md">Есть проект? Расскажи в двух словах — отвечу за сутки и пришлю смету.</p>
+      </div>
+
+      <div class="reveal space-y-3">
+        <a href="mailto:hello@artemkadr.ru" class="block cell p-6 group">
+          <div class="font-mono text-xs text-bone/50 mb-1">EMAIL</div>
+          <div class="font-display text-3xl group-hover:text-rec transition">hello@artemkadr.ru</div>
+        </a>
+        <a href="https://t.me/artemkadr" class="block cell p-6 group">
+          <div class="font-mono text-xs text-bone/50 mb-1">TELEGRAM</div>
+          <div class="font-display text-3xl group-hover:text-amber transition">@artemkadr</div>
+        </a>
+        <a href="tel:+79991234567" class="block cell p-6 group">
+          <div class="font-mono text-xs text-bone/50 mb-1">PHONE</div>
+          <div class="font-display text-3xl group-hover:text-rec transition">+7 999 123-45-67</div>
+        </a>
+        <div class="flex gap-3 mt-4">
+          <a href="#" class="flex-1 cell p-4 text-center font-mono text-xs uppercase tracking-widest hover:text-amber">YouTube</a>
+          <a href="#" class="flex-1 cell p-4 text-center font-mono text-xs uppercase tracking-widest hover:text-amber">Vimeo</a>
+          <a href="#" class="flex-1 cell p-4 text-center font-mono text-xs uppercase tracking-widest hover:text-amber">Behance</a>
+          <a href="#" class="flex-1 cell p-4 text-center font-mono text-xs uppercase tracking-widest hover:text-amber">Inst.</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="px-4 md:px-8 py-8 border-t border-bone/10 font-mono text-xs uppercase tracking-widest text-bone/50 flex flex-col md:flex-row justify-between gap-4">
+  <div>© 2026 ARTEM KADR · ALL RIGHTS RESERVED</div>
+  <div class="flex gap-6">
+    <span>FRAME 4096</span>
+    <span class="text-rec">END OF FILE</span>
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script>
+  // Cursor
+  const cursor = document.getElementById('cursor');
+  let cx = window.innerWidth/2, cy = window.innerHeight/2;
+  let tx = cx, ty = cy;
+  document.addEventListener('mousemove', (e) => { tx = e.clientX; ty = e.clientY; });
+  function loop() {
+    cx += (tx - cx) * 0.18;
+    cy += (ty - cy) * 0.18;
+    cursor.style.left = cx + 'px';
+    cursor.style.top  = cy + 'px';
+    requestAnimationFrame(loop);
+  }
+  loop();
+  document.querySelectorAll('a, button, .cell, .group').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('cursor-hover'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-hover'));
+  });
+
+  // Timecode
+  const tc = document.getElementById('timecode');
+  const start = Date.now();
+  setInterval(() => {
+    const t = Date.now() - start;
+    const frames = Math.floor((t/1000) * 24) % 24;
+    const secs = Math.floor(t/1000) % 60;
+    const mins = Math.floor(t/60000) % 60;
+    const hrs  = Math.floor(t/3600000);
+    const pad  = n => String(n).padStart(2,'0');
+    tc.textContent = `${pad(hrs)}:${pad(mins)}:${pad(secs)}:${pad(frames)}`;
+  }, 41);
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Number tickers
+  const tickers = document.querySelectorAll('.ticker');
+  const tIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const target = parseInt(el.dataset.target, 10);
+      const dur = 1400;
+      const t0 = performance.now();
+      function step(now) {
+        const k = Math.min(1, (now - t0) / dur);
+        const eased = 1 - Math.pow(1 - k, 3);
+        el.textContent = Math.floor(target * eased);
+        if (k < 1) requestAnimationFrame(step);
+        else el.textContent = target;
+      }
+      requestAnimationFrame(step);
+      tIO.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  tickers.forEach(t => tIO.observe(t));
+</script>
+</body>
+</html>
