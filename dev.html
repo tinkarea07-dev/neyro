@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARTEM KADR · Разработка — сайты, приложения, код</title>
+<meta name="description" content="Веб-разработка: React, Next.js, Tailwind. Сайты, лендинги, веб-приложения.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&family=Archivo+Black&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{fontFamily:{mono:['"JetBrains Mono"','monospace'],poster:['"Archivo Black"','sans-serif'],sans:['"Space Grotesk"','sans-serif']},colors:{void:'#050810',neon:'#00FFB2',glow:'#00E5FF',amber:'#F5B82E',rec:'#FF3B30',bone:'#EDE6D6',purple:'#8B5CF6'}}}}
+</script>
+<style>
+html{scroll-behavior:smooth}
+body{background:#050810;color:#00FFB2;font-family:'JetBrains Mono',monospace;overflow-x:hidden}
+::selection{background:#00FFB2;color:#050810}
+
+/* CRT scanlines */
+.crt::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(to bottom,rgba(0,255,178,0.03) 0px,rgba(0,255,178,0.03) 1px,transparent 1px,transparent 3px);pointer-events:none;z-index:9989}
+
+/* Grid bg */
+.gridbg::before{content:'';position:fixed;inset:0;background:linear-gradient(rgba(0,255,178,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,178,0.04) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}
+
+/* Glow text */
+.glow-text{text-shadow:0 0 10px rgba(0,255,178,0.8),0 0 40px rgba(0,255,178,0.3)}
+.glow-rec{text-shadow:0 0 10px rgba(255,59,48,0.8),0 0 40px rgba(255,59,48,0.3)}
+
+/* Code rain */
+.coderain{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.coderain span{position:absolute;top:-20%;font-size:14px;color:#00FFB2;opacity:0.4;writing-mode:vertical-rl;letter-spacing:3px;animation:rain linear infinite;text-shadow:0 0 6px rgba(0,255,178,0.6)}
+@keyframes rain{to{top:110%}}
+
+/* Terminal card */
+.terminal{background:rgba(5,8,16,0.9);border:1px solid rgba(0,255,178,0.3);border-radius:8px;box-shadow:0 0 30px rgba(0,255,178,0.1),inset 0 0 20px rgba(0,255,178,0.02)}
+.terminal-bar{background:rgba(0,255,178,0.08);border-bottom:1px solid rgba(0,255,178,0.2);padding:8px 16px;display:flex;align-items:center;gap:8px;border-radius:8px 8px 0 0}
+.terminal-dot{width:10px;height:10px;border-radius:50%}
+
+/* Typing cursor */
+.cursor-blink::after{content:'_';animation:blink 1s step-end infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+/* Neon border card */
+.neon-card{border:1px solid rgba(0,255,178,0.25);background:rgba(5,8,16,0.8);transition:border-color .3s,box-shadow .3s,transform .3s}
+.neon-card:hover{border-color:#00FFB2;box-shadow:0 0 20px rgba(0,255,178,0.3);transform:translateY(-4px)}
+
+/* ASCII Art pre */
+.ascii{font-size:8px;line-height:1.1;letter-spacing:1px;color:#00FFB2;opacity:.6}
+
+/* Progress bars */
+.skill-bar{height:6px;background:rgba(0,255,178,0.15);border-radius:3px;overflow:hidden}
+.skill-fill{height:100%;background:#00FFB2;border-radius:3px;box-shadow:0 0 6px rgba(0,255,178,0.6);transition:width 1.5s cubic-bezier(.2,.7,.2,1)}
+
+/* Marquee */
+.marquee{display:flex;overflow:hidden;gap:3rem}
+.marquee-track{display:flex;gap:3rem;flex-shrink:0;animation:marquee 20s linear infinite}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:all .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* rec dot */
+.rec-dot{width:8px;height:8px;background:#FF3B30;border-radius:50%;animation:pulse 1s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(255,59,48,0.6)}50%{opacity:.5;box-shadow:0 0 0 6px rgba(255,59,48,0)}}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body class="crt gridbg">
+
+<!-- Code Rain -->
+<div class="coderain" id="coderain"></div>
+
+<!-- NAV -->
+<header class="fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-3 flex items-center justify-between text-xs uppercase tracking-widest backdrop-blur-md bg-void/80 border-b border-neon/10">
+<a href="index.html" class="flex items-center gap-2"><span class="rec-dot"></span><span class="text-bone/80">ARTEM KADR</span></a>
+<nav class="hidden md:flex gap-2">
+<a href="index.html" class="px-3 py-1 text-bone/60 hover:text-neon">HUB</a>
+<a href="montage.html" class="px-3 py-1 text-bone/60 hover:text-neon">МОНТАЖ</a>
+<a href="design.html" class="px-3 py-1 text-bone/60 hover:text-neon">ДИЗАЙН</a>
+<a href="dev.html" class="px-3 py-1 bg-neon text-void">КОД</a>
+</nav>
+<div class="text-neon/60">03 / 03</div>
+</header>
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center px-4 md:px-8 pt-24 pb-16 z-10">
+<div class="max-w-6xl mx-auto w-full">
+
+<div class="text-xs uppercase tracking-[0.3em] text-neon/50 mb-6">$ cat ./about.md</div>
+
+<h1 class="text-[14vw] md:text-[9vw] font-poster leading-[0.85] text-bone glow-text">
+&lt;WEB<br><span class="text-neon">DEV</span> /&gt;
+</h1>
+
+<div class="mt-10 terminal max-w-2xl">
+<div class="terminal-bar">
+<span class="terminal-dot bg-rec"></span>
+<span class="terminal-dot bg-amber"></span>
+<span class="terminal-dot bg-neon"></span>
+<span class="text-neon/60 text-xs ml-2">artem@kadr:~/projects</span>
+</div>
+<div class="p-6 space-y-2 text-sm">
+<div><span class="text-neon/60">$</span> <span class="text-bone">whoami</span></div>
+<div class="text-neon">Фронтенд-разработчик · 4 года опыта</div>
+<div class="mt-3"><span class="text-neon/60">$</span> <span class="text-bone">cat stack.json</span></div>
+<div class="text-amber">{"react": true, "nextjs": true, "tailwind": true, "typescript": true}</div>
+<div class="mt-3"><span class="text-neon/60">$</span> <span class="text-bone">echo $MOTTO</span></div>
+<div class="text-rec">"Пишу код, который работает красиво — и выглядит чисто."</div>
+<div class="mt-3"><span class="text-neon/60">$</span> <span class="cursor-blink text-bone"></span></div>
+</div>
+</div>
+
+<div class="mt-12 flex flex-wrap gap-4">
+<a href="#projects" class="px-8 py-4 bg-neon text-void font-bold uppercase text-sm tracking-widest hover:bg-bone transition">Проекты →</a>
+<a href="#contact" class="px-8 py-4 border border-neon/40 text-neon uppercase text-sm tracking-widest hover:border-neon hover:bg-neon/10 transition">Написать</a>
+</div>
+</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="border-y border-neon/10 py-4 overflow-hidden z-10 relative">
+<div class="marquee">
+<div class="marquee-track font-poster text-4xl md:text-5xl whitespace-nowrap text-bone/50">
+<span>REACT</span><span class="text-neon">·</span>
+<span>NEXT.JS</span><span class="text-rec">·</span>
+<span>TAILWIND</span><span class="text-neon">·</span>
+<span>TYPESCRIPT</span><span class="text-amber">·</span>
+<span>NODE.JS</span><span class="text-neon">·</span>
+<span>FIGMA→CODE</span><span class="text-rec">·</span>
+</div>
+<div class="marquee-track font-poster text-4xl md:text-5xl whitespace-nowrap text-bone/50" aria-hidden="true">
+<span>REACT</span><span class="text-neon">·</span>
+<span>NEXT.JS</span><span class="text-rec">·</span>
+<span>TAILWIND</span><span class="text-neon">·</span>
+<span>TYPESCRIPT</span><span class="text-amber">·</span>
+<span>NODE.JS</span><span class="text-neon">·</span>
+<span>FIGMA→CODE</span><span class="text-rec">·</span>
+</div>
+</div>
+</div>
+
+<!-- SKILLS -->
+<section class="px-4 md:px-8 py-20 z-10 relative">
+<div class="max-w-6xl mx-auto">
+<div class="text-xs uppercase tracking-[0.3em] text-neon/50 mb-3 reveal">$ cat skills.log</div>
+<h2 class="font-poster text-5xl md:text-7xl text-bone glow-text mb-12 reveal">СТЕК</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+<div class="neon-card p-6 reveal">
+<div class="flex justify-between text-sm mb-2"><span class="text-bone">React / Next.js</span><span class="text-neon">95%</span></div>
+<div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+</div>
+<div class="neon-card p-6 reveal">
+<div class="flex justify-between text-sm mb-2"><span class="text-bone">TypeScript</span><span class="text-neon">90%</span></div>
+<div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+</div>
+<div class="neon-card p-6 reveal">
+<div class="flex justify-between text-sm mb-2"><span class="text-bone">Tailwind CSS</span><span class="text-neon">98%</span></div>
+<div class="skill-bar"><div class="skill-fill" style="width:98%"></div></div>
+</div>
+<div class="neon-card p-6 reveal">
+<div class="flex justify-between text-sm mb-2"><span class="text-bone">Node.js / API</span><span class="text-neon">80%</span></div>
+<div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+</div>
+<div class="neon-card p-6 reveal">
+<div class="flex justify-between text-sm mb-2"><span class="text-bone">Figma → Code</span><span class="text-amber">92%</span></div>
+<div class="skill-bar"><div class="skill-fill" style="width:92%;background:#F5B82E"></div></div>
+</div>
+<div class="neon-card p-6 reveal">
+<div class="flex justify-between text-sm mb-2"><span class="text-bone">Git / CI-CD</span><span class="text-neon">85%</span></div>
+<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="px-4 md:px-8 py-20 z-10 relative border-t border-neon/10">
+<div class="max-w-6xl mx-auto">
+<div class="text-xs uppercase tracking-[0.3em] text-neon/50 mb-3 reveal">$ ls ./services/</div>
+<h2 class="font-poster text-5xl md:text-7xl text-bone glow-text mb-12 reveal">ЧТО ПИШУ</h2>
+
+<div class="grid md:grid-cols-3 gap-4">
+<div class="neon-card p-8 reveal">
+<div class="text-4xl mb-4 glow-text">&lt;/&gt;</div>
+<h3 class="text-bone text-xl font-bold mb-3">Лендинги</h3>
+<p class="text-neon/70 text-sm">Pixel-perfect из Figma. Анимации, адаптив, SEO.</p>
+<div class="mt-6 text-xs text-neon/50">от 40 000 ₽</div>
+</div>
+<div class="neon-card p-8 reveal">
+<div class="text-4xl mb-4 text-amber" style="text-shadow:0 0 10px rgba(245,184,46,0.5)">{ }</div>
+<h3 class="text-bone text-xl font-bold mb-3">Веб-приложения</h3>
+<p class="text-neon/70 text-sm">SPA, дашборды, админки. React + TypeScript.</p>
+<div class="mt-6 text-xs text-neon/50">от 120 000 ₽</div>
+</div>
+<div class="neon-card p-8 reveal">
+<div class="text-4xl mb-4 text-rec glow-rec">⚡</div>
+<h3 class="text-bone text-xl font-bold mb-3">Интеграции</h3>
+<p class="text-neon/70 text-sm">API, Telegram-боты, автоматизации, деплой.</p>
+<div class="mt-6 text-xs text-neon/50">от 30 000 ₽</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="px-4 md:px-8 py-20 z-10 relative border-t border-neon/10">
+<div class="max-w-6xl mx-auto">
+<div class="text-xs uppercase tracking-[0.3em] text-neon/50 mb-3 reveal">$ git log --oneline</div>
+<h2 class="font-poster text-5xl md:text-7xl text-bone glow-text mb-12 reveal">ПРОЕКТЫ</h2>
+
+<div class="space-y-4">
+<div class="neon-card p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6 reveal">
+<div class="flex-1">
+<div class="text-xs text-neon/50 mb-2">commit a3f2d1c · 2025</div>
+<h3 class="text-bone text-2xl font-bold">FLUX OS — SaaS Dashboard</h3>
+<p class="text-neon/60 text-sm mt-2">Next.js 14 · App Router · shadcn/ui · Vercel</p>
+</div>
+<div class="font-poster text-5xl text-neon/20">01</div>
+</div>
+
+<div class="neon-card p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6 reveal">
+<div class="flex-1">
+<div class="text-xs text-neon/50 mb-2">commit 7b91e4a · 2025</div>
+<h3 class="text-bone text-2xl font-bold">SOLAR CO — корпоративный сайт</h3>
+<p class="text-neon/60 text-sm mt-2">React · Tailwind · Framer Motion · Sanity CMS</p>
+</div>
+<div class="font-poster text-5xl text-neon/20">02</div>
+</div>
+
+<div class="neon-card p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6 reveal">
+<div class="flex-1">
+<div class="text-xs text-neon/50 mb-2">commit e5c8f30 · 2024</div>
+<h3 class="text-bone text-2xl font-bold">NEYRO — Telegram бот</h3>
+<p class="text-neon/60 text-sm mt-2">Python · Telethon · SQLite · auto-responder</p>
+</div>
+<div class="font-poster text-5xl text-neon/20">03</div>
+</div>
+
+<div class="neon-card p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6 reveal">
+<div class="flex-1">
+<div class="text-xs text-neon/50 mb-2">commit 1d4a7f2 · 2024</div>
+<h3 class="text-bone text-2xl font-bold">URBANIST — YouTube канал</h3>
+<p class="text-neon/60 text-sm mt-2">Next.js · MDX · Tailwind · YouTube API</p>
+</div>
+<div class="font-poster text-5xl text-neon/20">04</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-4 md:px-8 py-24 z-10 relative border-t border-neon/10">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+<div class="reveal">
+<div class="text-xs uppercase tracking-[0.3em] text-neon/50 mb-4">$ echo "let's build"</div>
+<h2 class="font-poster text-6xl md:text-8xl text-bone glow-text leading-none">
+ДАВАЙ<br>ЗАПУСТИМ<br><span class="text-neon">ПРОЕКТ.</span>
+</h2>
+<p class="text-neon/70 mt-6 max-w-md">Опиши задачу — отвечу за сутки с оценкой и планом.</p>
+</div>
+<div class="space-y-4 reveal">
+<a href="mailto:hello@artemkadr.ru" class="block neon-card p-6">
+<div class="text-xs text-neon/50 mb-1">// EMAIL</div>
+<div class="text-bone text-2xl font-bold">hello@artemkadr.ru</div>
+</a>
+<a href="https://t.me/artemkadr" class="block neon-card p-6">
+<div class="text-xs text-neon/50 mb-1">// TELEGRAM</div>
+<div class="text-bone text-2xl font-bold">@artemkadr</div>
+</a>
+<a href="https://github.com/artemkadr" class="block neon-card p-6">
+<div class="text-xs text-neon/50 mb-1">// GITHUB</div>
+<div class="text-bone text-2xl font-bold">github.com/artemkadr</div>
+</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="px-4 md:px-8 py-6 border-t border-neon/10 text-xs uppercase tracking-widest text-neon/40 flex justify-between z-10 relative">
+<div>© 2026 ARTEM KADR · DEV</div>
+<div>process.exit(0)</div>
+</footer>
+
+<script>
+// Code Rain
+(function(){
+const r=document.getElementById('coderain');
+const chars='アイウエオカキクケコ01ABCDEF{}[]<>/=+;()const let var function return async await import export';
+for(let i=0;i<30;i++){
+const s=document.createElement('span');
+let t='';for(let j=0;j<20+Math.floor(Math.random()*12);j++)t+=chars[Math.floor(Math.random()*chars.length)];
+s.textContent=t;
+s.style.left=(i/30*100+Math.random()*2)+'%';
+s.style.animationDuration=(4+Math.random()*8)+'s';
+s.style.animationDelay=(Math.random()*6)+'s';
+s.style.opacity=(0.15+Math.random()*0.4).toString();
+r.appendChild(s);
+}})();
+
+// Reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
