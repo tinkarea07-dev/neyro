@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin · Nik Site</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Inter', sans-serif; background: #0F0F12; color: #EDE6D6; min-height: 100vh; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  ::selection { background: #FF3B30; color: #0A0A0A; }
+
+  .input {
+    background: #1A1A1F; border: 1px solid #2A2A30;
+    padding: 10px 14px; border-radius: 6px; color: #EDE6D6; font-size: 14px;
+    width: 100%; transition: border-color .2s;
+  }
+  .input:focus { outline: none; border-color: #00FFB2; }
+  textarea.input { font-family: 'JetBrains Mono', monospace; min-height: 80px; }
+  .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: #9A9A9A; margin-bottom: 6px; display: block; }
+  .btn {
+    padding: 10px 18px; border-radius: 6px; font-weight: 500; font-size: 14px;
+    transition: all .2s; cursor: pointer; border: none;
+  }
+  .btn-primary { background: #00FFB2; color: #0A0A0A; }
+  .btn-primary:hover { background: #00D499; }
+  .btn-ghost { background: transparent; color: #EDE6D6; border: 1px solid #2A2A30; }
+  .btn-ghost:hover { border-color: #EDE6D6; }
+  .btn-danger { background: #FF3B30; color: #fff; }
+  .btn-danger:hover { background: #D62828; }
+  .card {
+    background: #16161B; border: 1px solid #25252B; border-radius: 10px;
+    padding: 20px; transition: border-color .2s;
+  }
+  .card:hover { border-color: #3A3A42; }
+  .pill {
+    display: inline-block; padding: 3px 10px; border-radius: 999px;
+    font-size: 11px; text-transform: uppercase; letter-spacing: .1em;
+  }
+  .pill-rec { background: rgba(255,59,48,.15); color: #FF6660; }
+  .pill-amber { background: rgba(245,184,46,.15); color: #F5B82E; }
+  .pill-neon { background: rgba(0,255,178,.15); color: #00FFB2; }
+  .toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+    padding: 12px 24px; border-radius: 8px; font-size: 14px;
+    z-index: 50; animation: slide .3s ease;
+  }
+  @keyframes slide { from { opacity: 0; transform: translate(-50%, 20px); } to { opacity: 1; transform: translate(-50%, 0); } }
+  .tab { padding: 10px 16px; border-bottom: 2px solid transparent; cursor: pointer; color: #9A9A9A; font-weight: 500; }
+  .tab.active { color: #EDE6D6; border-color: #00FFB2; }
+
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(90deg); }
+  .chev { transition: transform .2s; display: inline-block; }
+</style>
+</head>
+<body>
+
+<!-- ============ LOGIN SCREEN ============ -->
+<section id="login-screen" class="min-h-screen flex items-center justify-center px-4">
+  <div class="max-w-md w-full">
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center gap-2 mono text-xs uppercase tracking-widest text-neutral-500 mb-3">
+        <span class="w-2 h-2 bg-[#00FFB2] rounded-full animate-pulse"></span>
+        Nik Admin Panel
+      </div>
+      <h1 class="text-4xl font-bold tracking-tight">Вход в админку</h1>
+      <p class="text-neutral-400 mt-3 text-sm">Управляй портфолио, услугами и контактами без кода.</p>
+    </div>
+
+    <div class="card space-y-4">
+      <div>
+        <label class="label">GitHub Personal Access Token</label>
+        <input type="password" id="token" class="input mono" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" />
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="label">Owner (репо)</label>
+          <input type="text" id="owner" class="input mono" value="tinkarea07-dev" />
+        </div>
+        <div>
+          <label class="label">Repo</label>
+          <input type="text" id="repo" class="input mono" value="neyro" />
+        </div>
+      </div>
+      <div>
+        <label class="label">Ветка</label>
+        <input type="text" id="branch" class="input mono" value="main" />
+      </div>
+      <div>
+        <label class="label">Путь к JSON</label>
+        <input type="text" id="path" class="input mono" value="data/portfolio.json" />
+      </div>
+
+      <button class="btn btn-primary w-full" onclick="login()">Войти →</button>
+
+      <details class="text-xs text-neutral-400 mt-2">
+        <summary class="hover:text-neutral-200"><span class="chev">▶</span> Где взять токен?</summary>
+        <div class="mt-3 space-y-2 leading-relaxed">
+          <p>1. Открой <a href="https://github.com/settings/tokens/new?scopes=repo&description=Nik%20Admin" target="_blank" class="text-[#00FFB2] underline">эту страницу GitHub</a></p>
+          <p>2. Note: <code class="bg-neutral-800 px-1 rounded">Nik Admin</code></p>
+          <p>3. Expiration: 90 days (или больше)</p>
+          <p>4. Scope: ✅ <code class="bg-neutral-800 px-1 rounded">repo</code> (полный доступ к репо)</p>
+          <p>5. Generate token → скопируй и вставь сюда</p>
+          <p class="text-neutral-500">Токен хранится только в твоём браузере (localStorage), никуда не отправляется.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAIN ADMIN ============ -->
+<main id="main" class="hidden">
+  <header class="border-b border-neutral-800 px-6 py-4 flex items-center justify-between sticky top-0 bg-[#0F0F12] z-40">
+    <div class="flex items-center gap-4">
+      <span class="w-2 h-2 bg-[#00FFB2] rounded-full animate-pulse"></span>
+      <span class="font-bold">Nik Admin</span>
+      <span class="text-xs text-neutral-500 mono" id="repo-info"></span>
+    </div>
+    <div class="flex gap-2">
+      <a href="../index.html" target="_blank" class="btn btn-ghost text-sm">Открыть сайт ↗</a>
+      <button class="btn btn-primary" onclick="save()">💾 Сохранить</button>
+      <button class="btn btn-ghost text-sm" onclick="logout()">Выйти</button>
+    </div>
+  </header>
+
+  <!-- Tabs -->
+  <nav class="flex border-b border-neutral-800 px-6 overflow-x-auto">
+    <div class="tab active" data-tab="profile">Профиль</div>
+    <div class="tab" data-tab="stats">Цифры</div>
+    <div class="tab" data-tab="videos">YouTube видео</div>
+    <div class="tab" data-tab="projects">Проекты</div>
+    <div class="tab" data-tab="testimonials">Отзывы</div>
+  </nav>
+
+  <div class="p-6 max-w-5xl mx-auto">
+
+    <!-- Profile Tab -->
+    <div class="tab-pane" data-tab="profile">
+      <h2 class="text-2xl font-bold mb-6">Профиль</h2>
+      <div class="card space-y-4">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div><label class="label">Имя</label><input class="input" id="f-name" /></div>
+          <div><label class="label">Полное имя</label><input class="input" id="f-fullname" /></div>
+        </div>
+        <div><label class="label">Слоган</label><input class="input" id="f-tagline" /></div>
+        <div><label class="label">Био / описание</label><textarea class="input" id="f-bio" rows="3"></textarea></div>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div><label class="label">Email</label><input class="input" id="f-email" /></div>
+          <div><label class="label">Telegram</label><input class="input" id="f-telegram" /></div>
+          <div><label class="label">Телефон</label><input class="input" id="f-phone" /></div>
+        </div>
+        <h3 class="text-sm font-semibold text-neutral-400 uppercase tracking-widest pt-4 border-t border-neutral-800">Соцсети</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div><label class="label">YouTube URL</label><input class="input" id="f-youtube" /></div>
+          <div><label class="label">Kwork URL</label><input class="input" id="f-kwork" /></div>
+          <div><label class="label">Instagram</label><input class="input" id="f-instagram" /></div>
+          <div><label class="label">VK</label><input class="input" id="f-vk" /></div>
+          <div><label class="label">GitHub</label><input class="input" id="f-github" /></div>
+          <div><label class="label">YouTube handle</label><input class="input" id="f-yt-handle" /></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Tab -->
+    <div class="tab-pane hidden" data-tab="stats">
+      <h2 class="text-2xl font-bold mb-6">Статистика</h2>
+      <div class="card">
+        <div class="grid md:grid-cols-3 gap-4">
+          <div><label class="label">Подписчики (короткое)</label><input class="input" id="s-subs" placeholder="272K" /></div>
+          <div><label class="label">Подписчики (полное)</label><input class="input" id="s-subs-full" placeholder="272 000" /></div>
+          <div><label class="label">Видео-проектов</label><input class="input" id="s-videos" type="number" /></div>
+          <div><label class="label">Брендов</label><input class="input" id="s-brands" type="number" /></div>
+          <div><label class="label">Сайтов</label><input class="input" id="s-sites" type="number" /></div>
+          <div><label class="label">Лет опыта</label><input class="input" id="s-years" type="number" /></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Videos Tab -->
+    <div class="tab-pane hidden" data-tab="videos">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold">YouTube видео</h2>
+        <button class="btn btn-primary" onclick="addVideo()">+ Добавить видео</button>
+      </div>
+      <div id="videos-list" class="space-y-3"></div>
+    </div>
+
+    <!-- Projects Tab -->
+    <div class="tab-pane hidden" data-tab="projects">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold">Проекты / услуги</h2>
+        <div class="flex gap-2">
+          <select class="input" id="filter-cat" onchange="renderProjects()" style="width:auto">
+            <option value="all">Все</option>
+            <option value="montage">Монтаж</option>
+            <option value="design">Дизайн</option>
+            <option value="dev">Код</option>
+          </select>
+          <button class="btn btn-primary" onclick="addProject()">+ Добавить</button>
+        </div>
+      </div>
+      <div id="projects-list" class="space-y-3"></div>
+    </div>
+
+    <!-- Testimonials Tab -->
+    <div class="tab-pane hidden" data-tab="testimonials">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold">Отзывы</h2>
+        <button class="btn btn-primary" onclick="addTestimonial()">+ Добавить отзыв</button>
+      </div>
+      <div id="testimonials-list" class="space-y-3"></div>
+    </div>
+
+  </div>
+</main>
+
+<div id="toast"></div>
+
+<script>
+// ============ STATE ============
+let DATA = null;
+let CFG = {
+  token: '',
+  owner: 'tinkarea07-dev',
+  repo: 'neyro',
+  branch: 'main',
+  path: 'data/portfolio.json',
+  sha: ''
+};
+
+// ============ AUTH ============
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('nik-admin-cfg');
+  if (saved) {
+    const c = JSON.parse(saved);
+    document.getElementById('token').value = c.token || '';
+    document.getElementById('owner').value = c.owner || CFG.owner;
+    document.getElementById('repo').value = c.repo || CFG.repo;
+    document.getElementById('branch').value = c.branch || CFG.branch;
+    document.getElementById('path').value = c.path || CFG.path;
+    if (c.token) login();
+  }
+});
+
+async function login() {
+  CFG.token = document.getElementById('token').value.trim();
+  CFG.owner = document.getElementById('owner').value.trim();
+  CFG.repo = document.getElementById('repo').value.trim();
+  CFG.branch = document.getElementById('branch').value.trim();
+  CFG.path = document.getElementById('path').value.trim();
+  if (!CFG.token) return toast('Введите токен', 'error');
+
+  toast('Загрузка...', 'info');
+  try {
+    const url = `https://api.github.com/repos/${CFG.owner}/${CFG.repo}/contents/${CFG.path}?ref=${CFG.branch}`;
+    const res = await fetch(url, { headers: { Authorization: `Bearer ${CFG.token}`, Accept: 'application/vnd.github+json' } });
+    if (!res.ok) {
+      if (res.status === 401) return toast('Неверный токен', 'error');
+      if (res.status === 404) return toast('Файл не найден. Проверь путь.', 'error');
+      return toast(`Ошибка ${res.status}`, 'error');
+    }
+    const json = await res.json();
+    CFG.sha = json.sha;
+    DATA = JSON.parse(decodeBase64Utf8(json.content));
+
+    localStorage.setItem('nik-admin-cfg', JSON.stringify(CFG));
+    document.getElementById('login-screen').classList.add('hidden');
+    document.getElementById('main').classList.remove('hidden');
+    document.getElementById('repo-info').textContent = `${CFG.owner}/${CFG.repo} · ${CFG.branch}`;
+    fillForm();
+    toast('Готово ✓', 'success');
+  } catch (e) {
+    console.error(e);
+    toast('Ошибка: ' + e.message, 'error');
+  }
+}
+
+function logout() {
+  if (!confirm('Выйти?')) return;
+  localStorage.removeItem('nik-admin-cfg');
+  location.reload();
+}
+
+// Base64 utf-8 helpers (GitHub returns base64 with newlines)
+function decodeBase64Utf8(b64) {
+  const cleaned = b64.replace(/\n/g, '');
+  return decodeURIComponent(escape(atob(cleaned)));
+}
+function encodeBase64Utf8(str) {
+  return btoa(unescape(encodeURIComponent(str)));
+}
+
+// ============ TABS ============
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(x => x.classList.add('hidden'));
+    t.classList.add('active');
+    document.querySelector(`.tab-pane[data-tab="${t.dataset.tab}"]`).classList.remove('hidden');
+  });
+});
+
+// ============ FILL FORM ============
+function fillForm() {
+  const s = DATA.site || {};
+  document.getElementById('f-name').value = s.name || '';
+  document.getElementById('f-fullname').value = s.fullname || '';
+  document.getElementById('f-tagline').value = s.tagline || '';
+  document.getElementById('f-bio').value = s.bio || '';
+  document.getElementById('f-email').value = s.email || '';
+  document.getElementById('f-telegram').value = s.telegram || '';
+  document.getElementById('f-phone').value = s.phone || '';
+  document.getElementById('f-yt-handle').value = s.youtube_handle || '';
+  const so = s.social || {};
+  document.getElementById('f-youtube').value = so.youtube || '';
+  document.getElementById('f-kwork').value = so.kwork || '';
+  document.getElementById('f-instagram').value = so.instagram || '';
+  document.getElementById('f-vk').value = so.vk || '';
+  document.getElementById('f-github').value = so.github || '';
+
+  const st = DATA.stats || {};
+  document.getElementById('s-subs').value = st.subscribers || '';
+  document.getElementById('s-subs-full').value = st.subscribers_full || '';
+  document.getElementById('s-videos').value = st.video_projects ?? '';
+  document.getElementById('s-brands').value = st.brands ?? '';
+  document.getElementById('s-sites').value = st.websites ?? '';
+  document.getElementById('s-years').value = st.years ?? '';
+
+  renderVideos();
+  renderProjects();
+  renderTestimonials();
+}
+
+function collectForm() {
+  DATA.site = DATA.site || {};
+  DATA.site.name = v('f-name');
+  DATA.site.fullname = v('f-fullname');
+  DATA.site.tagline = v('f-tagline');
+  DATA.site.bio = v('f-bio');
+  DATA.site.email = v('f-email');
+  DATA.site.telegram = v('f-telegram');
+  DATA.site.phone = v('f-phone');
+  DATA.site.youtube_handle = v('f-yt-handle');
+  DATA.site.social = {
+    youtube: v('f-youtube'),
+    kwork: v('f-kwork'),
+    instagram: v('f-instagram'),
+    vk: v('f-vk'),
+    github: v('f-github'),
+  };
+  DATA.stats = DATA.stats || {};
+  DATA.stats.subscribers = v('s-subs');
+  DATA.stats.subscribers_full = v('s-subs-full');
+  DATA.stats.video_projects = +v('s-videos') || 0;
+  DATA.stats.brands = +v('s-brands') || 0;
+  DATA.stats.websites = +v('s-sites') || 0;
+  DATA.stats.years = +v('s-years') || 0;
+}
+const v = id => document.getElementById(id).value.trim();
+
+// ============ VIDEOS ============
+function renderVideos() {
+  const list = document.getElementById('videos-list');
+  list.innerHTML = '';
+  (DATA.videos || []).forEach((vid, i) => list.appendChild(videoCard(vid, i)));
+}
+function videoCard(vid, i) {
+  const div = document.createElement('div');
+  div.className = 'card';
+  div.innerHTML = `
+    <div class="flex gap-4">
+      <div class="w-32 flex-shrink-0">
+        ${vid.thumb ? `<img src="${vid.thumb}" class="w-full aspect-video object-cover rounded" />` : '<div class="w-full aspect-video bg-neutral-800 rounded"></div>'}
+      </div>
+      <div class="flex-1 grid md:grid-cols-2 gap-3">
+        <div><label class="label">YouTube ID или URL</label><input class="input mono" value="${vid.id || ''}" data-f="id" /></div>
+        <div><label class="label">Заголовок</label><input class="input" value="${escapeAttr(vid.title || '')}" data-f="title" /></div>
+        <div><label class="label">Тег / категория</label><input class="input" value="${escapeAttr(vid.tag || '')}" data-f="tag" /></div>
+        <div class="grid grid-cols-2 gap-2">
+          <div><label class="label">Просмотры</label><input class="input" value="${escapeAttr(vid.views || '')}" data-f="views" placeholder="100K" /></div>
+          <div><label class="label">Год</label><input class="input" value="${vid.year || ''}" data-f="year" type="number" /></div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2 justify-start">
+        <button class="btn btn-danger" onclick="removeVideo(${i})">×</button>
+      </div>
+    </div>
+  `;
+  div.querySelectorAll('[data-f]').forEach(inp => {
+    inp.addEventListener('change', e => {
+      const f = e.target.dataset.f;
+      let val = e.target.value.trim();
+      if (f === 'id') {
+        // extract id from URL if needed
+        const m = val.match(/(?:v=|youtu\.be\/|youtube\.com\/(?:embed\/|shorts\/))([a-zA-Z0-9_-]{11})/);
+        if (m) val = m[1];
+        DATA.videos[i].id = val;
+        DATA.videos[i].url = `https://www.youtube.com/watch?v=${val}`;
+        DATA.videos[i].thumb = `https://i.ytimg.com/vi/${val}/hqdefault.jpg`;
+        renderVideos();
+        return;
+      }
+      DATA.videos[i][f] = f === 'year' ? +val : val;
+    });
+  });
+  return div;
+}
+function addVideo() {
+  DATA.videos = DATA.videos || [];
+  DATA.videos.unshift({ id: '', title: '', tag: '', views: '', year: new Date().getFullYear(), url: '', thumb: '' });
+  renderVideos();
+}
+function removeVideo(i) {
+  if (!confirm('Удалить видео?')) return;
+  DATA.videos.splice(i, 1);
+  renderVideos();
+}
+
+// ============ PROJECTS ============
+function renderProjects() {
+  const list = document.getElementById('projects-list');
+  const filter = document.getElementById('filter-cat').value;
+  list.innerHTML = '';
+  const items = (DATA.projects || []).filter(p => filter === 'all' || p.category === filter);
+  if (!items.length) {
+    list.innerHTML = '<div class="card text-center text-neutral-500">Пока нет проектов в этой категории</div>';
+    return;
+  }
+  items.forEach(p => {
+    const idx = DATA.projects.indexOf(p);
+    list.appendChild(projectCard(p, idx));
+  });
+}
+function projectCard(p, i) {
+  const div = document.createElement('div');
+  div.className = 'card';
+  const pillCls = p.category === 'montage' ? 'pill-rec' : p.category === 'design' ? 'pill-amber' : 'pill-neon';
+  div.innerHTML = `
+    <div class="flex items-start justify-between gap-4 mb-3">
+      <span class="pill ${pillCls}">${p.category || 'project'}</span>
+      <button class="btn btn-danger text-sm py-1 px-3" onclick="removeProject(${i})">Удалить</button>
+    </div>
+    <div class="grid md:grid-cols-2 gap-3">
+      <div><label class="label">Категория</label>
+        <select class="input" data-f="category">
+          <option value="montage" ${p.category==='montage'?'selected':''}>Монтаж</option>
+          <option value="design" ${p.category==='design'?'selected':''}>Дизайн</option>
+          <option value="dev" ${p.category==='dev'?'selected':''}>Код</option>
+        </select>
+      </div>
+      <div><label class="label">Название</label><input class="input" value="${escapeAttr(p.title || '')}" data-f="title" /></div>
+      <div><label class="label">Тег</label><input class="input" value="${escapeAttr(p.tag || '')}" data-f="tag" /></div>
+      <div><label class="label">Год</label><input class="input" value="${p.year || ''}" data-f="year" type="number" /></div>
+      <div class="md:col-span-2"><label class="label">Описание</label><textarea class="input" rows="2" data-f="description">${escapeAttr(p.description || '')}</textarea></div>
+      <div><label class="label">Обложка (URL картинки)</label><input class="input mono" value="${escapeAttr(p.cover || '')}" data-f="cover" placeholder="https://..." /></div>
+      <div><label class="label">Видео (URL, опционально)</label><input class="input mono" value="${escapeAttr(p.video || '')}" data-f="video" placeholder="https://youtube.com/..." /></div>
+      <div class="md:col-span-2"><label class="label">Ссылка (на работу/заказ)</label><input class="input mono" value="${escapeAttr(p.link || '')}" data-f="link" /></div>
+    </div>
+  `;
+  div.querySelectorAll('[data-f]').forEach(inp => {
+    inp.addEventListener('change', e => {
+      const f = e.target.dataset.f;
+      let val = e.target.value.trim();
+      DATA.projects[i][f] = f === 'year' ? +val : val;
+      if (f === 'category') renderProjects();
+    });
+  });
+  return div;
+}
+function addProject() {
+  DATA.projects = DATA.projects || [];
+  const cat = document.getElementById('filter-cat').value;
+  DATA.projects.unshift({
+    id: 'p' + Date.now(),
+    category: cat === 'all' ? 'montage' : cat,
+    title: 'Новый проект',
+    tag: '',
+    year: new Date().getFullYear(),
+    cover: '', video: '', link: '', description: ''
+  });
+  renderProjects();
+}
+function removeProject(i) {
+  if (!confirm('Удалить проект?')) return;
+  DATA.projects.splice(i, 1);
+  renderProjects();
+}
+
+// ============ TESTIMONIALS ============
+function renderTestimonials() {
+  const list = document.getElementById('testimonials-list');
+  list.innerHTML = '';
+  (DATA.testimonials || []).forEach((t, i) => {
+    const div = document.createElement('div');
+    div.className = 'card';
+    div.innerHTML = `
+      <div class="flex items-start justify-between mb-3">
+        <span class="pill pill-amber">отзыв ${i + 1}</span>
+        <button class="btn btn-danger text-sm py-1 px-3" onclick="removeTestimonial(${i})">×</button>
+      </div>
+      <div class="space-y-3">
+        <div><label class="label">Текст отзыва</label><textarea class="input" rows="3" data-f="text">${escapeAttr(t.text || '')}</textarea></div>
+        <div class="grid md:grid-cols-2 gap-3">
+          <div><label class="label">Автор</label><input class="input" value="${escapeAttr(t.author || '')}" data-f="author" /></div>
+          <div><label class="label">Роль / описание</label><input class="input" value="${escapeAttr(t.role || '')}" data-f="role" /></div>
+        </div>
+      </div>
+    `;
+    div.querySelectorAll('[data-f]').forEach(inp => {
+      inp.addEventListener('change', e => {
+        DATA.testimonials[i][e.target.dataset.f] = e.target.value.trim();
+      });
+    });
+    list.appendChild(div);
+  });
+}
+function addTestimonial() {
+  DATA.testimonials = DATA.testimonials || [];
+  DATA.testimonials.unshift({ text: '', author: '', role: '' });
+  renderTestimonials();
+}
+function removeTestimonial(i) {
+  if (!confirm('Удалить отзыв?')) return;
+  DATA.testimonials.splice(i, 1);
+  renderTestimonials();
+}
+
+// ============ SAVE ============
+async function save() {
+  collectForm();
+  toast('Сохранение в GitHub...', 'info');
+  try {
+    const json = JSON.stringify(DATA, null, 2);
+    const url = `https://api.github.com/repos/${CFG.owner}/${CFG.repo}/contents/${CFG.path}`;
+    const res = await fetch(url, {
+      method: 'PUT',
+      headers: {
+        Authorization: `Bearer ${CFG.token}`,
+        Accept: 'application/vnd.github+json',
+      },
+      body: JSON.stringify({
+        message: 'admin: update portfolio data',
+        content: encodeBase64Utf8(json),
+        sha: CFG.sha,
+        branch: CFG.branch
+      })
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      return toast('Ошибка сохранения: ' + (err.message || res.status), 'error');
+    }
+    const result = await res.json();
+    CFG.sha = result.content.sha;
+    toast('✓ Сохранено! Сайт обновится через ~1 минуту', 'success');
+  } catch (e) {
+    console.error(e);
+    toast('Ошибка: ' + e.message, 'error');
+  }
+}
+
+// ============ HELPERS ============
+function escapeAttr(s) {
+  return String(s || '').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+function toast(msg, type = 'info') {
+  const t = document.getElementById('toast');
+  const colors = {
+    success: '#00FFB2', error: '#FF3B30', info: '#3D5AFE'
+  };
+  t.innerHTML = `<div class="toast" style="background:${colors[type]};color:#0A0A0A;font-weight:500;">${msg}</div>`;
+  clearTimeout(window._toastT);
+  window._toastT = setTimeout(() => { t.innerHTML = ''; }, 3000);
+}
+</script>
+</body>
+</html>
