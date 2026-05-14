@@ -1,0 +1,216 @@
+{
+  "site": {
+    "name": "Nik",
+    "fullname": "Nik · Nikitanext",
+    "tagline": "Блогер · Монтаж · Дизайн · Разработка",
+    "bio": "Привет! Я Nik. Развиваю YouTube-канал про дизайн и продвижение, веду стримы, помогаю каналам расти. На сайте мои услуги и работы.",
+    "email": "hello@niknext.ru",
+    "telegram": "@nikitanext2002",
+    "phone": "",
+    "youtube_handle": "@yotubeThebadBoy",
+    "social": {
+      "youtube": "https://youtube.com/@yotubeThebadBoy",
+      "kwork": "https://kwork.ru/user/nikitanext2002",
+      "instagram": "",
+      "vk": "",
+      "github": ""
+    }
+  },
+  "stats": {
+    "subscribers": "272K",
+    "subscribers_full": "272 000",
+    "video_projects": 150,
+    "brands": 25,
+    "websites": 12,
+    "years": 6
+  },
+  "hero": {
+    "kicker": "Блогер · 272K подписчиков",
+    "highlights": [
+      { "label": "YouTube",       "value": "272K", "color": "rec" },
+      { "label": "Просмотров",    "value": "10M+", "color": "amber" },
+      { "label": "Лет в YouTube", "value": "6",    "color": "bone" }
+    ]
+  },
+  "videos": [
+    {
+      "id": "3rTJUjFn17I",
+      "title": "Как сделать красивое превью пак для Photoshop",
+      "tag": "Дизайн / туториал",
+      "views": "169K",
+      "year": 2021,
+      "url": "https://www.youtube.com/watch?v=3rTJUjFn17I",
+      "thumb": "https://i.ytimg.com/vi/3rTJUjFn17I/hqdefault.jpg"
+    },
+    {
+      "id": "hddVLV7ER88",
+      "title": "Как получить галочку ВК",
+      "tag": "Соцсети",
+      "views": "110K",
+      "year": 2021,
+      "url": "https://www.youtube.com/watch?v=hddVLV7ER88",
+      "thumb": "https://i.ytimg.com/vi/hddVLV7ER88/hqdefault.jpg"
+    },
+    {
+      "id": "5BWKepeH1r4",
+      "title": "Прокачиваю новый канал за 24 часа",
+      "tag": "Продвижение",
+      "views": "85K",
+      "year": 2021,
+      "url": "https://www.youtube.com/watch?v=5BWKepeH1r4",
+      "thumb": "https://i.ytimg.com/vi/5BWKepeH1r4/hqdefault.jpg"
+    },
+    {
+      "id": "0yrv_JumppQ",
+      "title": "Как набрать подписчиков в YouTube",
+      "tag": "Продвижение",
+      "views": "82K",
+      "year": 2021,
+      "url": "https://www.youtube.com/watch?v=0yrv_JumppQ",
+      "thumb": "https://i.ytimg.com/vi/0yrv_JumppQ/hqdefault.jpg"
+    },
+    {
+      "id": "dAiZglJybXo",
+      "title": "Как я создаю свои видео пак для ютубера",
+      "tag": "Монтаж",
+      "views": "75K",
+      "year": 2020,
+      "url": "https://www.youtube.com/watch?v=dAiZglJybXo",
+      "thumb": "https://i.ytimg.com/vi/dAiZglJybXo/hqdefault.jpg"
+    },
+    {
+      "id": "65pwp4Y4nZg",
+      "title": "Вебка из телефона для стримов бесплатно",
+      "tag": "Стримы",
+      "views": "69K",
+      "year": 2020,
+      "url": "https://www.youtube.com/watch?v=65pwp4Y4nZg",
+      "thumb": "https://i.ytimg.com/vi/65pwp4Y4nZg/hqdefault.jpg"
+    },
+    {
+      "id": "D2_qEH_O_pI",
+      "title": "Купил огромный дом в 18 лет",
+      "tag": "Лайфстайл",
+      "views": "68K",
+      "year": 2020,
+      "url": "https://www.youtube.com/watch?v=D2_qEH_O_pI",
+      "thumb": "https://i.ytimg.com/vi/D2_qEH_O_pI/hqdefault.jpg"
+    },
+    {
+      "id": "fGgn6rOuAkg",
+      "title": "Как стримить с телефона на iOS и Android",
+      "tag": "Стримы",
+      "views": "67K",
+      "year": 2020,
+      "url": "https://www.youtube.com/watch?v=fGgn6rOuAkg",
+      "thumb": "https://i.ytimg.com/vi/fGgn6rOuAkg/hqdefault.jpg"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p001",
+      "category": "montage",
+      "title": "Превью для блогеров",
+      "tag": "YouTube · превью",
+      "year": 2025,
+      "cover": "",
+      "video": "",
+      "link": "https://kwork.ru/user/nikitanext2002",
+      "description": "Кликабельные превью, которые увеличивают CTR в 2-3 раза"
+    },
+    {
+      "id": "p002",
+      "category": "montage",
+      "title": "Монтаж YouTube-роликов",
+      "tag": "Монтаж · цветокор",
+      "year": 2025,
+      "cover": "",
+      "video": "",
+      "link": "https://kwork.ru/user/nikitanext2002",
+      "description": "Динамичный монтаж с переходами, графикой и звуком"
+    },
+    {
+      "id": "p003",
+      "category": "montage",
+      "title": "Reels / Shorts / TikTok",
+      "tag": "Вертикальное видео",
+      "year": 2025,
+      "cover": "",
+      "video": "",
+      "link": "https://kwork.ru/user/nikitanext2002",
+      "description": "Вирусные вертикальные ролики 9:16 с хуком в первые 2 секунды"
+    },
+    {
+      "id": "d001",
+      "category": "design",
+      "title": "Шапки канала YouTube",
+      "tag": "Оформление канала",
+      "year": 2025,
+      "cover": "",
+      "link": "https://kwork.ru/user/nikitanext2002",
+      "description": "Шапка, аватарка и watermark в едином стиле"
+    },
+    {
+      "id": "d002",
+      "category": "design",
+      "title": "Логотип / айдентика",
+      "tag": "Брендинг",
+      "year": 2025,
+      "cover": "",
+      "link": "https://kwork.ru/user/nikitanext2002",
+      "description": "Логотип канала или бренда в нескольких вариантах"
+    },
+    {
+      "id": "d003",
+      "category": "design",
+      "title": "Дизайн соцсетей",
+      "tag": "VK / Instagram",
+      "year": 2025,
+      "cover": "",
+      "link": "https://kwork.ru/user/nikitanext2002",
+      "description": "Шаблоны постов и сторис в едином визуале"
+    },
+    {
+      "id": "v001",
+      "category": "dev",
+      "title": "Сайт-визитка для блогера",
+      "tag": "HTML · Tailwind",
+      "year": 2026,
+      "cover": "",
+      "link": "https://kwork.ru/user/nikitanext2002",
+      "description": "Адаптивный лендинг для блогеров и YouTube-каналов"
+    },
+    {
+      "id": "v002",
+      "category": "dev",
+      "title": "Лендинг под услугу",
+      "tag": "Конверсионный сайт",
+      "year": 2026,
+      "cover": "",
+      "link": "https://kwork.ru/user/nikitanext2002",
+      "description": "Один экран одна цель: заявка"
+    },
+    {
+      "id": "v003",
+      "category": "dev",
+      "title": "Telegram-бот",
+      "tag": "Python · автоматизация",
+      "year": 2026,
+      "cover": "",
+      "link": "https://kwork.ru/user/nikitanext2002",
+      "description": "Боты для рассылок, ответов, поиска по ключевым словам"
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "Nik сделал мне превью CTR вырос с 4% до 11%, видео залетело на 50K за неделю.",
+      "author": "Артём К.",
+      "role": "Автор YouTube · 30K подписчиков"
+    },
+    {
+      "text": "Заказал шапку и аватарку, всё пришло за 2 дня и точно по брифу. Канал сразу стал выглядеть профессионально.",
+      "author": "Мария С.",
+      "role": "Бьюти-блогер · 12K подписчиков"
+    }
+  ]
+}

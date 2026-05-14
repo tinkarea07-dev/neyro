@@ -3,195 +3,114 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ARTEM KADR · Монтаж · Дизайн · Разработка</title>
-<meta name="description" content="Креативная студия одного человека: видеомонтаж, графический дизайн, разработка сайтов." />
+<title>Nik · Блогер 272K · Монтаж · Дизайн · Разработка</title>
+<meta name="description" content="Nik (nikitanext2002) — YouTube-блогер 272K подписчиков. Услуги: монтаж видео, превью, дизайн каналов, разработка сайтов." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&family=Bebas+Neue&family=Archivo+Black&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: {
-          mono: ['"JetBrains Mono"', 'monospace'],
-          display: ['"Bebas Neue"', 'sans-serif'],
-          poster:  ['"Archivo Black"', 'sans-serif'],
-          sans:    ['"Space Grotesk"', 'sans-serif'],
-        },
-        colors: {
-          ink: '#0A0A0A', bone: '#EDE6D6',
-          rec: '#FF3B30', amber: '#F5B82E',
-          neon: '#00FFB2', cobalt: '#3D5AFE', violet: '#8B5CF6',
-        },
+    theme: { extend: {
+      fontFamily: {
+        mono: ['"JetBrains Mono"','monospace'],
+        display: ['"Bebas Neue"','sans-serif'],
+        poster:  ['"Archivo Black"','sans-serif'],
+        sans:    ['"Space Grotesk"','sans-serif'],
       },
-    },
+      colors: {
+        ink:'#0A0A0A', bone:'#EDE6D6',
+        rec:'#FF3B30', amber:'#F5B82E',
+        neon:'#00FFB2', cobalt:'#3D5AFE', violet:'#8B5CF6',
+        ytred:'#FF0033'
+      },
+    } },
   };
 </script>
 <style>
   html { scroll-behavior: smooth; }
-  body {
-    background: #0A0A0A; color: #EDE6D6;
-    font-family: 'Space Grotesk', sans-serif;
-    overflow-x: hidden;
-    min-height: 100vh;
-  }
-  ::selection { background: #FF3B30; color: #0A0A0A; }
+  body { background:#0A0A0A; color:#EDE6D6; font-family:'Space Grotesk',sans-serif; overflow-x:hidden; min-height:100vh; }
+  ::selection { background:#FF3B30; color:#0A0A0A; }
 
-  /* Grain */
-  .grain::before {
-    content: '';
-    position: fixed; inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
-    opacity: .08; pointer-events: none; z-index: 9990;
-    mix-blend-mode: overlay;
-  }
+  .grain::before { content:''; position:fixed; inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+    opacity:.08; pointer-events:none; z-index:9990; mix-blend-mode:overlay; }
 
-  /* Hub portals */
-  .portal {
-    position: relative;
-    overflow: hidden;
-    transition: flex .8s cubic-bezier(.2,.7,.2,1);
-    cursor: pointer;
-  }
-  .portal-content {
-    transition: transform .6s cubic-bezier(.2,.7,.2,1), opacity .4s;
-  }
+  .portal { position:relative; overflow:hidden; transition:flex .8s cubic-bezier(.2,.7,.2,1); cursor:pointer; }
+  .portal-content { transition:transform .6s cubic-bezier(.2,.7,.2,1), opacity .4s; }
 
-  /* CINEMA portal: filmstrip */
-  .portal-cinema {
-    background: #0A0A0A;
-  }
-  .portal-cinema::before {
-    content: '';
-    position: absolute; inset: 0;
-    background:
-      radial-gradient(circle at 30% 50%, rgba(255,59,48,0.25), transparent 60%),
-      url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n2)' opacity='0.4'/%3E%3C/svg%3E");
-    background-size: cover;
-    opacity: .8;
-  }
-  .filmstrip {
-    position: absolute;
-    left: -8px; right: -8px;
-    height: 22px;
+  .portal-cinema { background:#0A0A0A; }
+  .portal-cinema::before { content:''; position:absolute; inset:0;
+    background: radial-gradient(circle at 30% 50%, rgba(255,59,48,0.25), transparent 60%), url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n2)' opacity='0.4'/%3E%3C/svg%3E");
+    background-size:cover; opacity:.8; }
+  .filmstrip { position:absolute; left:-8px; right:-8px; height:22px;
     background-image: radial-gradient(circle, #0A0A0A 4px, transparent 5px);
-    background-size: 24px 22px;
-    background-position: 0 0;
-    background-color: #1a1a1a;
+    background-size:24px 22px; background-position:0 0; background-color:#1a1a1a; }
+
+  .portal-design { background:#FAF7F2; color:#0A0A0A; }
+  .portal-design::before { content:''; position:absolute; inset:0;
+    background-image: radial-gradient(rgba(10,10,10,0.18) 1px, transparent 1px);
+    background-size:6px 6px; opacity:.5; }
+
+  .portal-dev { background:#050810; color:#00FFB2; }
+  .portal-dev::before { content:''; position:absolute; inset:0;
+    background: linear-gradient(rgba(0,255,178,0.07) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,255,178,0.07) 1px, transparent 1px);
+    background-size:32px 32px; }
+  .portal-dev::after { content:''; position:absolute; inset:0;
+    background: radial-gradient(ellipse at center, transparent 0%, #050810 80%); }
+
+  .coderain { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+  .coderain span { position:absolute; top:-20%;
+    font-family:'JetBrains Mono',monospace; font-size:14px; color:#00FFB2; opacity:.55;
+    writing-mode:vertical-rl; text-orientation:mixed; letter-spacing:2px;
+    animation:rain linear infinite; text-shadow:0 0 6px rgba(0,255,178,0.6); }
+  @keyframes rain { to { top:110%; } }
+
+  @media (min-width:768px) {
+    .portals { display:flex; height:calc(100vh - 80px); min-height:540px; }
+    .portal { flex:1; }
+    .portals:hover .portal { flex:.7; filter:brightness(.6) saturate(.6); }
+    .portals:hover .portal:hover { flex:1.6; filter:brightness(1.1) saturate(1.3); }
   }
 
-  /* DESIGN portal: memphis */
-  .portal-design {
-    background: #F5B82E;
-    color: #0A0A0A;
-  }
-  .portal-design::before {
-    content: '';
-    position: absolute; inset: 0;
-    background-image:
-      radial-gradient(circle at 80% 20%, #FF3B30 0 40px, transparent 41px),
-      radial-gradient(circle at 20% 80%, #3D5AFE 0 60px, transparent 61px),
-      linear-gradient(45deg, transparent 48%, #0A0A0A 49%, #0A0A0A 51%, transparent 52%),
-      linear-gradient(-45deg, transparent 48%, #0A0A0A 49%, #0A0A0A 51%, transparent 52%);
-    background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
-    opacity: .9;
-  }
-
-  /* DEV portal: matrix grid */
-  .portal-dev {
-    background: #050810;
-    color: #00FFB2;
-  }
-  .portal-dev::before {
-    content: '';
-    position: absolute; inset: 0;
-    background:
-      linear-gradient(rgba(0,255,178,0.07) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,255,178,0.07) 1px, transparent 1px);
-    background-size: 32px 32px;
-  }
-  .portal-dev::after {
-    content: '';
-    position: absolute; inset: 0;
-    background: radial-gradient(ellipse at center, transparent 0%, #050810 80%);
-  }
-
-  /* Code rain */
-  .coderain {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-    pointer-events: none;
-  }
-  .coderain span {
-    position: absolute;
-    top: -20%;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 14px;
-    color: #00FFB2;
-    opacity: 0.55;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    letter-spacing: 2px;
-    animation: rain linear infinite;
-    text-shadow: 0 0 6px rgba(0,255,178,0.6);
-  }
-  @keyframes rain {
-    to { top: 110%; }
-  }
-
-  /* Hover effects per portal */
-  @media (min-width: 768px) {
-    .portals { display: flex; height: calc(100vh - 80px); }
-    .portal { flex: 1; }
-    .portals:hover .portal { flex: 0.7; filter: brightness(0.6) saturate(0.6); }
-    .portals:hover .portal:hover { flex: 1.6; filter: brightness(1.1) saturate(1.3); }
-  }
-
-  /* Big number */
-  .big-num {
-    font-family: 'Archivo Black', sans-serif;
-    line-height: 0.85;
-  }
-
-  /* Top bar pulse */
-  .rec-dot {
-    width: 8px; height: 8px;
-    background: #FF3B30; border-radius: 50%;
-    animation: pulse 1s infinite;
-  }
+  .big-num { font-family:'Archivo Black',sans-serif; line-height:.85; }
+  .rec-dot { width:8px; height:8px; background:#FF3B30; border-radius:50%; animation:pulse 1s infinite; }
   @keyframes pulse {
-    0%,100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255,59,48,0.6); }
-    50%     { opacity: .5; box-shadow: 0 0 0 6px rgba(255,59,48,0); }
+    0%,100% { opacity:1; box-shadow:0 0 0 0 rgba(255,59,48,0.6); }
+    50%     { opacity:.5; box-shadow:0 0 0 6px rgba(255,59,48,0); }
   }
 
-  /* Marquee */
-  .marquee { display: flex; overflow: hidden; gap: 3rem; }
-  .marquee-track {
-    display: flex; gap: 3rem; flex-shrink: 0;
-    animation: marquee 25s linear infinite;
-  }
-  @keyframes marquee {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-100%); }
-  }
+  .marquee { display:flex; overflow:hidden; gap:3rem; }
+  .marquee-track { display:flex; gap:3rem; flex-shrink:0; animation:marquee 25s linear infinite; }
+  @keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-100%); } }
 
-  /* Chromatic */
-  .chroma { position: relative; display: inline-block; }
+  .chroma { position:relative; display:inline-block; }
   .chroma::before, .chroma::after {
-    content: attr(data-text); position: absolute; left: 0; top: 0;
-    width: 100%; height: 100%; pointer-events: none;
+    content:attr(data-text); position:absolute; left:0; top:0;
+    width:100%; height:100%; pointer-events:none;
   }
-  .chroma::before { color: #FF3B30; transform: translate(-3px,0); mix-blend-mode: screen; }
-  .chroma::after  { color: #00FFB2; transform: translate(3px,0);  mix-blend-mode: screen; }
+  .chroma::before { color:#FF3B30; transform:translate(-3px,0); mix-blend-mode:screen; }
+  .chroma::after  { color:#00FFB2; transform:translate(3px,0);  mix-blend-mode:screen; }
 
-  /* Reveal */
-  .reveal { opacity: 0; transform: translateY(20px); transition: all .8s; }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal { opacity:0; transform:translateY(20px); transition:all .8s; }
+  .reveal.visible { opacity:1; transform:translateY(0); }
+
+  /* YouTube card */
+  .yt-card {
+    border:1px solid rgba(237,230,214,0.12);
+    transition: border-color .3s, transform .3s;
+    background: #111;
+  }
+  .yt-card:hover { border-color:#FF0033; transform: translateY(-4px); }
+  .yt-card .play {
+    position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+    background:rgba(0,0,0,0.3);
+    opacity:0; transition:opacity .3s;
+  }
+  .yt-card:hover .play { opacity:1; }
 
   @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { animation: none !important; transition: none !important; }
+    *, *::before, *::after { animation:none !important; transition:none !important; }
   }
 </style>
 </head>
@@ -202,7 +121,7 @@
 <header class="px-4 md:px-8 py-4 border-b border-bone/10 flex items-center justify-between font-mono text-xs uppercase tracking-widest">
   <div class="flex items-center gap-3">
     <span class="rec-dot"></span>
-    <span class="text-bone">ARTEM KADR · STUDIO</span>
+    <span class="text-bone">NIK · 272K SUBS</span>
   </div>
   <nav class="hidden md:flex gap-2">
     <a href="index.html"   class="px-3 py-1 bg-bone text-ink">HUB</a>
@@ -210,43 +129,61 @@
     <a href="design.html"  class="px-3 py-1 text-bone/60 hover:text-bone">ДИЗАЙН</a>
     <a href="dev.html"     class="px-3 py-1 text-bone/60 hover:text-bone">КОД</a>
   </nav>
-  <div class="text-bone/60">2026</div>
+  <a href="https://youtube.com/@yotubeThebadBoy" target="_blank" class="text-bone/70 hover:text-ytred">YouTube ↗</a>
 </header>
 
 <!-- ============ HERO LINE ============ -->
 <section class="px-4 md:px-8 py-10 md:py-14 border-b border-bone/10">
   <div class="max-w-7xl mx-auto">
-    <div class="font-mono text-xs uppercase tracking-[0.3em] text-bone/50 mb-4">// СТУДИЯ ОДНОГО ЧЕЛОВЕКА</div>
+    <div class="font-mono text-xs uppercase tracking-[0.3em] text-bone/50 mb-4 flex items-center gap-3">
+      <span class="rec-dot"></span> Блогер · 272K подписчиков на YouTube
+    </div>
     <h1 class="font-poster text-[14vw] md:text-[8vw] leading-[0.85] tracking-tight">
-      Я <span class="text-rec">монтирую</span>,<br/>
+      Я <span class="chroma" data-text="монтирую">монтирую</span>,<br/>
       <span class="text-amber">проектирую</span> и<br/>
-      <span class="chroma" data-text="программирую">программирую</span>.
+      <span class="text-ytred">снимаю YouTube</span>.
     </h1>
-    <p class="mt-8 max-w-2xl text-bone/70 text-lg">
-      Три ремесла под одной крышей. Выбери нужное направление — каждое со своим миром, своей логикой и своими работами.
-    </p>
+    <div class="grid md:grid-cols-12 gap-6 mt-8">
+      <p class="md:col-span-7 text-bone/70 text-lg max-w-3xl">
+        Привет! Я <span class="text-bone font-semibold">Nik</span>. Развиваю канал про дизайн и продвижение, веду стримы, помогаю каналам расти.
+        Беру заказы на превью, монтаж, оформление каналов и сайты — выбирай направление ниже.
+      </p>
+      <div class="md:col-span-5 flex gap-3 items-end">
+        <div class="flex-1 border-l-2 border-rec pl-3">
+          <div class="big-num text-3xl md:text-4xl text-bone">272K</div>
+          <div class="font-mono text-[10px] uppercase text-bone/60 mt-1">YouTube</div>
+        </div>
+        <div class="flex-1 border-l-2 border-amber pl-3">
+          <div class="big-num text-3xl md:text-4xl text-bone">10M+</div>
+          <div class="font-mono text-[10px] uppercase text-bone/60 mt-1">Просмотров</div>
+        </div>
+        <div class="flex-1 border-l-2 border-bone/40 pl-3">
+          <div class="big-num text-3xl md:text-4xl text-bone">6</div>
+          <div class="font-mono text-[10px] uppercase text-bone/60 mt-1">Лет</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ============ THREE PORTALS ============ -->
 <section class="portals">
 
-  <!-- CINEMA -->
+  <!-- CINEMA / MONTAGE -->
   <a href="montage.html" class="portal portal-cinema flex items-end p-6 md:p-10 group">
-    <div class="filmstrip" style="top: 40px;"></div>
-    <div class="filmstrip" style="bottom: 40px;"></div>
+    <div class="filmstrip" style="top:40px;"></div>
+    <div class="filmstrip" style="bottom:40px;"></div>
     <div class="portal-content relative z-10 w-full">
       <div class="font-mono text-xs uppercase tracking-[0.3em] text-bone/60 mb-4 flex items-center gap-2">
-        <span class="rec-dot"></span> 01 / CINEMA
+        <span class="rec-dot"></span> 01 / VIDEO
       </div>
       <div class="big-num text-rec text-7xl md:text-9xl mb-2">01</div>
       <h2 class="font-display text-5xl md:text-7xl text-bone leading-none">МОНТАЖ</h2>
-      <p class="text-bone/70 text-sm md:text-base mt-4 max-w-xs">Клипы, реклама, YouTube, документалки. Цветокор и VFX.</p>
+      <p class="text-bone/70 text-sm md:text-base mt-4 max-w-xs">YouTube-ролики, превью, Reels, Shorts. Цветокор и звук.</p>
       <div class="mt-8 inline-flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-bone/80 group-hover:text-rec transition">
-        Смотреть showreel
+        Смотреть работы
         <span class="w-0 h-0 border-l-[8px] border-l-current border-y-[6px] border-y-transparent"></span>
       </div>
-      <!-- Mini timeline decor -->
       <div class="mt-6 space-y-1 max-w-xs">
         <div class="h-2 bg-rec/60"></div>
         <div class="h-2 bg-amber/60 w-2/3"></div>
@@ -258,21 +195,20 @@
   <!-- DESIGN -->
   <a href="design.html" class="portal portal-design flex items-end p-6 md:p-10 group">
     <div class="portal-content relative z-10 w-full">
-      <div class="font-mono text-xs uppercase tracking-[0.3em] text-ink/70 mb-4 flex items-center gap-2">
-        <span class="w-2 h-2 bg-ink"></span> 02 / DESIGN
+      <div class="font-mono text-xs uppercase tracking-[0.3em] text-ink/60 mb-4 flex items-center gap-2">
+        <span class="w-2 h-2 bg-ink rounded-full"></span> 02 / DESIGN
       </div>
-      <div class="big-num text-ink text-7xl md:text-9xl mb-2">02</div>
+      <div class="big-num text-ink text-7xl md:text-9xl mb-2" style="font-family:'Fraunces',serif;font-style:italic;font-weight:300;color:#A88752;">02</div>
       <h2 class="font-poster text-5xl md:text-7xl text-ink leading-none">ДИЗАЙН</h2>
-      <p class="text-ink/80 text-sm md:text-base mt-4 max-w-xs font-medium">Брендинг, лендинги, постеры, айдентика. Смело и по делу.</p>
+      <p class="text-ink/70 text-sm md:text-base mt-4 max-w-xs">Превью, шапки каналов, логотипы, оформление соцсетей.</p>
       <div class="mt-8 inline-flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-ink group-hover:gap-6 transition-all">
         Открыть портфолио →
       </div>
-      <!-- Memphis shapes decor -->
       <div class="mt-6 flex gap-2 items-center">
-        <span class="w-10 h-10 rounded-full bg-rec border-2 border-ink"></span>
-        <span class="w-10 h-10 bg-cobalt border-2 border-ink rotate-45"></span>
-        <span class="w-10 h-10 bg-ink"></span>
-        <span class="w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[28px] border-b-ink"></span>
+        <span class="w-8 h-8 rounded-full bg-rec"></span>
+        <span class="w-8 h-8 bg-cobalt rotate-45"></span>
+        <span class="w-8 h-8 bg-ink"></span>
+        <span class="w-8 h-8 bg-amber rounded-full"></span>
       </div>
     </div>
   </a>
@@ -282,21 +218,20 @@
     <div class="coderain" id="coderain-hub"></div>
     <div class="portal-content relative z-10 w-full">
       <div class="font-mono text-xs uppercase tracking-[0.3em] text-neon/70 mb-4 flex items-center gap-2">
-        <span class="w-2 h-2 bg-neon"></span> 03 / CODE
+        <span class="w-2 h-2 bg-neon rounded-full"></span> 03 / CODE
       </div>
-      <div class="big-num text-neon text-7xl md:text-9xl mb-2" style="text-shadow: 0 0 20px rgba(0,255,178,0.5);">03</div>
+      <div class="big-num text-neon text-7xl md:text-9xl mb-2" style="text-shadow:0 0 20px rgba(0,255,178,0.5);">03</div>
       <h2 class="font-mono text-3xl md:text-5xl text-neon leading-none">&lt;dev /&gt;</h2>
-      <p class="text-neon/70 text-sm md:text-base mt-4 max-w-xs font-mono">Сайты, веб-приложения, интеграции. React · Next · Tailwind.</p>
+      <p class="text-neon/70 text-sm md:text-base mt-4 max-w-xs font-mono">Сайты, лендинги, Telegram-боты, автоматизация.</p>
       <div class="mt-8 inline-flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-neon group-hover:tracking-[0.4em] transition-all">
         $ open ./projects
       </div>
-      <!-- Code preview -->
-      <pre class="mt-6 font-mono text-[10px] text-neon/70 leading-relaxed">
+<pre class="mt-6 font-mono text-[10px] text-neon/70 leading-relaxed">
 <span class="text-bone/60">// stack</span>
 const <span class="text-amber">stack</span> = [
-  <span class="text-rec">'React'</span>,
-  <span class="text-rec">'Next.js'</span>,
-  <span class="text-rec">'Tailwind'</span>
+  <span class="text-rec">'HTML'</span>,
+  <span class="text-rec">'Tailwind'</span>,
+  <span class="text-rec">'Python'</span>
 ];</pre>
     </div>
   </a>
@@ -308,51 +243,82 @@ const <span class="text-amber">stack</span> = [
   <div class="marquee">
     <div class="marquee-track font-display text-4xl md:text-6xl whitespace-nowrap text-bone/60">
       <span>МОНТАЖ</span><span class="text-rec">●</span>
-      <span>БРЕНДИНГ</span><span class="text-amber">●</span>
-      <span>WEB DEV</span><span class="text-neon">●</span>
-      <span>МОТИОН</span><span class="text-rec">●</span>
-      <span>UI/UX</span><span class="text-amber">●</span>
-      <span>ЦВЕТОКОР</span><span class="text-neon">●</span>
+      <span>ПРЕВЬЮ</span><span class="text-amber">●</span>
+      <span>ШАПКИ КАНАЛОВ</span><span class="text-neon">●</span>
+      <span>REELS</span><span class="text-rec">●</span>
+      <span>САЙТЫ</span><span class="text-amber">●</span>
+      <span>ЛОГОТИПЫ</span><span class="text-neon">●</span>
     </div>
     <div class="marquee-track font-display text-4xl md:text-6xl whitespace-nowrap text-bone/60" aria-hidden="true">
       <span>МОНТАЖ</span><span class="text-rec">●</span>
-      <span>БРЕНДИНГ</span><span class="text-amber">●</span>
-      <span>WEB DEV</span><span class="text-neon">●</span>
-      <span>МОТИОН</span><span class="text-rec">●</span>
-      <span>UI/UX</span><span class="text-amber">●</span>
-      <span>ЦВЕТОКОР</span><span class="text-neon">●</span>
+      <span>ПРЕВЬЮ</span><span class="text-amber">●</span>
+      <span>ШАПКИ КАНАЛОВ</span><span class="text-neon">●</span>
+      <span>REELS</span><span class="text-rec">●</span>
+      <span>САЙТЫ</span><span class="text-amber">●</span>
+      <span>ЛОГОТИПЫ</span><span class="text-neon">●</span>
     </div>
   </div>
 </div>
 
-<!-- ============ STATS / META ============ -->
-<section class="px-4 md:px-8 py-20">
+<!-- ============ YOUTUBE CHANNEL ============ -->
+<section id="youtube" class="px-4 md:px-8 py-20 border-t border-bone/10">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-end justify-between mb-10 reveal">
+      <div>
+        <div class="font-mono text-xs uppercase tracking-[0.3em] text-bone/50 mb-3 flex items-center gap-2">
+          <span class="w-2 h-2 bg-ytred"></span> // YOUTUBE
+        </div>
+        <h2 class="font-display text-5xl md:text-7xl">
+          МОЙ КАНАЛ <span class="text-ytred">→</span>
+        </h2>
+      </div>
+      <a href="https://youtube.com/@yotubeThebadBoy" target="_blank" class="hidden md:inline-flex items-center gap-2 bg-ytred text-bone px-5 py-3 font-mono uppercase text-xs tracking-widest hover:bg-bone hover:text-ink transition">
+        Подписаться · 272K
+      </a>
+    </div>
+
+    <div id="yt-grid" class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+      <!-- filled by JS from data/portfolio.json (videos[]) -->
+    </div>
+
+    <div class="mt-8 md:hidden">
+      <a href="https://youtube.com/@yotubeThebadBoy" target="_blank" class="block text-center bg-ytred text-bone py-3 font-mono uppercase text-xs tracking-widest">
+        Подписаться · 272K
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="px-4 md:px-8 py-20 border-t border-bone/10">
   <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-6 reveal">
-    <div class="border-l-2 border-rec pl-4">
-      <div class="big-num text-5xl text-bone">247</div>
-      <div class="font-mono text-xs uppercase text-bone/60 mt-2">Видеопроектов</div>
+    <div class="border-l-2 border-ytred pl-4">
+      <div class="big-num text-5xl text-bone">272K</div>
+      <div class="font-mono text-xs uppercase text-bone/60 mt-2">Подписчиков на YouTube</div>
     </div>
     <div class="border-l-2 border-amber pl-4">
-      <div class="big-num text-5xl text-bone">38</div>
-      <div class="font-mono text-xs uppercase text-bone/60 mt-2">Брендов</div>
+      <div class="big-num text-5xl text-bone">150+</div>
+      <div class="font-mono text-xs uppercase text-bone/60 mt-2">Видео-проектов</div>
     </div>
     <div class="border-l-2 border-neon pl-4">
-      <div class="big-num text-5xl text-bone">19</div>
-      <div class="font-mono text-xs uppercase text-bone/60 mt-2">Сайтов в&nbsp;продакшене</div>
+      <div class="big-num text-5xl text-bone">12+</div>
+      <div class="font-mono text-xs uppercase text-bone/60 mt-2">Сайтов</div>
     </div>
     <div class="border-l-2 border-bone/40 pl-4">
-      <div class="big-num text-5xl text-bone">8</div>
-      <div class="font-mono text-xs uppercase text-bone/60 mt-2">Лет практики</div>
+      <div class="big-num text-5xl text-bone">6 лет</div>
+      <div class="font-mono text-xs uppercase text-bone/60 mt-2">Опыта в YouTube</div>
     </div>
   </div>
 </section>
 
 <!-- ============ FOOTER ============ -->
 <footer class="px-4 md:px-8 py-8 border-t border-bone/10 font-mono text-xs uppercase tracking-widest text-bone/50 flex flex-col md:flex-row justify-between gap-4">
-  <div>© 2026 ARTEM KADR · ALL CRAFTS</div>
-  <div class="flex gap-6">
-    <a href="mailto:hello@artemkadr.ru" class="hover:text-bone">hello@artemkadr.ru</a>
-    <a href="https://t.me/artemkadr" class="hover:text-bone">@artemkadr</a>
+  <div>© 2026 NIK · NIKITANEXT2002</div>
+  <div class="flex gap-6 flex-wrap">
+    <a href="https://youtube.com/@yotubeThebadBoy" target="_blank" class="hover:text-ytred">YouTube</a>
+    <a href="https://kwork.ru/user/nikitanext2002" target="_blank" class="hover:text-bone">Kwork</a>
+    <a href="https://t.me/nikitanext2002" class="hover:text-bone">Telegram</a>
+    <a href="admin/" class="hover:text-amber">Admin</a>
   </div>
 </footer>
 
@@ -373,7 +339,7 @@ const <span class="text-amber">stack</span> = [
       s.style.left = (i / cols * 100 + Math.random()*4) + '%';
       s.style.animationDuration = (3 + Math.random()*5) + 's';
       s.style.animationDelay = (Math.random()*5) + 's';
-      s.style.opacity = (0.25 + Math.random()*0.5).toString();
+      s.style.opacity = (.25 + Math.random()*.5).toString();
       root.appendChild(s);
     }
   })();
@@ -383,6 +349,37 @@ const <span class="text-amber">stack</span> = [
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Load YouTube videos from data
+  (async function loadYT(){
+    try {
+      const res = await fetch('data/portfolio.json', { cache:'no-store' });
+      if (!res.ok) return;
+      const data = await res.json();
+      const grid = document.getElementById('yt-grid');
+      if (!grid || !data.videos) return;
+      grid.innerHTML = data.videos.map(v => `
+        <a href="${v.url}" target="_blank" rel="noopener" class="yt-card relative overflow-hidden block reveal">
+          <div class="aspect-video relative">
+            <img src="${v.thumb}" alt="${v.title}" loading="lazy" class="w-full h-full object-cover" />
+            <div class="play">
+              <div class="w-14 h-14 rounded-full bg-ytred flex items-center justify-center">
+                <span class="w-0 h-0 border-l-[12px] border-l-bone border-y-[8px] border-y-transparent ml-1"></span>
+              </div>
+            </div>
+            <div class="absolute bottom-2 right-2 bg-ink/85 text-bone font-mono text-[10px] px-2 py-0.5">
+              ${v.views} · ${v.year}
+            </div>
+          </div>
+          <div class="p-3">
+            <div class="text-bone text-sm leading-snug line-clamp-2">${v.title}</div>
+            <div class="font-mono text-[10px] text-bone/50 mt-2 uppercase">${v.tag}</div>
+          </div>
+        </a>
+      `).join('');
+      grid.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    } catch(e) { console.warn(e); }
+  })();
 </script>
 </body>
 </html>
