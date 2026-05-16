@@ -155,10 +155,52 @@ class TelegramCommentator:
                     self.logger.warning(f"⚠️ Не удалось удалить временный файл: {e}")
     
     def start_telegram_client(self):
-        """Запускает клиент Telegram"""
-        self.logger.info("🔌 Подключение к Telegram...")
-        self.client = TelegramClient(Config.SESSION_NAME, self.api_id, self.api_hash)
-        self.client.start()
+        """Запускает клиент Telegram с понятной диагностикой прокси."""
+        proxy = Config.get_telegram_proxy()
+        self.logger.info(f"🔌 Подключение к Telegram ({Config.describe_telegram_proxy()})...")
+
+        client_kwargs = {
+            'connection_retries': Config.TELEGRAM_CONNECTION_RETRIES,
+            'timeout': Config.TELEGRAM_TIMEOUT,
+            'auto_reconnect': True,
+        }
+        if proxy:
+            client_kwargs['proxy'] = proxy
+
+        self.client = TelegramClient(
+            Config.SESSION_NAME,
+            self.api_id,
+            self.api_hash,
+            **client_kwargs,
+        )
+
+        try:
+            self.client.start()
+        except Exception as e:
+            self.logger.error(f"❌ Ошибка подключения к Telegram: {e}")
+            if proxy:
+                self.logger.error(
+                    "❌ Прокси не отвечает или Telegram недоступен через него. "
+                    "Проверьте IP/порт/тип/логин/пароль, доступность прокси и переменную TELEGRAM_PROXY."
+                )
+                if Config.TELEGRAM_PROXY_FALLBACK_DIRECT:
+                    self.logger.warning("⚠️ Пробую подключиться напрямую без прокси (TELEGRAM_PROXY_FALLBACK_DIRECT=true)...")
+                    self.client = TelegramClient(
+                        Config.SESSION_NAME,
+                        self.api_id,
+                        self.api_hash,
+                        connection_retries=Config.TELEGRAM_CONNECTION_RETRIES,
+                        timeout=Config.TELEGRAM_TIMEOUT,
+                        auto_reconnect=True,
+                    )
+                    self.client.start()
+                else:
+                    raise RuntimeError(
+                        "Connection to Telegram failed через прокси. "
+                        "Замените прокси или включите TELEGRAM_PROXY_FALLBACK_DIRECT=true для прямого подключения."
+                    ) from e
+            else:
+                raise
         
         me = self.client.get_me()
         self.logger.info(f"✅ Подключен как: {me.first_name} (@{me.username or 'нет'})")
