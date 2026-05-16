@@ -8,66 +8,153 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-  body { font-family: 'Inter', sans-serif; background: #0F0F12; color: #EDE6D6; min-height: 100vh; }
-  .mono { font-family: 'JetBrains Mono', monospace; }
-  ::selection { background: #FF3B30; color: #0A0A0A; }
+  :root {
+    --bg: #07080d;
+    --panel: rgba(18, 21, 32, 0.76);
+    --panel-strong: rgba(25, 29, 44, 0.92);
+    --line: rgba(255, 255, 255, 0.10);
+    --muted: #9aa4b2;
+    --text: #f6efe4;
+    --lime: #67f7c1;
+    --cyan: #6ae7ff;
+    --red: #ff4f5e;
+    --amber: #ffc866;
+    --violet: #9b7cff;
+  }
 
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background:
+      radial-gradient(circle at 12% 10%, rgba(103, 247, 193, .18), transparent 28rem),
+      radial-gradient(circle at 82% 2%, rgba(155, 124, 255, .18), transparent 26rem),
+      linear-gradient(135deg, #07080d 0%, #10131e 50%, #08090f 100%);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: .28;
+    background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+    background-size: 52px 52px;
+    mask-image: linear-gradient(to bottom, #000, transparent 80%);
+  }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  ::selection { background: var(--lime); color: #06100d; }
+
+  .shell { width: min(1180px, calc(100vw - 32px)); margin: 0 auto; }
+  .glass {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    box-shadow: 0 24px 80px rgba(0,0,0,.38), inset 0 1px rgba(255,255,255,.06);
+    backdrop-filter: blur(18px);
+  }
   .input {
-    background: #1A1A1F; border: 1px solid #2A2A30;
-    padding: 10px 14px; border-radius: 6px; color: #EDE6D6; font-size: 14px;
-    width: 100%; transition: border-color .2s;
+    background: rgba(6, 8, 13, .76);
+    border: 1px solid rgba(255,255,255,.12);
+    padding: 12px 14px;
+    border-radius: 14px;
+    color: var(--text);
+    font-size: 14px;
+    width: 100%;
+    transition: border-color .2s, box-shadow .2s, background .2s;
   }
-  .input:focus { outline: none; border-color: #00FFB2; }
-  textarea.input { font-family: 'JetBrains Mono', monospace; min-height: 80px; }
-  .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: #9A9A9A; margin-bottom: 6px; display: block; }
+  .input:focus { outline: none; border-color: rgba(103,247,193,.82); box-shadow: 0 0 0 4px rgba(103,247,193,.12); background: rgba(10, 13, 21, .94); }
+  textarea.input { font-family: 'JetBrains Mono', monospace; min-height: 92px; resize: vertical; }
+  .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--muted); margin-bottom: 7px; display: block; font-weight: 700; }
   .btn {
-    padding: 10px 18px; border-radius: 6px; font-weight: 500; font-size: 14px;
-    transition: all .2s; cursor: pointer; border: none;
+    padding: 11px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: transform .2s, border-color .2s, background .2s, box-shadow .2s;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
   }
-  .btn-primary { background: #00FFB2; color: #0A0A0A; }
-  .btn-primary:hover { background: #00D499; }
-  .btn-ghost { background: transparent; color: #EDE6D6; border: 1px solid #2A2A30; }
-  .btn-ghost:hover { border-color: #EDE6D6; }
-  .btn-danger { background: #FF3B30; color: #fff; }
-  .btn-danger:hover { background: #D62828; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: linear-gradient(135deg, var(--lime), var(--cyan)); color: #06100d; box-shadow: 0 14px 36px rgba(103,247,193,.20); }
+  .btn-primary:hover { box-shadow: 0 18px 46px rgba(103,247,193,.28); }
+  .btn-ghost { background: rgba(255,255,255,.04); color: var(--text); border-color: rgba(255,255,255,.12); }
+  .btn-ghost:hover { border-color: rgba(103,247,193,.55); background: rgba(103,247,193,.08); }
+  .btn-danger { background: rgba(255,79,94,.16); color: #ffd7db; border-color: rgba(255,79,94,.32); }
+  .btn-danger:hover { background: rgba(255,79,94,.25); }
   .card {
-    background: #16161B; border: 1px solid #25252B; border-radius: 10px;
-    padding: 20px; transition: border-color .2s;
+    background: var(--panel-strong);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    padding: 22px;
+    box-shadow: 0 18px 48px rgba(0,0,0,.24);
+    transition: border-color .2s, transform .2s;
   }
-  .card:hover { border-color: #3A3A42; }
+  .card:hover { border-color: rgba(103,247,193,.28); transform: translateY(-1px); }
   .pill {
-    display: inline-block; padding: 3px 10px; border-radius: 999px;
-    font-size: 11px; text-transform: uppercase; letter-spacing: .1em;
+    display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 999px;
+    font-size: 10px; text-transform: uppercase; letter-spacing: .12em; font-weight: 800; border: 1px solid currentColor;
   }
-  .pill-rec { background: rgba(255,59,48,.15); color: #FF6660; }
-  .pill-amber { background: rgba(245,184,46,.15); color: #F5B82E; }
-  .pill-neon { background: rgba(0,255,178,.15); color: #00FFB2; }
+  .pill-rec { background: rgba(255,79,94,.12); color: var(--red); }
+  .pill-amber { background: rgba(255,200,102,.12); color: var(--amber); }
+  .pill-neon { background: rgba(103,247,193,.12); color: var(--lime); }
   .toast {
     position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
-    padding: 12px 24px; border-radius: 8px; font-size: 14px;
-    z-index: 50; animation: slide .3s ease;
+    padding: 13px 22px; border-radius: 999px; font-size: 14px;
+    z-index: 50; animation: slide .3s ease; box-shadow: 0 18px 48px rgba(0,0,0,.34);
   }
   @keyframes slide { from { opacity: 0; transform: translate(-50%, 20px); } to { opacity: 1; transform: translate(-50%, 0); } }
-  .tab { padding: 10px 16px; border-bottom: 2px solid transparent; cursor: pointer; color: #9A9A9A; font-weight: 500; }
-  .tab.active { color: #EDE6D6; border-color: #00FFB2; }
-
+  .tab {
+    padding: 12px 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: var(--muted);
+    font-weight: 800;
+    border-radius: 999px;
+    font-size: 13px;
+    transition: color .2s, background .2s, border-color .2s;
+  }
+  .tab:hover { color: var(--text); background: rgba(255,255,255,.05); }
+  .tab.active { color: #06100d; background: linear-gradient(135deg, var(--lime), var(--cyan)); border-color: transparent; }
+  .hero-title { font-size: clamp(2.5rem, 7vw, 6.8rem); line-height: .88; letter-spacing: -.075em; }
+  .status-dot { width: 10px; height: 10px; border-radius: 999px; background: var(--lime); box-shadow: 0 0 24px var(--lime); }
   details > summary { list-style: none; cursor: pointer; }
   details > summary::-webkit-details-marker { display: none; }
   details[open] .chev { transform: rotate(90deg); }
   .chev { transition: transform .2s; display: inline-block; }
+
+  @media (max-width: 760px) {
+    .shell { width: min(100vw - 20px, 1180px); }
+    .btn { width: 100%; text-align: center; }
+    header .btn { width: auto; }
+  }
 </style>
 </head>
 <body>
 
 <!-- ============ LOGIN SCREEN ============ -->
-<section id="login-screen" class="min-h-screen flex items-center justify-center px-4">
-  <div class="max-w-md w-full">
-    <div class="text-center mb-8">
+<section id="login-screen" class="min-h-screen flex items-center justify-center px-4 py-10">
+  <div class="shell grid lg:grid-cols-[1.05fr_.95fr] gap-8 items-center">
+    <div class="hidden lg:block">
+      <div class="inline-flex items-center gap-2 mono text-xs uppercase tracking-[0.28em] text-neutral-400 mb-6">
+        <span class="status-dot"></span> Live content control
+      </div>
+      <h1 class="hero-title font-black">Панель, которая выглядит как студия.</h1>
+      <p class="text-neutral-300 mt-6 text-lg max-w-xl">Обновляй портфолио, видео, проекты и отзывы в одном месте. Новый интерфейс быстрее читается, лучше подсвечивает действия и ошибки.</p>
+      <div class="grid grid-cols-3 gap-3 mt-8 max-w-xl">
+        <div class="glass rounded-3xl p-4"><div class="text-2xl font-black text-[#67f7c1]">JSON</div><div class="mono text-[10px] uppercase text-neutral-500 mt-1">GitHub sync</div></div>
+        <div class="glass rounded-3xl p-4"><div class="text-2xl font-black text-[#6ae7ff]">5 tabs</div><div class="mono text-[10px] uppercase text-neutral-500 mt-1">Content</div></div>
+        <div class="glass rounded-3xl p-4"><div class="text-2xl font-black text-[#ffc866]">Safe</div><div class="mono text-[10px] uppercase text-neutral-500 mt-1">Local token</div></div>
+      </div>
+    </div>
+    <div class="max-w-md w-full mx-auto">
+    <div class="text-center mb-8 lg:text-left">
       <div class="inline-flex items-center gap-2 mono text-xs uppercase tracking-widest text-neutral-500 mb-3">
-        <span class="w-2 h-2 bg-[#00FFB2] rounded-full animate-pulse"></span>
+        <span class="status-dot animate-pulse"></span>
         Nik Admin Panel
       </div>
-      <h1 class="text-4xl font-bold tracking-tight">Вход в админку</h1>
+      <h1 class="text-4xl font-black tracking-tight">Вход в админку</h1>
       <p class="text-neutral-400 mt-3 text-sm">Управляй портфолио, услугами и контактами без кода.</p>
     </div>
 
@@ -109,12 +196,13 @@
         </div>
       </details>
     </div>
+    </div>
   </div>
 </section>
 
 <!-- ============ MAIN ADMIN ============ -->
-<main id="main" class="hidden">
-  <header class="border-b border-neutral-800 px-6 py-4 flex items-center justify-between sticky top-0 bg-[#0F0F12] z-40">
+<main id="main" class="hidden pb-12">
+  <header class="glass shell mt-4 rounded-full px-4 md:px-6 py-3 flex items-center justify-between sticky top-4 z-40">
     <div class="flex items-center gap-4">
       <span class="w-2 h-2 bg-[#00FFB2] rounded-full animate-pulse"></span>
       <span class="font-bold">Nik Admin</span>
@@ -128,7 +216,13 @@
   </header>
 
   <!-- Tabs -->
-  <nav class="flex border-b border-neutral-800 px-6 overflow-x-auto">
+  <section class="shell mt-8 mb-5">
+    <div class="inline-flex items-center gap-2 mono text-xs uppercase tracking-[0.28em] text-neutral-500 mb-3"><span class="status-dot"></span> portfolio cms</div>
+    <h2 class="hero-title font-black">Контент под контролем.</h2>
+    <p class="text-neutral-400 mt-4 max-w-2xl">Быстро редактируй данные сайта и сохраняй изменения напрямую в GitHub. Ошибки API показываются в уведомлениях снизу.</p>
+  </section>
+
+  <nav class="shell glass rounded-full p-2 flex gap-2 overflow-x-auto">
     <div class="tab active" data-tab="profile">Профиль</div>
     <div class="tab" data-tab="stats">Цифры</div>
     <div class="tab" data-tab="videos">YouTube видео</div>
@@ -136,7 +230,7 @@
     <div class="tab" data-tab="testimonials">Отзывы</div>
   </nav>
 
-  <div class="p-6 max-w-5xl mx-auto">
+  <div class="shell mt-6">
 
     <!-- Profile Tab -->
     <div class="tab-pane" data-tab="profile">

@@ -69,6 +69,21 @@ Owner_id=@your_username
 python create_session_smart.py
 ```
 
+
+### Настройка Telegram-прокси
+
+Если Telegram не подключается и в логах видно `Connection to Telegram failed 5 time(s)` или `Ошибка прокси ...`, укажите рабочий прокси в `1.envv`:
+
+```env
+TELEGRAM_PROXY=socks5://login:password@38.154.16.129:8000
+TELEGRAM_CONNECTION_RETRIES=8
+TELEGRAM_TIMEOUT=20
+# true — разрешить резервное прямое подключение, если прокси упал
+TELEGRAM_PROXY_FALLBACK_DIRECT=false
+```
+
+Поддерживаются `socks5://`, `socks4://`, `http://` и короткий формат `host:port` (тогда тип берется из `TELEGRAM_PROXY_TYPE`, по умолчанию `socks5`). Для SOCKS-прокси установите зависимости из `requirements.txt`, там добавлен `PySocks`.
+
 ### 3. Создание сессии Telegram
 
 ```bash

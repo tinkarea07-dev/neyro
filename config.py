@@ -30,6 +30,63 @@ class Config:
     
     # Telegram сессия
     SESSION_NAME = 'session_name'
+
+    # Настройки подключения Telegram
+    # TELEGRAM_PROXY поддерживает форматы:
+    #   socks5://user:pass@host:port
+    #   socks4://host:port
+    #   http://host:port
+    #   host:port (тип берется из TELEGRAM_PROXY_TYPE, по умолчанию socks5)
+    TELEGRAM_CONNECTION_RETRIES = int(os.getenv('TELEGRAM_CONNECTION_RETRIES', '8'))
+    TELEGRAM_TIMEOUT = int(os.getenv('TELEGRAM_TIMEOUT', '20'))
+    TELEGRAM_PROXY = os.getenv('TELEGRAM_PROXY') or os.getenv('Telegram_proxy') or ''
+    TELEGRAM_PROXY_TYPE = os.getenv('TELEGRAM_PROXY_TYPE', 'socks5').lower()
+    TELEGRAM_PROXY_FALLBACK_DIRECT = os.getenv('TELEGRAM_PROXY_FALLBACK_DIRECT', 'false').lower() in ('1', 'true', 'yes', 'да')
+
+    @staticmethod
+    def get_telegram_proxy():
+        """Возвращает proxy tuple для Telethon или None, если прокси не задан."""
+        proxy_url = Config.TELEGRAM_PROXY.strip()
+        if not proxy_url:
+            return None
+
+        from urllib.parse import urlparse, unquote
+        import importlib
+
+        socks = importlib.import_module('socks')
+        parsed = urlparse(proxy_url if '://' in proxy_url else f'{Config.TELEGRAM_PROXY_TYPE}://{proxy_url}')
+        scheme = (parsed.scheme or Config.TELEGRAM_PROXY_TYPE).lower()
+        proxy_types = {
+            'socks5': socks.SOCKS5,
+            'socks4': socks.SOCKS4,
+            'http': socks.HTTP,
+            'https': socks.HTTP,
+        }
+
+        if scheme not in proxy_types:
+            raise ValueError(f'Неподдерживаемый тип TELEGRAM_PROXY: {scheme}. Используйте socks5, socks4 или http.')
+        if not parsed.hostname or not parsed.port:
+            raise ValueError('TELEGRAM_PROXY должен содержать host и port, например socks5://127.0.0.1:9050')
+
+        username = unquote(parsed.username) if parsed.username else None
+        password = unquote(parsed.password) if parsed.password else None
+        return (proxy_types[scheme], parsed.hostname, parsed.port, True, username, password)
+
+    @staticmethod
+    def describe_telegram_proxy() -> str:
+        """Безопасное описание прокси без логирования пароля."""
+        proxy_url = Config.TELEGRAM_PROXY.strip()
+        if not proxy_url:
+            return 'без прокси'
+
+        from urllib.parse import urlparse
+
+        parsed = urlparse(proxy_url if '://' in proxy_url else f'{Config.TELEGRAM_PROXY_TYPE}://{proxy_url}')
+        scheme = (parsed.scheme or Config.TELEGRAM_PROXY_TYPE).upper()
+        host = parsed.hostname or 'unknown-host'
+        port = parsed.port or 'unknown-port'
+        auth = ' с авторизацией' if parsed.username else ''
+        return f'{scheme} {host}:{port}{auth}'
     
     # Владелец бота (для отправки логов)
     OWNER_ID = os.getenv('Owner_id', '@your_username')
